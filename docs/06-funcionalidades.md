@@ -134,9 +134,11 @@ Sem JavaScript. "Citar" leva à página Especial:Citar.
 
 ## Opções de leitura
 
-![Opções de leitura no celular, tema papel](imagens/redesign-celular-opcoes-papel.jpg)
+![Opções de leitura no computador, com as seis fontes](imagens/redesign-opcoes-desktop.jpg)
 
-Escolha. Tema (automático, claro, papel, escuro), fonte (serifada, sem serifa, legibilidade), tamanho do texto (cinco passos, de 90% a 142%), espaço entre linhas (três passos) e largura da coluna (três passos). Cada mudança vale na hora, sem botão de salvar, e fica guardada no navegador. "Restaurar padrão" volta tudo ao início.
+![Opções de leitura no celular, tema papel, fonte Inter](imagens/redesign-celular-opcoes-papel.jpg)
+
+Escolha. Tema (automático, claro, papel, escuro), fonte (sistema, serifada, Inter, Literata, Source Serif ou legibilidade), tamanho do texto (cinco passos, de 90% a 142%), espaço entre linhas (três passos) e largura da coluna (três passos). Cada mudança vale na hora, sem botão de salvar, e fica guardada no navegador. O texto do painel informa o peso de cada fonte para o leitor saber o que vai baixar. "Restaurar padrão" volta tudo ao início.
 
 Por quê. No computador o painel abre na lateral e o artigo continua visível ao lado; o próprio artigo serve de prévia. As preferências são aplicadas por um script de dez linhas no `<head>`, antes da primeira pintura, para a página não piscar com o tema errado ao abrir.
 

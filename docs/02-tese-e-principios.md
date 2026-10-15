@@ -46,13 +46,13 @@ Isso vem da restrição de conexão ruim. Em 2G, o HTML chega bem antes do JavaS
 
 A página atual do Chá transfere cerca de 54 KB de HTML e 178 KB de outros recursos em 37 requisições. O redesign tem um orçamento menor que isso: HTML de até 60 KB comprimido, CSS de até 15 KB, JavaScript de até 20 KB, nenhuma fonte baixada por padrão. As imagens são as mesmas do artigo, servidas pelo mesmo servidor da Wikimedia, e carregam só quando se aproximam da tela.
 
-O resultado ficou em 24,6 KB de HTML, 7,2 KB de CSS e 11,8 KB de JavaScript, comprimidos. O orçamento eliminou ideias boas na aparência; fontes customizadas são o exemplo principal (ver [04-tipografia-e-layout.md](04-tipografia-e-layout.md#família-tipográfica)).
+O resultado ficou em 24,7 KB de HTML, 7,7 KB de CSS e 11,8 KB de JavaScript, comprimidos. O orçamento eliminou ideias boas na aparência; fontes customizadas são o exemplo principal (ver [04-tipografia-e-layout.md](04-tipografia-e-layout.md#família-tipográfica)).
 
-### 6. Nada se move sozinho
+### 6. Movimento mínimo e nada se move sozinho
 
-Não há animações, transições, rolagem suave nem elementos que aparecem ou somem conforme a direção da rolagem. Um painel abre de uma vez. Um salto para uma seção acontece de uma vez.
+A única transição é uma mudança de cor de 100 ms ao passar o mouse sobre botões e itens de navegação. Não há animações, rolagem suave nem elementos que aparecem, somem ou se deslocam. Um painel abre de uma vez. Um salto para uma seção acontece de uma vez.
 
-A preferência `prefers-reduced-motion` existe, mas depende de a pessoa saber que ela existe e onde ativar no sistema. Quem tem distúrbio vestibular, enxaqueca ou dificuldade de atenção muitas vezes não sabe. Como movimento não acrescenta nada a uma tarefa de leitura, a escolha mais segura é não ter movimento para ninguém. A justificativa completa está em [07-acessibilidade.md](07-acessibilidade.md#movimento).
+A preferência `prefers-reduced-motion` existe, mas depende de a pessoa saber que ela existe e onde ativar no sistema. Quem tem distúrbio vestibular, enxaqueca ou dificuldade de atenção muitas vezes não sabe. Como movimento não acrescenta nada a uma tarefa de leitura, o movimento já nasce pequeno para todos, e com a preferência ativada some por completo. A justificativa completa está em [07-acessibilidade.md](07-acessibilidade.md#movimento).
 
 ### 7. Uma cor de destaque, para o que é clicável
 

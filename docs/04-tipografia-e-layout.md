@@ -14,37 +14,49 @@ A largura é definida em `ch`, a unidade que acompanha a largura dos caracteres 
 
 A variação dentro de cada opção vem das palavras longas que não cabem no fim da linha, não do layout. Compare com 64 a 121 na página atual.
 
-O `ch` não resolve tudo. Com o mesmo valor de 55ch, a fonte sem serifa ficou com 72 caracteres por linha e a fonte de legibilidade com 60, porque a proporção entre o "0" (que define o `ch`) e as outras letras muda de uma família para outra. Acrescentei um fator de correção por família (0,9 para a sem serifa e 1,08 para a de legibilidade). Depois disso as três famílias deram 65 caracteres por linha.
+O `ch` não resolve tudo. A unidade é a largura do algarismo "0" da fonte, e a proporção entre o "0" e as outras letras muda de uma família para outra. Medi cada fonte com o mesmo valor e depois ajustei um fator de correção por família:
+
+| Fonte | Fator | Caracteres por linha |
+| --- | --- | --- |
+| Sistema | 0,9 | 65 |
+| Serifada | 1,0 | 65 |
+| Inter | 0,96 | 65 |
+| Literata | 1,03 | 65 |
+| Source Serif | 1,14 | 66 |
+| Legibilidade | 0,94 | 66 |
+
+Na primeira calibração, só com três fontes, a Atkinson parecia precisar de 1,08. Era um erro de medição: o teste rodou antes de a fonte carregar e mediu a fonte de reserva. Com a fonte carregada, o fator certo é 0,94. A medição agora espera `document.fonts.load` antes de contar.
 
 No celular a coluna ocupa a tela, com 16 px de margem de cada lado. A 375 px de largura ficam 42 caracteres por linha, e a 320 px ficam 35. É menos que o ideal para computador, mas é o que cabe com um corpo de 17 px, e reduzir o corpo para ganhar caracteres seria pior.
 
 ## Família tipográfica
 
-Três opções, como pedido: serifada, sem serifa e uma pensada para legibilidade.
+Seis opções para o texto do artigo. A interface (barras, botões, painéis, ficha, referências) fica sempre na fonte sans do sistema, exceto na opção Legibilidade. Assim o leitor distingue o que é conteúdo do que é ferramenta, e escolher uma fonte de leitura não muda o resto da página.
 
-### Serifada (padrão)
+| Opção | Fonte | Peso extra | Caráter |
+| --- | --- | --- | --- |
+| Sistema (padrão) | San Francisco no Mac e iOS, Segoe UI Variable no Windows, Roboto no Android | 0 | A aparência do Notion e dos apps da Apple |
+| Serifada | Charter no Mac e iOS, Sitka Text no Windows, Noto Serif no Android | 0 | Livro, com a fonte que o sistema já tem |
+| Inter | Inter, de Rasmus Andersson | 48 KB | Sans neutra e nítida, a fonte do Linear |
+| Literata | Literata, da TypeTogether para o Google Play Livros | 79 KB | Serifada desenhada para leitura longa em tela |
+| Source Serif | Source Serif 4, da Adobe | 103 KB | Serifada de transição, mais seca e clara |
+| Legibilidade | Atkinson Hyperlegible Next, do Braille Institute | 48 KB | Letras que não se confundem, com mais espaço entre letras e palavras |
 
-`Charter, Sitka Text, Cambria, Georgia, Noto Serif, DejaVu Serif, serif`
+![Seção Cultura do chá em Literata, tema papel](imagens/redesign-literata-papel.jpg)
 
-Todas são fontes que já vêm instaladas. Charter está no Mac e no iOS, Sitka Text no Windows (a Microsoft a desenhou com testes de legibilidade em tela), Georgia em quase tudo, Noto Serif no Android.
+Todas as fontes baixadas são variáveis, só do alfabeto latino (cobre o português) e só carregam quando escolhidas, porque o `@font-face` de uma fonte só é buscado quando algum elemento a usa. O padrão não baixa nada.
 
-Considerei duas fontes web, Source Serif 4 e Literata, ambas desenhadas para leitura longa. Com regular e itálico, só para o alfabeto latino, seriam cerca de 70 KB a mais. Descartei por três motivos. Em 2G, 70 KB são mais de dois segundos. A fonte cobriria latim, cirílico e grego, então um artigo em árabe, hindi ou japonês misturaria fontes na mesma página. E as serifadas de sistema dos quatro sistemas principais já são boas para tela. O preço é que a página não fica idêntica em todo aparelho; no Mac ela usa Charter e no Windows, Sitka. Aceitei isso porque a medida em `ch` mantém o número de caracteres por linha estável entre fontes.
+### Por que o padrão mudou de serifada para sistema
 
-A serifada é o padrão por dois motivos. O primeiro é separar o texto do artigo da interface: tudo o que é do artigo usa a fonte de leitura, e tudo o que é interface (barras, botões, painéis, ficha, referências) usa a sem serifa do sistema. Assim o leitor sabe, sem pensar, o que é conteúdo e o que é ferramenta. O segundo é continuidade: os títulos da Wikipédia já são serifados há mais de dez anos. As pesquisas comparando serifa e sem serifa em tela não mostram vencedor claro, e por isso a escolha fica com o leitor.
+A primeira versão do projeto usava Charter como padrão. Na passada de acabamento visual, a referência passou a ser Notion e Linear, que são interfaces sans de ponta a ponta. A serifada continua a um clique, mas a página abre como um app de documentos, não como um livro. A fonte do sistema também mantém o orçamento de peso: nenhum byte de fonte na primeira visita. No Mac e no iPhone ela é a San Francisco, a fonte da própria Apple.
 
-### Sem serifa
+### Opções que testei e tirei
 
-`-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Helvetica Neue, Arial, sans-serif`
+Newsreader, com o eixo de tamanho óptico, ficou com 279 KB entre romano e itálico. Só com o eixo de peso, 123 KB, mais que o dobro das outras serifadas, e sem o eixo óptico ela perde o desenho que a justifica. Lora entrou na lista e saiu: ficou parecida demais com Literata e Source Serif para valer uma quarta serifada. As fontes com eixo de tamanho óptico em Inter e Literata passaram de 73 KB e 110 KB cada, então pedi só o eixo de peso.
 
-É a mesma pilha da interface. Evitei a palavra-chave `system-ui` porque no Windows em chinês ou japonês ela pode escolher uma fonte de interface CJK também para o texto latino.
+Descartei OpenDyslexic pelos motivos já descritos: os estudos não encontram ganho de leitura (Wery e Diliberto, 2017, com OpenDyslexic; Kuster e colegas, 2018, com a Dyslexie). O que tem mais evidência a favor é aumentar o espaço entre letras (Zorzi e colegas, 2012). O nome da opção é "Legibilidade" porque ela também ajuda quem tem baixa visão e porque não quero prometer um efeito que a pesquisa não confirma.
 
-### Legibilidade
-
-Atkinson Hyperlegible Next, do Braille Institute (licença OFL), com 2% a mais de espaço entre letras e 8% entre palavras. É a única fonte baixada, e só quando o leitor a escolhe: são 48 KB (34 KB do arquivo variável e 14 KB do itálico, só o alfabeto latino). O rótulo do botão no painel de opções não usa essa fonte de propósito, porque desenhar o rótulo nela já baixaria o arquivo.
-
-Considerei OpenDyslexic, que é a fonte mais conhecida para dislexia. Descartei porque os estudos não encontram ganho de velocidade nem de precisão de leitura com ela (Wery e Diliberto, 2017, com OpenDyslexic; Kuster e colegas, 2018, com a Dyslexie). O que tem mais evidência a favor é aumentar o espaço entre letras (Zorzi e colegas, 2012). Atkinson Hyperlegible diferencia as letras que se confundem com facilidade (I, l e 1; O e 0) e tem bom espaçamento próprio, e o espaço extra entre letras e palavras vem do CSS.
-
-O nome da opção é "Legibilidade", não "Dislexia", porque ela também ajuda quem tem baixa visão e porque não quero prometer um efeito que a pesquisa não confirma.
+A fonte do sistema no Windows e no Linux depende do que está instalado. O pior caso é Arial ou Helvetica, que são aceitáveis e já foram a fonte da Wikipédia.
 
 ## Escala e hierarquia
 
@@ -52,19 +64,19 @@ O corpo do texto tem 17 px no celular e 18 px a partir de 768 px, sempre em `rem
 
 | Elemento | Tamanho | Peso | Espaço |
 | --- | --- | --- | --- |
-| Título do artigo | 36 a 48 px, conforme a largura | regular | |
-| Seção (h2) | 1,6 vez o corpo | regular | 2,2 linhas acima, 0,55 abaixo |
-| Subseção (h3) | 1,22 vez o corpo | negrito | 1,8 acima, 0,5 abaixo |
-| Subsubseção (h4) | igual ao corpo | negrito | 1,6 acima, 0,4 abaixo |
+| Título do artigo | 36 a 52 px, conforme a largura | negrito (semibold nas serifadas), espaçamento negativo | |
+| Seção (h2) | 1,55 vez o corpo | semibold | 2,3 linhas acima, 0,5 abaixo |
+| Subseção (h3) | 1,2 vez o corpo | semibold | 1,8 acima, 0,45 abaixo |
+| Subsubseção (h4) | igual ao corpo | semibold | 1,6 acima, 0,4 abaixo |
 | Corpo | 17 ou 18 px | regular | 0,9 linha entre parágrafos |
 | Interface | 15 px | regular | |
 | Legendas, ficha, notas | 14 px | regular | |
 
-Títulos grandes ficam em peso regular porque o tamanho já os separa do texto. O negrito fica para h3 e h4, onde o tamanho sozinho não basta. O espaço acima de cada título é sempre maior que o espaço abaixo, para o título ficar visualmente preso ao texto que ele abre.
+Na primeira versão, com serifada, os títulos grandes eram em peso regular. Com a sans padrão, o peso semibold e o espaçamento levemente negativo (-0,02em) dão a hierarquia do Notion, em que o título é a âncora visual da página. O espaço acima de cada título é sempre maior que o espaço abaixo, para o título ficar visualmente preso ao texto que ele abre.
 
 Nenhum texto tem menos de 14 px, com uma exceção: os números das chamadas de referência, que são sobrescritos por convenção. Para compensar, a área clicável de cada chamada é maior que o número (ver [07-acessibilidade.md](07-acessibilidade.md)).
 
-A entrelinha padrão é 1,6, com opções de 1,45 e 1,8. O texto é alinhado à esquerda, sem justificação e sem hifenização automática. Justificar cria espaços irregulares entre palavras, e a hifenização atrapalha quem tem dislexia; com o texto alinhado à esquerda nenhuma das duas é necessária. Uso `text-wrap: pretty` nos parágrafos, para evitar palavras sozinhas na última linha, e `text-wrap: balance` nos títulos.
+A entrelinha padrão é 1,65, com opções de 1,45 e 1,85. O texto é alinhado à esquerda, sem justificação e sem hifenização automática. Justificar cria espaços irregulares entre palavras, e a hifenização atrapalha quem tem dislexia; com o texto alinhado à esquerda nenhuma das duas é necessária. Uso `text-wrap: pretty` nos parágrafos, para evitar palavras sozinhas na última linha, e `text-wrap: balance` nos títulos.
 
 No corpo, os números usam algarismos de texto quando a fonte oferece, para datas como 1543 e 1660 não saltarem da linha. Na ficha, nas tabelas e na linha de metadados os números são alinhados e de largura fixa.
 

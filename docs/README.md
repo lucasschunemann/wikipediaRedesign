@@ -17,21 +17,21 @@ Redesign conceitual da página de artigo da Wikipédia, demonstrado com o artigo
 9. [Desempenho e testes](09-desempenho-e-testes.md): peso, testes feitos, erros encontrados e o que não foi testado.
 10. [Limitações](10-limitacoes.md): o que o conceito não cobre e o que faltou verificar.
 
-O [registro de decisões](registro-de-decisoes.md) reúne as 17 decisões principais no formato problema, alternativas, escolha e motivo.
+O [registro de decisões](registro-de-decisoes.md) reúne as 19 decisões principais no formato problema, alternativas, escolha e motivo.
 
 ## Em números
 
 | | Página atual (Vector 2022) | Redesign |
 | --- | --- | --- |
-| Caracteres por linha no computador | 64 a 121 no mesmo artigo | 65 (opções de 55 e 76) |
-| Peso na primeira visita, sem imagens | cerca de 232 KB, 37 requisições | 43,6 KB, 3 requisições |
+| Caracteres por linha no computador | 64 a 121 no mesmo artigo | 65 (opções de 55 e 75), em qualquer das seis fontes |
+| Peso na primeira visita, sem imagens | cerca de 232 KB, 37 requisições | 44,2 KB, 3 requisições |
 | Citar | dentro de um menu de 18 itens | no cabeçalho, 6 formatos, data de acesso correta |
 | Sumário no celular | não há | barra inferior com a seção atual |
 | Violações automáticas de WCAG 2.2 AA (axe) | não medido | 0 nos três temas |
 
 ## Créditos
 
-Texto, ficha e referências: artigo [Chá](https://pt.wikipedia.org/w/index.php?title=Ch%C3%A1&oldid=73198638) da Wikipédia em português, revisão 73198638, pelos [colaboradores da Wikipédia](https://pt.wikipedia.org/w/index.php?title=Ch%C3%A1&action=history), sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br). As imagens vêm do Wikimedia Commons, cada uma com sua licença na página do arquivo. Fonte Atkinson Hyperlegible Next, do Braille Institute, sob a SIL Open Font License.
+Texto, ficha e referências: artigo [Chá](https://pt.wikipedia.org/w/index.php?title=Ch%C3%A1&oldid=73198638) da Wikipédia em português, revisão 73198638, pelos [colaboradores da Wikipédia](https://pt.wikipedia.org/w/index.php?title=Ch%C3%A1&action=history), sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br). As imagens vêm do Wikimedia Commons, cada uma com sua licença na página do arquivo. Fontes opcionais Inter, Literata, Source Serif 4 e Atkinson Hyperlegible Next, todas sob a SIL Open Font License.
 
 As capturas de tela da página atual da Wikipédia (arquivos `imagens/auditoria-*.jpg`) foram feitas em 15 de outubro de 2026 para fins de análise.
 

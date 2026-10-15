@@ -46,7 +46,7 @@ Problema: A tipografia é o centro do redesign, e uma fonte desenhada para leitu
 
 Alternativas: Fonte web para o texto (Source Serif 4 ou Literata, cerca de 70 KB para regular e itálico só no alfabeto latino). Fontes do sistema. Fontes do sistema por padrão e fontes web só quando o leitor escolhe.
 
-Escolha: Fontes do sistema para as opções serifada e sem serifa. A opção de legibilidade usa Atkinson Hyperlegible Next, que só é baixada se o leitor escolher essa opção.
+Escolha: Fontes do sistema por padrão. Inter, Literata, Source Serif 4 e Atkinson Hyperlegible Next só são baixadas se o leitor as escolher. (Na primeira versão eram só três opções e o padrão era a serifada do sistema; ver [D19](#d19-fonte-sans-do-sistema-como-padrão).)
 
 Por quê: Detalhes em [04-tipografia-e-layout.md](04-tipografia-e-layout.md#família-tipográfica). Em resumo: 70 KB a mais em 2G são mais de dois segundos; a fonte web cobriria só latim, cirílico e grego, e artigos em árabe, hindi ou japonês misturariam fontes; e os sistemas atuais já trazem serifadas boas para tela (Charter no Mac e iOS, Sitka no Windows, Noto Serif no Android).
 
@@ -148,7 +148,7 @@ Por quê: para quem lê, o link vermelho chama mais atenção do que merece. Par
 
 ---
 
-## D13. Nenhuma animação
+## D13. Nenhuma animação (revista em D18)
 
 Problema: decidir o papel do movimento na interface.
 
@@ -205,4 +205,30 @@ Alternativas: manter tudo; reduzir para uma página bem resolvida e documentar o
 Escolha: uma página, a do Chá.
 
 Por quê: a tese do projeto é sobre ler um artigo, e preferi concentrar o trabalho numa página completa, testada e documentada. O que saiu está descrito em [10-limitacoes.md](10-limitacoes.md).
+
+---
+
+## D18. Acabamento visual no padrão Notion e Linear
+
+Problema: a primeira versão era correta e sóbria, mas sem personalidade visual. O pedido passou a ser uma aparência mais refinada, com Notion e Linear como referência, e movimento mínimo.
+
+Alternativas: manter a paleta e só trocar a fonte; refazer a paleta e os componentes com neutros quentes, linhas finas e hover em cinza; acrescentar capa e ícone de página, como o Notion.
+
+Escolha: refazer paleta e componentes. Texto #37352f, fundo de superfície #f7f6f3, azul #1d5fc4 só para links, escuro #161617. Título em semibold com espaçamento negativo, sumário com item atual em fundo cinza arredondado, botões do cabeçalho com contorno fino, imagens e prévia com cantos de 10 px, sombra só na prévia de referência. Nada de capa nem ícone: seriam decoração, e a imagem do Chá já está na ficha.
+
+Por quê: a hierarquia vem da tipografia e do espaço, como pedido. O azul do Notion para links não passa no contraste (4,0:1), por isso o azul é mais escuro.
+
+Movimento: a única transição é uma mudança de cor de 100 ms em botões e itens de navegação, desligada com `prefers-reduced-motion`. Isso revisa D13, que não tinha nenhuma. Nada se desloca, cresce ou aparece, então o risco que motivou D13 (movimento que atrapalha quem tem distúrbio vestibular ou dificuldade de atenção) não se aplica a uma troca de cor.
+
+---
+
+## D19. Fonte sans do sistema como padrão
+
+Problema: com a nova linguagem visual, o padrão serifado (Charter) deixava a página com cara de livro, longe de Notion e Linear.
+
+Alternativas: Inter como padrão (baixa 48 KB em toda primeira visita); sans do sistema (San Francisco no Mac e no iPhone); manter a serifada.
+
+Escolha: sans do sistema como padrão, com Inter, Literata, Source Serif 4, serifada do sistema e Atkinson a um clique.
+
+Por quê: a fonte do sistema não custa nenhum byte e, no Mac e no iPhone, é a San Francisco, a fonte da Apple. Inter ficaria quase idêntica e custaria o download. Mantive as serifadas porque algumas pessoas leem melhor com elas e a tese é deixar o leitor decidir. Os fatores de correção da largura da coluna foram recalibrados para as seis famílias (todas entre 65 e 66 caracteres por linha). Detalhes em [04-tipografia-e-layout.md](04-tipografia-e-layout.md#família-tipográfica).
 

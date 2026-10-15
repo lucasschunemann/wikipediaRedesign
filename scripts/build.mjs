@@ -237,7 +237,16 @@ await writeFile(join(out, 'assets', 'cha-dados.json'), JSON.stringify(panelData)
 await copyFile(join(root, 'src', 'site.css'), join(out, 'assets', 'site.css'));
 await copyFile(join(root, 'src', 'site.js'), join(out, 'assets', 'site.js'));
 await mkdir(join(out, 'assets', 'fonts'), { recursive: true });
-for (const f of ['atkinson-next-latin.woff2', 'atkinson-next-latin-italic.woff2', 'OFL.txt']) {
+for (const f of [
+  'atkinson-next-latin.woff2',
+  'atkinson-next-latin-italic.woff2',
+  'inter-latin.woff2',
+  'literata-latin.woff2',
+  'literata-latin-italic.woff2',
+  'sourceserif4-latin.woff2',
+  'sourceserif4-latin-italic.woff2',
+  'OFL.txt',
+]) {
   await copyFile(join(root, 'src', 'fonts', f), join(out, 'assets', 'fonts', f));
 }
 

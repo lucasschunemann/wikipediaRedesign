@@ -83,8 +83,9 @@ export default {
   themes: { auto: 'Automático', light: 'Claro', paper: 'Papel', dark: 'Escuro' },
   themeHint: 'Automático segue o sistema. Papel tem fundo mais quente e menos brilho, para leituras longas.',
   font: 'Fonte',
-  fonts: { serif: 'Serifada', sans: 'Sem serifa', legible: 'Legibilidade' },
-  fontHint: 'Legibilidade usa a Atkinson Hyperlegible, com mais espaço entre letras e palavras. Ela só é baixada quando escolhida (cerca de 50 KB).',
+  fonts: { system: 'Sistema', serif: 'Serifada', inter: 'Inter', literata: 'Literata', sourceserif: 'Source Serif', legible: 'Legibilidade' },
+  fontHint:
+    'Sistema e Serifada usam fontes já instaladas no aparelho. Inter (48 KB), Literata (79 KB), Source Serif 4 (103 KB) e Atkinson Hyperlegible (48 KB, na opção Legibilidade, com mais espaço entre letras e palavras) só são baixadas quando escolhidas.',
   size: 'Tamanho do texto',
   sizeDown: 'Diminuir texto',
   sizeUp: 'Aumentar texto',

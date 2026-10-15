@@ -77,7 +77,7 @@
   /* ---------- Preferências de leitura ---------- */
 
   const PREF_KEY = 'leitura';
-  const DEFAULTS = { theme: 'auto', font: 'serif', size: '0', leading: 'normal', measure: 'normal' };
+  const DEFAULTS = { theme: 'auto', font: 'system', size: '0', leading: 'normal', measure: 'normal' };
   let prefs = {};
   try {
     prefs = JSON.parse(localStorage.getItem(PREF_KEY) || '{}');

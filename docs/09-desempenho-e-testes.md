@@ -4,21 +4,21 @@
 
 | Arquivo | Tamanho | Comprimido | Quando carrega |
 | --- | --- | --- | --- |
-| `index.html` (artigo inteiro e interface) | 98,6 KB | 24,6 KB | Sempre |
-| `site.css` | 30,3 KB | 7,2 KB | Sempre |
+| `index.html` (artigo inteiro e interface) | 98,8 KB | 24,7 KB | Sempre |
+| `site.css` | 32,7 KB | 7,7 KB | Sempre |
 | `site.js` | 38,3 KB | 11,8 KB | Sempre, depois do HTML (`defer`) |
 | `cha-dados.json` (idiomas, histórico, discussão) | 39,5 KB | 10,4 KB | Só quando o leitor abre Idiomas, Histórico ou Discussão |
-| Fonte Atkinson Hyperlegible Next | 48 KB | já comprimida | Só quando o leitor escolhe "Legibilidade" |
+| Fontes opcionais: Inter 48 KB, Literata 79 KB, Source Serif 4 103 KB, Atkinson Hyperlegible Next 48 KB | já comprimidas | | Só quando o leitor escolhe a fonte |
 | Imagens | as mesmas do artigo | | Quando se aproximam da tela |
 
-Primeira visita, sem contar imagens: 43,6 KB comprimidos em 3 requisições. A página atual do Vector 2022 transfere cerca de 54 KB de HTML e 178 KB de outros recursos em 37 requisições (ver [auditoria](01-auditoria.md#desempenho-medido)).
+Primeira visita, sem contar imagens: 44,2 KB comprimidos em 3 requisições. A página atual do Vector 2022 transfere cerca de 54 KB de HTML e 178 KB de outros recursos em 37 requisições (ver [auditoria](01-auditoria.md#desempenho-medido)).
 
 O orçamento definido no começo era 60 KB de HTML, 15 KB de CSS e 20 KB de JavaScript, comprimidos. Os três ficaram abaixo.
 
 As decisões que mais pesaram:
 
 - O texto chega no HTML. O JavaScript carrega com `defer`, depois que a página já pode ser lida.
-- Nenhuma fonte baixada por padrão ([D04](registro-de-decisoes.md#d04-fontes-do-sistema-por-padrão)).
+- Nenhuma fonte baixada por padrão ([D04](registro-de-decisoes.md#d04-fontes-do-sistema-por-padrão) e [D19](registro-de-decisoes.md#d19-fonte-sans-do-sistema-como-padrão)).
 - Os dados dos painéis ficam num arquivo separado. A lista de 217 idiomas é a maior parte dele, e a maioria dos leitores nunca abre o seletor de idiomas.
 - O build tira do HTML do Parsoid os atributos internos (`data-mw`, `about`, `typeof`, ids sem uso). Isso compensou o peso de toda a interface: o HTML do Parsoid tem 121 KB e a página final, com a interface, tem 98,6 KB.
 - As imagens usam as larguras padronizadas da Wikimedia (330 e 500 px) e o navegador escolhe pela largura disponível. No celular, uma figura pesa o mesmo que no Minerva.

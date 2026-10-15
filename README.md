@@ -60,7 +60,7 @@ src/site.css         tokens, layout e componentes
 src/site.js          sumário, busca, referências, painéis, preferências, retomada
 src/prefs-inline.js  aplica as preferências antes da primeira pintura
 src/strings/pt.mjs   todos os textos de interface
-src/fonts/           Atkinson Hyperlegible Next (só baixada se o leitor escolher)
+src/fonts/           Inter, Literata, Source Serif 4 e Atkinson (só baixadas se o leitor escolher)
 site/                resultado do build
 docs/                documentação do processo
 ```
@@ -69,4 +69,4 @@ Sem framework e sem dependências no navegador. A única dependência de desenvo
 
 ## Licenças
 
-O conteúdo do artigo é da Wikipédia em português, sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br). As imagens têm licenças próprias no Wikimedia Commons. A fonte Atkinson Hyperlegible Next está sob a SIL Open Font License (`src/fonts/OFL.txt`). Wikipédia é uma marca registrada da Wikimedia Foundation; este projeto não tem relação com ela.
+O conteúdo do artigo é da Wikipédia em português, sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.pt-br). As imagens têm licenças próprias no Wikimedia Commons. As fontes opcionais (Inter, Literata, Source Serif 4 e Atkinson Hyperlegible Next) estão sob a SIL Open Font License; a licença é a mesma para as quatro, com copyright de autores diferentes (Rasmus Andersson, TypeTogether, Adobe e Braille Institute). `src/fonts/OFL.txt` traz o texto da licença com o aviso da Atkinson. Wikipédia é uma marca registrada da Wikimedia Foundation; este projeto não tem relação com ela.

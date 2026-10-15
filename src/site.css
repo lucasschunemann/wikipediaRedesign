@@ -3,7 +3,7 @@
    seções e busca, painéis, barra inferior, impressão.
    Os valores e o motivo de cada um estão em docs/05-sistema-visual.md. */
 
-/* ---------- Fonte da opção de legibilidade (só é baixada se for usada) ---------- */
+/* ---------- Fontes opcionais (cada arquivo só é baixado se a fonte for escolhida) ---------- */
 
 @font-face {
   font-family: 'Atkinson Hyperlegible Next';
@@ -19,25 +19,61 @@
   font-display: swap;
   src: url(fonts/atkinson-next-latin-italic.woff2) format('woff2');
 }
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/inter-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Literata';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/literata-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Literata';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/literata-latin-italic.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/sourceserif4-latin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(fonts/sourceserif4-latin-italic.woff2) format('woff2');
+}
 
 /* ---------- Tokens ---------- */
 
 :root {
-  --font-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, 'Noto Serif', 'DejaVu Serif', serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, 'Helvetica Neue', Arial, sans-serif;
-  --font-legible: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible', Verdana, var(--font-sans);
-  --font-text: var(--font-serif);
-  --font-ui: var(--font-sans);
+  --font-system-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable Text', 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, 'Helvetica Neue', Arial, sans-serif;
+  --font-system-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, 'Noto Serif', 'DejaVu Serif', serif;
+  --font-text: var(--font-system-sans);
+  --font-ui: var(--font-system-sans);
   --text-tracking: 0;
   --word-spacing: normal;
+  --title-weight: 700;
+  --heading-weight: 600;
 
-  /* Escala: 1 = 18 px no computador quando o navegador está no padrão de 16 px. */
+  /* Escala: 1 = 17 px no celular e 18 px no computador quando o navegador está no padrão de 16 px. */
   --scale: 1;
   --text-size: calc(1.0625rem * var(--scale));
-  --leading: 1.6;
+  --leading: 1.65;
   /* Largura da coluna em caracteres do próprio texto, corrigida por família (ver docs/04). */
   --measure-chars: 55;
-  --measure-k: 1;
+  --measure-k: 0.9;
 
   /* Espaçamento em múltiplos de 4 px. */
   --s1: 0.25rem;
@@ -52,6 +88,7 @@
   --ui-size: 0.9375rem;
   --ui-small: 0.875rem;
   --radius: 6px;
+  --radius-lg: 10px;
   --topbar-h: 3.25rem;
   --rail-w: 14.5rem;
   --margin-w: 16rem;
@@ -59,46 +96,50 @@
 
   /* Tema claro */
   --bg: #ffffff;
-  --bg-2: #f5f4f1;
-  --text: #24221e;
-  --text-2: #625e57;
-  --rule: #e5e2dc;
-  --rule-strong: #8c877e;
-  --accent: #2756a8;
-  --visited: #5b4b97;
-  --mark: #fde68a;
-  --mark-current: #f6bf3c;
-  --shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 4px 12px rgb(0 0 0 / 0.06);
+  --bg-2: #f7f6f3;
+  --hover: #f0efec;
+  --text: #37352f;
+  --text-2: #6b6964;
+  --rule: #ebeae6;
+  --rule-strong: #8f8c85;
+  --accent: #1d5fc4;
+  --visited: #6a4fb3;
+  --mark: #fff0a6;
+  --mark-current: #ffd84d;
+  --shadow: 0 0 0 1px rgb(55 53 47 / 0.08), 0 8px 24px rgb(55 53 47 / 0.12);
   --img-filter: none;
   color-scheme: light;
 }
 
 :root[data-theme='paper'] {
-  --bg: #f4efe5;
-  --bg-2: #ebe4d6;
-  --text: #2f271d;
-  --text-2: #64584a;
-  --rule: #dcd2c1;
+  --bg: #f6f1e7;
+  --bg-2: #eee7d8;
+  --hover: #e8e0cf;
+  --text: #33291f;
+  --text-2: #675b4c;
+  --rule: #e2d9c7;
   --rule-strong: #8b7d69;
-  --accent: #29538f;
+  --accent: #24508f;
   --visited: #5a4686;
   --mark: #f2d57a;
   --mark-current: #e2ae3d;
+  --shadow: 0 0 0 1px rgb(51 41 31 / 0.1), 0 8px 24px rgb(51 41 31 / 0.14);
   color-scheme: light;
 }
 
 :root[data-theme='dark'] {
-  --bg: #191919;
-  --bg-2: #232322;
-  --text: #e3e0da;
-  --text-2: #a8a39a;
-  --rule: #34332f;
-  --rule-strong: #7d786f;
-  --accent: #8fb5f2;
-  --visited: #b7a4ea;
+  --bg: #161617;
+  --bg-2: #1e1e20;
+  --hover: #27272a;
+  --text: #ececed;
+  --text-2: #a0a0a6;
+  --rule: #2b2b2e;
+  --rule-strong: #74747b;
+  --accent: #7fa9f5;
+  --visited: #b8a8ee;
   --mark: #4a3c10;
   --mark-current: #6b520c;
-  --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 12px rgb(0 0 0 / 0.3);
+  --shadow: 0 0 0 1px rgb(255 255 255 / 0.08), 0 8px 24px rgb(0 0 0 / 0.5);
   --img-filter: brightness(0.88);
   color-scheme: dark;
 }
@@ -106,17 +147,18 @@
 /* Automático: segue o sistema quando o leitor não escolheu um tema. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --bg: #191919;
-    --bg-2: #232322;
-    --text: #e3e0da;
-    --text-2: #a8a39a;
-    --rule: #34332f;
-    --rule-strong: #7d786f;
-    --accent: #8fb5f2;
-    --visited: #b7a4ea;
+    --bg: #161617;
+    --bg-2: #1e1e20;
+    --hover: #27272a;
+    --text: #ececed;
+    --text-2: #a0a0a6;
+    --rule: #2b2b2e;
+    --rule-strong: #74747b;
+    --accent: #7fa9f5;
+    --visited: #b8a8ee;
     --mark: #4a3c10;
     --mark-current: #6b520c;
-    --shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 4px 12px rgb(0 0 0 / 0.3);
+    --shadow: 0 0 0 1px rgb(255 255 255 / 0.08), 0 8px 24px rgb(0 0 0 / 0.5);
     --img-filter: brightness(0.88);
     color-scheme: dark;
   }
@@ -130,16 +172,34 @@
   }
 }
 
-:root[data-font='sans'] {
-  --font-text: var(--font-sans);
-  --measure-k: 0.9;
+/* Fontes do texto do artigo. A interface fica sempre na fonte do sistema, exceto em Legibilidade. */
+:root[data-font='serif'] {
+  --font-text: var(--font-system-serif);
+  --title-weight: 600;
+  --heading-weight: 600;
+  --measure-k: 1;
+}
+:root[data-font='inter'] {
+  --font-text: 'Inter', var(--font-system-sans);
+  --text-tracking: -0.003em;
+  --measure-k: 0.96;
+}
+:root[data-font='literata'] {
+  --font-text: 'Literata', var(--font-system-serif);
+  --title-weight: 600;
+  --measure-k: 1.03;
+}
+:root[data-font='sourceserif'] {
+  --font-text: 'Source Serif 4', var(--font-system-serif);
+  --title-weight: 600;
+  --measure-k: 1.14;
 }
 :root[data-font='legible'] {
-  --font-text: var(--font-legible);
-  --font-ui: var(--font-legible);
+  --font-text: 'Atkinson Hyperlegible Next', Verdana, var(--font-system-sans);
+  --font-ui: 'Atkinson Hyperlegible Next', Verdana, var(--font-system-sans);
   --text-tracking: 0.02em;
   --word-spacing: 0.08em;
-  --measure-k: 1.08;
+  --measure-k: 0.94;
 }
 
 :root[data-size='-1'] { --scale: 0.9; }
@@ -148,7 +208,7 @@
 :root[data-size='3'] { --scale: 1.42; }
 
 :root[data-leading='tight'] { --leading: 1.45; }
-:root[data-leading='loose'] { --leading: 1.8; }
+:root[data-leading='loose'] { --leading: 1.85; }
 
 :root[data-measure='narrow'] { --measure-chars: 47; }
 :root[data-measure='wide'] { --measure-chars: 64; }
@@ -165,18 +225,33 @@
   box-sizing: border-box;
 }
 
-/* Sem movimento: nenhuma transição, animação ou rolagem suave, com ou sem prefers-reduced-motion.
-   Motivo em docs/07-acessibilidade.md. */
 html {
   scroll-behavior: auto;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
-*,
-*::before,
-*::after {
-  transition: none !important;
-  animation: none !important;
+
+/* Movimento: só uma mudança de cor de 100 ms ao passar o mouse ou focar em botões e links de navegação.
+   Nada se desloca, cresce ou aparece. Com prefers-reduced-motion ou o tema de alto contraste, nem isso.
+   Motivo em docs/07-acessibilidade.md. */
+.btn,
+.tool,
+.toc a,
+.find-hit,
+.choice span,
+.topbar-location,
+.bottombar button,
+.account a {
+  transition: background-color 100ms linear, color 100ms linear, border-color 100ms linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 body {
@@ -192,8 +267,8 @@ a {
   color: var(--accent);
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  text-decoration-color: color-mix(in srgb, currentColor 38%, transparent);
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, currentColor 32%, transparent);
 }
 a:visited {
   color: var(--visited);
@@ -205,7 +280,7 @@ a:hover {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 img {
@@ -251,12 +326,12 @@ img {
   background: transparent;
   border: 1px solid transparent;
   border-radius: var(--radius);
-  padding: 0.45em 0.7em;
+  padding: 0.45em 0.75em;
   min-height: 2.25rem;
   cursor: pointer;
 }
 .btn:hover {
-  background: var(--bg-2);
+  background: var(--hover);
 }
 
 input[type='search'] {
@@ -267,7 +342,7 @@ input[type='search'] {
   background: var(--bg);
   border: 1px solid var(--rule-strong);
   border-radius: var(--radius);
-  padding: 0.45em 0.65em;
+  padding: 0.45em 0.7em;
   min-height: 2.5rem;
   width: 100%;
   min-width: 0;
@@ -290,6 +365,7 @@ input[type='search']::placeholder {
   color: var(--text-2);
   font-size: var(--ui-small);
   text-align: center;
+  border-bottom: 1px solid var(--rule);
 }
 
 /* ---------- Barra do topo ---------- */
@@ -305,11 +381,11 @@ input[type='search']::placeholder {
   font-size: var(--ui-size);
 }
 .wordmark {
-  font-family: var(--font-serif);
+  font-family: var(--font-system-serif);
   font-size: 1.25rem;
   color: var(--text);
   text-decoration: none;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.005em;
 }
 .wordmark:visited {
   color: var(--text);
@@ -418,9 +494,10 @@ main:focus {
     top: var(--topbar-h);
     max-height: calc(100vh - var(--topbar-h));
     overflow-y: auto;
-    margin: 0;
-    padding: var(--s6) 0 var(--s6);
+    margin: 0 calc(-1 * var(--s3));
+    padding: var(--s6) var(--s3);
     border: 0;
+    overflow-x: hidden;
   }
   .article {
     margin-inline: 0;
@@ -459,24 +536,26 @@ main:focus {
 }
 .article h1 {
   font-family: var(--font-text);
-  font-weight: 400;
-  font-size: clamp(2.25rem, 1.6rem + 2.5vw, 3rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  font-weight: var(--title-weight);
+  font-size: clamp(2.25rem, 1.5rem + 3vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
   margin: 0;
   text-wrap: balance;
 }
 .description {
-  margin: var(--s2) 0 0;
+  margin: var(--s3) 0 0;
   color: var(--text-2);
-  font-size: 1.05em;
+  font-size: 1.1em;
+  line-height: 1.45;
 }
 .meta {
   margin: var(--s4) 0 0;
   font-family: var(--font-ui);
   font-size: var(--ui-small);
   color: var(--text-2);
-  line-height: 1.4;
+  line-height: 1.5;
+  text-wrap: balance;
 }
 .meta span + span::before {
   content: ' · ';
@@ -484,8 +563,8 @@ main:focus {
 .tools {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s1) var(--s1);
-  margin: var(--s4) 0 0 calc(-1 * var(--s3));
+  gap: var(--s2);
+  margin: var(--s5) 0 0;
   padding: 0;
   list-style: none;
   font-family: var(--font-ui);
@@ -497,7 +576,8 @@ main:focus {
   align-items: center;
   gap: 0.4em;
   min-height: 2.25rem;
-  padding: 0.45em var(--s3);
+  padding: 0.4em var(--s3);
+  border: 1px solid var(--rule);
   border-radius: var(--radius);
   color: var(--text);
   text-decoration: none;
@@ -506,10 +586,11 @@ main:focus {
   color: var(--text);
 }
 .tool:hover {
-  background: var(--bg-2);
+  background: var(--hover);
 }
 .tool[aria-expanded='true'] {
-  background: var(--bg-2);
+  background: var(--hover);
+  border-color: var(--rule-strong);
 }
 .tool-count {
   color: var(--text-2);
@@ -554,19 +635,21 @@ main:focus {
   scroll-margin-top: calc(var(--topbar-h) + var(--s4));
 }
 .article-body h2 {
-  font-size: 1.6em;
-  font-weight: 400;
-  margin: 2.2em 0 0.55em;
+  font-size: 1.55em;
+  font-weight: var(--heading-weight);
+  letter-spacing: -0.02em;
+  margin: 2.3em 0 0.5em;
 }
 .article-body h3 {
-  font-size: 1.22em;
-  font-weight: 700;
-  margin: 1.8em 0 0.5em;
+  font-size: 1.2em;
+  font-weight: var(--heading-weight);
+  letter-spacing: -0.012em;
+  margin: 1.8em 0 0.45em;
 }
 .article-body h4,
 .article-body h5 {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: var(--heading-weight);
   margin: 1.6em 0 0.4em;
 }
 /* Um título logo depois do outro (Portugal, Açores) não precisa do espaço todo. */
@@ -685,6 +768,7 @@ sup.cn a {
   display: block;
   width: 100%;
   background: var(--bg-2);
+  border-radius: var(--radius-lg);
 }
 .figure figcaption,
 .infobox-image figcaption {
@@ -708,7 +792,8 @@ sup.cn a {
 }
 .infobox-title {
   font-weight: 600;
-  font-size: var(--ui-size);
+  font-size: 1.0625rem;
+  letter-spacing: -0.01em;
   margin: 0 0 var(--s3);
   padding-bottom: var(--s2);
   border-bottom: 1px solid var(--rule);
@@ -1044,19 +1129,19 @@ mark {
   display: flex;
   justify-content: space-between;
   gap: var(--s2);
-  padding: 0.32em var(--s3);
-  margin-inline-start: calc(-1 * var(--s3) - 2px);
-  border-inline-start: 2px solid transparent;
+  padding: 0.34em var(--s3);
+  border-radius: var(--radius);
   color: var(--text-2);
   text-decoration: none;
 }
 .toc a:hover {
   color: var(--text);
+  background: var(--bg-2);
 }
 .toc a[aria-current='true'] {
   color: var(--text);
   font-weight: 600;
-  border-inline-start-color: var(--text);
+  background: var(--hover);
 }
 .toc-count {
   color: var(--text-2);
@@ -1297,8 +1382,12 @@ dialog::backdrop {
   border-radius: var(--radius);
   min-height: 2.5rem;
 }
+.choice input:hover + span {
+  background: var(--bg-2);
+}
 .choice input:checked + span {
   border-color: var(--text);
+  background: var(--hover);
   box-shadow: inset 0 0 0 1px var(--text);
   font-weight: 600;
 }
@@ -1326,8 +1415,7 @@ dialog::backdrop {
   text-align: center;
   font-variant-numeric: tabular-nums;
 }
-.swatch-serif span { font-family: var(--font-serif); }
-.swatch-sans span { font-family: var(--font-sans); }
+.swatch-serif span { font-family: var(--font-system-serif); }
 
 /* Citar */
 .cite-box {
@@ -1359,7 +1447,8 @@ dialog::backdrop {
   width: min(28rem, calc(100vw - 2rem));
   max-height: min(24rem, 70vh);
   overflow: auto;
-  border-radius: var(--radius);
+  border: 0;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   inset: auto;
 }
@@ -1480,7 +1569,7 @@ dialog::backdrop {
 }
 .bottombar-options {
   flex: 0 0 3.5rem;
-  font-family: var(--font-serif) !important;
+  font-family: var(--font-system-serif) !important;
   font-size: 1.15rem !important;
   border-inline-start: 1px solid var(--rule) !important;
 }

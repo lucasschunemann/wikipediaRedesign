@@ -4,43 +4,46 @@ Todos os valores estão como variáveis CSS no começo de `src/site.css`. Esta p
 
 ## Cor
 
-Cada tema tem nove cores. Elas foram escolhidas em pares: cada cor de texto foi testada contra cada fundo em que aparece.
+A linguagem visual vem do Notion e do Linear: neutros quentes, linhas finas em vez de caixas, hover em cinza e um azul só para o que é clicável. Cada tema tem onze cores, escolhidas em pares e verificadas por `scripts/contrast.mjs`.
 
 | Token | Uso | Claro | Papel | Escuro |
 | --- | --- | --- | --- | --- |
-| `--bg` | Fundo da página e dos painéis | #ffffff | #f4efe5 | #191919 |
-| `--bg-2` | Superfícies: avisos, botão sob o cursor, retomar leitura | #f5f4f1 | #ebe4d6 | #232322 |
-| `--text` | Texto | #24221e | #2f271d | #e3e0da |
-| `--text-2` | Texto secundário: metadados, legendas, rótulos | #625e57 | #64584a | #a8a39a |
-| `--rule` | Linhas divisórias, que não carregam informação | #e5e2dc | #dcd2c1 | #34332f |
-| `--rule-strong` | Bordas de campos e botões | #8c877e | #8b7d69 | #7d786f |
-| `--accent` | Links e anel de foco | #2756a8 | #29538f | #8fb5f2 |
-| `--visited` | Links já visitados | #5b4b97 | #5a4686 | #b7a4ea |
-| `--mark` e `--mark-current` | Destaque da busca e do resultado atual | #fde68a / #f6bf3c | #f2d57a / #e2ae3d | #4a3c10 / #6b520c |
+| `--bg` | Fundo da página e dos painéis | #ffffff | #f6f1e7 | #161617 |
+| `--bg-2` | Superfícies: avisos, retomada, hover do sumário | #f7f6f3 | #eee7d8 | #1e1e20 |
+| `--hover` | Item atual do sumário, botão pressionado, escolha marcada | #f0efec | #e8e0cf | #27272a |
+| `--text` | Texto | #37352f | #33291f | #ececed |
+| `--text-2` | Texto secundário: metadados, legendas, rótulos | #6b6964 | #675b4c | #a0a0a6 |
+| `--rule` | Linhas divisórias, que não carregam informação | #ebeae6 | #e2d9c7 | #2b2b2e |
+| `--rule-strong` | Bordas de campos e botões | #8f8c85 | #8b7d69 | #74747b |
+| `--accent` | Links e anel de foco | #1d5fc4 | #24508f | #7fa9f5 |
+| `--visited` | Links já visitados | #6a4fb3 | #5a4686 | #b8a8ee |
+| `--mark` e `--mark-current` | Destaque da busca e do resultado atual | #fff0a6 / #ffd84d | #f2d57a / #e2ae3d | #4a3c10 / #6b520c |
+
+O texto do tema claro é #37352f, o marrom-acinzentado que o Notion usa no lugar do preto, e o fundo de superfície é #f7f6f3, o cinza quente da barra lateral do Notion. No escuro, #161617 com texto #ececed segue o caminho do Linear: fundo quase preto, sem azul de fundo e sem branco puro.
 
 ### Uma cor de destaque
 
-O azul é a única cor com significado. Ele marca o que é clicável no texto (links) e onde está o foco do teclado. Ficou próximo do azul atual da Wikipédia, um pouco mais escuro (#2756a8 contra #3366cc), para passar de 5,4:1 para 7:1 sobre o branco. Mudar a cor dos links seria trocar uma convenção que bilhões de pessoas já aprenderam por um ganho estético.
+O azul é a única cor com significado. Ele marca o que é clicável no texto (links) e onde está o foco do teclado. O azul do Notion para links (#2383e2) tem só 4,0:1 sobre o branco e não passa para texto, então usei #1d5fc4, que dá 6,0:1.
 
-O roxo dos links visitados não conta como segunda cor: é um estado do link, e a Wikipédia o usa há mais de 20 anos. Num artigo com 306 links, saber quais já foram abertos ajuda quem pesquisa.
+O roxo dos links visitados não conta como segunda cor: é um estado do link. Num artigo com 306 links, saber quais já foram abertos ajuda quem pesquisa.
 
-Os links vermelhos da Wikipédia (artigos que ainda não existem) perderam o vermelho. Viraram texto secundário com sublinhado pontilhado. O vermelho seria uma segunda cor de destaque e, para quem lê, chama mais atenção do que a informação merece. Para quem edita, o pontilhado continua indicando que ali falta um artigo, e o título do link diz "página ainda não existe".
+Os links vermelhos da Wikipédia (artigos que ainda não existem) perderam o vermelho. Viraram texto secundário com sublinhado pontilhado, e o título do link diz "página ainda não existe".
 
-O amarelo da busca é a outra exceção. Ele não decora: é a convenção de marca-texto, que todo leitor reconhece, e só aparece enquanto há uma busca ativa.
+O amarelo da busca é a outra exceção. Ele é a convenção de marca-texto e só aparece enquanto há uma busca ativa.
 
 ### Sublinhado dos links
 
-Os links têm sublinhado de 1 px numa versão mais transparente da cor do link, afastado 0,18em da letra. Sem sublinhado, o link dependeria só da cor; o azul da Wikipédia tem 3,01:1 contra o texto, no limite do que a WCAG aceita para cor como único indicador. Com sublinhado forte, 306 links em 3.200 palavras virariam ruído. O sublinhado claro resolve as duas coisas e escurece quando o cursor passa por cima.
+Sublinhado de 1 px, em 32% de opacidade da cor do link, afastado 0,2em da letra, que escurece ao passar o mouse. É o mesmo tratamento do Notion e mantém a distinção dos links sem depender só da cor.
 
 ### Tema papel
 
-Pensado para leituras longas. O fundo é um bege claro (#f4efe5) e o texto um marrom-escuro (#2f271d). O contraste cai de 15,9:1 (claro) para 12,8:1: ainda muito acima do mínimo, mas sem o brilho de um fundo branco puro. Considerei um sépia mais escuro, como o de leitores de livros digitais. Descartei porque um fundo mais escuro aproxima o texto secundário do mínimo de 4,5:1 e muda a aparência das fotos do artigo, que foram feitas para fundo claro.
+Fundo #f6f1e7 e texto #33291f: 12,6:1 de contraste, abaixo do tema claro, mas sem o brilho do branco puro. Pensado para leituras longas.
 
 ### Tema escuro
 
-O fundo não é preto puro e o texto não é branco puro. Texto muito claro sobre preto absoluto "vaza" para quem tem astigmatismo, e o contraste excessivo cansa em leituras longas. As imagens ficam com 88% do brilho no tema escuro, para uma foto clara não ofuscar o texto ao redor.
+O fundo não é preto puro e o texto não é branco puro. As imagens ficam com 88% do brilho, para uma foto clara não ofuscar o texto ao redor.
 
-O tema automático segue a preferência do sistema (`prefers-color-scheme`). Quem pede mais contraste no sistema (`prefers-contrast: more`) recebe o texto secundário na mesma cor do texto principal e linhas divisórias mais fortes.
+O tema automático segue `prefers-color-scheme`. Com `prefers-contrast: more`, o texto secundário passa a usar a cor do texto principal e as linhas ficam mais escuras.
 
 ### Contraste medido
 
@@ -48,29 +51,31 @@ Calculado por `scripts/contrast.mjs`, que lê as cores direto do CSS.
 
 | Par | Mínimo | Claro | Papel | Escuro |
 | --- | --- | --- | --- | --- |
-| Texto sobre fundo | 4,5:1 | 15,88:1 | 12,83:1 | 13,35:1 |
-| Texto secundário sobre fundo | 4,5:1 | 6,45:1 | 6,03:1 | 7,01:1 |
-| Texto secundário sobre superfície (avisos) | 4,5:1 | 5,86:1 | 5,47:1 | 6,27:1 |
-| Link sobre fundo | 4,5:1 | 7,04:1 | 6,72:1 | 8,42:1 |
-| Link sobre superfície | 4,5:1 | 6,40:1 | 6,08:1 | 7,54:1 |
-| Link visitado sobre fundo | 4,5:1 | 7,25:1 | 6,90:1 | 7,96:1 |
-| Texto sobre destaque da busca | 4,5:1 | 12,75:1 | 10,20:1 | 8,20:1 |
-| Texto sobre destaque atual | 4,5:1 | 9,40:1 | 7,25:1 | 5,62:1 |
-| Borda de campo e botão sobre fundo | 3:1 | 3,57:1 | 3,50:1 | 4,01:1 |
-| Anel de foco sobre fundo | 3:1 | 7,04:1 | 6,72:1 | 8,42:1 |
+| Texto sobre fundo | 4,5:1 | 12,26:1 | 12,62:1 | 15,32:1 |
+| Texto secundário sobre fundo | 4,5:1 | 5,48:1 | 5,87:1 | 6,95:1 |
+| Texto secundário sobre superfície (avisos) | 4,5:1 | 5,07:1 | 5,37:1 | 6,40:1 |
+| Link sobre fundo | 4,5:1 | 6,02:1 | 7,12:1 | 7,66:1 |
+| Link sobre superfície | 4,5:1 | 5,57:1 | 6,51:1 | 7,05:1 |
+| Link visitado sobre fundo | 4,5:1 | 6,21:1 | 7,03:1 | 8,50:1 |
+| Texto sobre destaque da busca | 4,5:1 | 10,67:1 | 9,86:1 | 9,15:1 |
+| Texto sobre destaque atual | 4,5:1 | 8,86:1 | 7,01:1 | 6,27:1 |
+| Borda de campo e botão sobre fundo | 3:1 | 3,36:1 | 3,56:1 | 3,90:1 |
+| Anel de foco sobre fundo | 3:1 | 6,02:1 | 7,12:1 | 7,66:1 |
 
-Na primeira versão, o destaque do resultado atual no tema escuro tinha 3,84:1. O script acusou e escureci os dois tons de amarelo.
+Todos os pares passam. Na versão anterior, o destaque do resultado atual no tema escuro tinha 3,84:1; o script acusou e escureci os dois tons de amarelo, e a nova paleta manteve o ajuste.
 
 ## Tipo
 
 | Token | Valor |
 | --- | --- |
-| `--font-serif` | Charter, Sitka Text, Cambria, Georgia, Noto Serif, DejaVu Serif, serif |
-| `--font-sans` | -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Helvetica Neue, Arial, sans-serif |
-| `--font-legible` | Atkinson Hyperlegible Next, Verdana, sans-serif |
+| `--font-system-sans` | -apple-system, Segoe UI Variable Text, Segoe UI, Roboto, Noto Sans, Ubuntu, Helvetica Neue, Arial, sans-serif |
+| `--font-system-serif` | Charter, Sitka Text, Cambria, Georgia, Noto Serif, DejaVu Serif, serif |
+| `--font-text` | Sistema (padrão). Serifada, Inter, Literata, Source Serif 4 ou Atkinson, conforme a escolha |
+| `--font-ui` | Sempre a sans do sistema, exceto em Legibilidade |
+| `--title-weight` / `--heading-weight` | 700 e 600 (600 e 600 nas serifadas) |
 | `--text-size` | 1,0625rem no celular, 1,125rem a partir de 48em, vezes a escala escolhida |
-| `--leading` | 1,6 (opções: 1,45 e 1,8) |
-| `--measure-chars` | 55 (opções: 47 e 64), em `ch` |
+| `--leading` | 1,65 (opções: 1,45 e 1,85) |
+| `--measure-chars` e `--measure-k` | 55 (opções: 47 e 64) vezes o fator da fonte, em `ch` |
 | `--ui-size` / `--ui-small` | 0,9375rem / 0,875rem |
 
 Os motivos estão em [04-tipografia-e-layout.md](04-tipografia-e-layout.md).
@@ -81,9 +86,15 @@ Uma escala de oito passos em múltiplos de 4 px: 4, 8, 12, 16, 24, 32, 48 e 64. 
 
 ## Forma
 
-Cantos de 6 px em tudo o que é clicável ou é uma superfície (botões, campos, avisos). Os painéis que sobem da base da tela no celular têm 12 px nos cantos de cima, para se lerem como uma folha sobre a página.
+Cantos de 6 px em botões, campos e avisos, e de 10 px em imagens e na prévia de referência. Os painéis que sobem da base no celular têm 12 px em cima, para se lerem como uma folha sobre a página.
 
-Só existe uma sombra no sistema, pequena (até 12 px de desfoque e 6% de opacidade), e só na prévia de referência. É o único elemento que flutua sobre o texto, e sem a sombra a borda dele se confundiria com as linhas do parágrafo embaixo. Os painéis laterais não têm sombra: uma linha de 1 px os separa da página.
+Linhas de 1 px em vez de caixas: o item atual do sumário é um fundo cinza arredondado (como a barra lateral do Notion), os botões do cabeçalho têm um contorno fino e o resto separa por espaço.
+
+A única sombra do sistema é a da prévia de referência, uma borda de 1 px mais um desfoque de 24 px a 12% de opacidade (a 50% no tema escuro). É o único elemento que flutua sobre o texto, e sem a sombra a borda dele se confundiria com as linhas do parágrafo embaixo. Os painéis laterais não têm sombra: uma linha de 1 px os separa da página.
+
+## Movimento
+
+A única transição é uma mudança de cor de 100 ms, linear, em fundo, texto e borda de botões, itens do sumário, ferramentas do cabeçalho e escolhas das opções. Nada se desloca, cresce, desliza ou aparece. Com `prefers-reduced-motion: reduce` nem isso. Painéis, prévias e saltos para seções acontecem de uma vez. Revisão da decisão anterior, de nenhuma animação: ver [D18 no registro](registro-de-decisoes.md#d18-acabamento-visual-no-padrão-notion-e-linear).
 
 ## Componentes
 
@@ -106,4 +117,4 @@ O painel é o mesmo para tudo: no computador ele abre na lateral direita e deixa
 
 Nenhum ícone. Todos os botões dizem o que fazem em texto. A única exceção é "Aa" na barra inferior do celular, que é a convenção de leitores de livros digitais para opções de texto e tem o nome acessível "Opções de leitura".
 
-Nenhuma animação, transição ou gradiente. Nenhum card: os parágrafos do artigo não ficam dentro de caixas, e a ficha é só texto com linhas divisórias.
+Nenhum gradiente, vidro, brilho ou imagem de capa. Nenhum card: os parágrafos do artigo não ficam dentro de caixas, e a ficha é só texto com linhas divisórias.

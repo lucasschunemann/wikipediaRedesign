@@ -44,26 +44,28 @@ Todos os tamanhos são em `rem` e `em`, e os pontos de quebra também. Se o leit
 
 ## Movimento
 
-A página não tem nenhuma animação, transição ou rolagem suave. Painéis abrem de uma vez. Um salto para uma seção acontece de uma vez. A página nunca rola sozinha: a retomada de leitura oferece um botão "Continuar" em vez de levar o leitor até lá.
-
-A regra está no CSS para todos os leitores, não só para quem ativou `prefers-reduced-motion`:
+O movimento é mínimo e opcional. A única transição é uma mudança de cor de 100 ms, linear, ao passar o mouse ou focar em botões, itens do sumário e escolhas das opções. Nada se desloca, cresce, desliza ou aparece. Painéis abrem de uma vez, um salto para uma seção acontece de uma vez e a página nunca rola sozinha: a retomada de leitura oferece um botão "Continuar" em vez de levar o leitor até lá.
 
 ```css
-*, *::before, *::after {
-  transition: none !important;
-  animation: none !important;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 html { scroll-behavior: auto; }
 ```
 
-Por que ir além da preferência do sistema:
+Na primeira versão do projeto não havia nenhuma transição, para ninguém. A revisão visual pediu um acabamento no nível de Notion e Linear, que têm um retorno de hover. Mantive só o que não desloca nada: uma troca de cor curta é percebida como resposta do botão e não dispara os problemas que a WCAG 2.3.3 trata (movimento de interface que causa náusea, tontura ou perda de foco). Quem pede menos movimento no sistema não recebe nem isso.
 
-- A preferência fica em configurações de acessibilidade que pouca gente conhece. Quem tem distúrbio vestibular, enxaqueca ou dificuldade de atenção muitas vezes nunca soube que ela existe.
-- A WCAG trata movimento disparado por interação no critério 2.3.3, de nível AAA. Seguir só o AA permitiria animações que fazem mal a uma parte dos leitores.
+O que continua valendo da regra original:
+
+- A preferência do sistema fica em configurações que pouca gente conhece; por isso o movimento já nasce pequeno para todos.
 - Ler é uma tarefa parada. Um painel que desliza ou um título que aparece com fade não acrescenta informação; só disputa a atenção com o texto.
 - Animação custa processamento, e a Wikipédia precisa funcionar em aparelhos simples.
+- Nenhuma animação de entrada, de rolagem ou de layout. A rolagem é sempre a do navegador.
 
-Considerei manter uma transição curta na abertura dos painéis, para o leitor perceber de onde ele veio. Descartei porque o painel sempre abre no mesmo lugar e a mudança é grande o bastante para ser percebida sem movimento.
+Um efeito colateral do teste: com o painel do navegador oculto, as transições ficam congeladas no meio e o axe pode medir uma cor intermediária. Rodei a verificação com as transições desligadas para medir as cores finais.
 
 ## Preferências do sistema
 
