@@ -1,0 +1,505 @@
+[
+  {
+    "revid": 73198638,
+    "parentid": 73198632,
+    "minor": true,
+    "user": "BlackShadoww",
+    "timestamp": "2026-10-13T12:12:52Z",
+    "size": 25938,
+    "comment": "Desfeita(s) uma ou mais edições de [[Special:Contribs/Kiritofodda|Kiritofodda]]",
+    "tags": [
+      "mw-manual-revert",
+      "diff-tools"
+    ]
+  },
+  {
+    "revid": 73198632,
+    "parentid": 73139594,
+    "minor": false,
+    "user": "Kiritofodda",
+    "timestamp": "2026-10-13T12:12:14Z",
+    "size": 25988,
+    "comment": "",
+    "tags": [
+      "visualeditor",
+      "mw-reverted"
+    ]
+  },
+  {
+    "revid": 73139594,
+    "parentid": 73139335,
+    "minor": true,
+    "user": "79a",
+    "timestamp": "2026-10-06T19:35:53Z",
+    "size": 25938,
+    "comment": "Foi [[WP:REV|revertida]] a edição de [[Special:Contribuições/Deus do crosmos|Deus do crosmos]] para a última revisão de [[Special:Contribuições/Publicadosmaria|Publicadosmaria]], de 2026-09-02T15:34:01 (UTC)",
+    "tags": [
+      "mw-rollback"
+    ]
+  },
+  {
+    "revid": 73139335,
+    "parentid": 72918083,
+    "minor": false,
+    "user": "Deus do crosmos",
+    "timestamp": "2026-10-06T19:06:42Z",
+    "size": 26000,
+    "comment": "melhorei",
+    "tags": [
+      "visualeditor",
+      "mw-reverted"
+    ]
+  },
+  {
+    "revid": 72918083,
+    "parentid": 72826068,
+    "minor": true,
+    "user": "Publicadosmaria",
+    "timestamp": "2026-09-02T15:34:01Z",
+    "size": 25938,
+    "comment": "revisão do tom textual",
+    "tags": [
+      "visualeditor",
+      "newcomer task",
+      "newcomer task revise tone"
+    ]
+  },
+  {
+    "revid": 72826068,
+    "parentid": 71650173,
+    "minor": false,
+    "user": "Esopo",
+    "timestamp": "2026-08-16T00:52:55Z",
+    "size": 25812,
+    "comment": "/* Substitutos do chá */ fiz uma ligação interna,",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 71650173,
+    "parentid": 71645564,
+    "minor": false,
+    "user": "Joseolgon",
+    "timestamp": "2026-02-01T11:57:00Z",
+    "size": 25775,
+    "comment": "/* Vila do Conde */",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 71645564,
+    "parentid": 71107293,
+    "minor": true,
+    "user": "Mf tdo",
+    "timestamp": "2026-01-31T17:11:48Z",
+    "size": 25771,
+    "comment": "Estudos já demonstraram que o chá preto é eficiente como anti-oxidante e neuroestimulante, sendo aplicado em estudos contra o câncer e epilepsia.  O chá verde apresenta propriedades músculo-relaxantes, com efeito sobre a hipertensão e ulcerações no aparelho digestivo.",
+    "tags": [
+      "visualeditor",
+      "editcheck-newcontent",
+      "editcheck-newreference",
+      "editcheck-references-shown"
+    ]
+  },
+  {
+    "revid": 71107293,
+    "parentid": 70531918,
+    "minor": true,
+    "user": "Little Sunshine",
+    "timestamp": "2025-10-30T00:33:10Z",
+    "size": 24791,
+    "comment": "Removendo [[parâmetros UTM]] de links em refs",
+    "tags": [
+      "OAuth CID: 4664"
+    ]
+  },
+  {
+    "revid": 70531918,
+    "parentid": 70205437,
+    "minor": false,
+    "user": "Rui Gabriel Correia",
+    "timestamp": "2025-07-26T06:55:07Z",
+    "size": 24847,
+    "comment": "/* História */ carece de fontes",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 70205437,
+    "parentid": 70062296,
+    "minor": false,
+    "user": "Zúltimo",
+    "timestamp": "2025-05-29T19:48:44Z",
+    "size": 25041,
+    "comment": "/* Processamento do chá preto */",
+    "tags": [
+      "visualeditor"
+    ]
+  },
+  {
+    "revid": 70062296,
+    "parentid": 70062292,
+    "minor": false,
+    "user": "Joseolgon",
+    "timestamp": "2025-05-04T20:21:00Z",
+    "size": 25020,
+    "comment": "/* Portugal */",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 70062292,
+    "parentid": 70062279,
+    "minor": false,
+    "user": "Joseolgon",
+    "timestamp": "2025-05-04T20:19:20Z",
+    "size": 25020,
+    "comment": "/* =Açores */",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 70062279,
+    "parentid": 69830911,
+    "minor": false,
+    "user": "Joseolgon",
+    "timestamp": "2025-05-04T20:17:00Z",
+    "size": 25019,
+    "comment": "/* Portugal */",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 69830911,
+    "parentid": 68978550,
+    "minor": false,
+    "user": "NPGN",
+    "timestamp": "2025-03-30T14:09:33Z",
+    "size": 24525,
+    "comment": "Nome científico do Rooibos e detalhes como: sem cafeína, regiao da Africa onde é cultivada.",
+    "tags": [
+      "visualeditor"
+    ]
+  },
+  {
+    "revid": 68978550,
+    "parentid": 68927414,
+    "minor": true,
+    "user": "Hellidy",
+    "timestamp": "2024-11-11T18:28:58Z",
+    "size": 24381,
+    "comment": "/* Cultura do chá */ [[Produção de chá]]",
+    "tags": [
+      "visualeditor"
+    ]
+  },
+  {
+    "revid": 68927414,
+    "parentid": 68927405,
+    "minor": true,
+    "user": "Pixial",
+    "timestamp": "2024-11-02T18:07:44Z",
+    "size": 24358,
+    "comment": "/* Ligações externas */-fora do ar",
+    "tags": [
+      "mobile edit",
+      "mobile web edit",
+      "advanced mobile edit"
+    ]
+  },
+  {
+    "revid": 68927405,
+    "parentid": 68927403,
+    "minor": true,
+    "user": "Pixial",
+    "timestamp": "2024-11-02T18:06:09Z",
+    "size": 24436,
+    "comment": "Foi [[WP:REV|revertida]] a edição de [[Special:Contribuições/Tai Valente|Tai Valente]] para a última revisão de [[Special:Contribuições/Otto Von Heim|Otto Von Heim]], de 14h06min de 13 de junho de 2024 (UTC)",
+    "tags": [
+      "mobile edit",
+      "mobile web edit",
+      "mw-rollback",
+      "advanced mobile edit"
+    ]
+  },
+  {
+    "revid": 68927403,
+    "parentid": 68114961,
+    "minor": false,
+    "user": "Tai Valente",
+    "timestamp": "2024-11-02T18:05:44Z",
+    "size": 24514,
+    "comment": "/* Ligações externas */",
+    "tags": [
+      "visualeditor",
+      "mw-reverted"
+    ]
+  },
+  {
+    "revid": 68114961,
+    "parentid": 67966997,
+    "minor": true,
+    "user": "Otto Von Heim",
+    "timestamp": "2024-06-13T14:06:01Z",
+    "size": 24436,
+    "comment": "/* Processamento do chá */ aqui estou de novo pra corrigir o mesmo parênteses",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 67966997,
+    "parentid": 67765670,
+    "minor": true,
+    "user": "Cadnero",
+    "timestamp": "2024-05-18T20:20:20Z",
+    "size": 24437,
+    "comment": "",
+    "tags": [
+      "visualeditor"
+    ]
+  },
+  {
+    "revid": 67765670,
+    "parentid": 67545594,
+    "minor": false,
+    "user": "Catmatias",
+    "timestamp": "2024-04-10T11:53:57Z",
+    "size": 24453,
+    "comment": "erro corrigido",
+    "tags": [
+      "visualeditor"
+    ]
+  },
+  {
+    "revid": 67545594,
+    "parentid": 67436642,
+    "minor": false,
+    "user": "E.A.Kowalewski",
+    "timestamp": "2024-02-27T01:46:44Z",
+    "size": 24464,
+    "comment": "/* Cultura do chá */",
+    "tags": [
+      "mobile edit",
+      "mobile web edit",
+      "advanced mobile edit"
+    ]
+  },
+  {
+    "revid": 67436642,
+    "parentid": 67369511,
+    "minor": false,
+    "user": "Chronus",
+    "timestamp": "2024-02-06T02:36:44Z",
+    "size": 24460,
+    "comment": "",
+    "tags": [
+      "mw-manual-revert",
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 67369511,
+    "parentid": 67167960,
+    "minor": true,
+    "user": "Cadnero",
+    "timestamp": "2024-01-26T10:41:53Z",
+    "size": 27372,
+    "comment": "",
+    "tags": [
+      "visualeditor",
+      "mw-reverted"
+    ]
+  },
+  {
+    "revid": 67167960,
+    "parentid": 66724405,
+    "minor": true,
+    "user": "Otto Von Heim",
+    "timestamp": "2023-12-22T19:44:45Z",
+    "size": 27392,
+    "comment": "/* Processamento do chá */ Parênteses não aberto",
+    "tags": [
+      "mw-reverted",
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 66724405,
+    "parentid": 66192644,
+    "minor": true,
+    "user": "Hellidy",
+    "timestamp": "2023-10-06T19:26:09Z",
+    "size": 27393,
+    "comment": "[[Chá solúvel]] em /* Ver também */",
+    "tags": [
+      "visualeditor",
+      "mw-reverted"
+    ]
+  },
+  {
+    "revid": 66192644,
+    "parentid": 65917809,
+    "minor": true,
+    "user": "Arquestrato",
+    "timestamp": "2023-07-04T01:58:12Z",
+    "size": 27353,
+    "comment": "Adicionei fontes, mas não alterei o texto. Apenas inclui bibliografias em afirmações que careciam de fontes.",
+    "tags": [
+      "visualeditor",
+      "mw-reverted"
+    ]
+  },
+  {
+    "revid": 65917809,
+    "parentid": 65218739,
+    "minor": false,
+    "user": "Esopo",
+    "timestamp": "2023-05-22T18:44:02Z",
+    "size": 24460,
+    "comment": "Adicionei novas informações, referências dados do Wikidata e uma imagem.",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 65218739,
+    "parentid": 63736065,
+    "minor": true,
+    "user": "Alch Bot",
+    "timestamp": "2023-02-01T03:57:29Z",
+    "size": 23123,
+    "comment": "Robô: Alteração da categoria redirecionada [[:Categoria:Chá|Chá]] para [[:Categoria:Chás|Chás]]",
+    "tags": []
+  },
+  {
+    "revid": 63736065,
+    "parentid": 63735558,
+    "minor": true,
+    "user": "PauloMSimoes",
+    "timestamp": "2022-06-06T02:59:14Z",
+    "size": 23122,
+    "comment": "",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 63735558,
+    "parentid": 63733802,
+    "minor": false,
+    "user": "Stegop",
+    "timestamp": "2022-06-06T01:37:49Z",
+    "size": 23122,
+    "comment": "",
+    "tags": []
+  },
+  {
+    "revid": 63733802,
+    "parentid": 63632750,
+    "minor": false,
+    "user": "Dascarioca1980",
+    "timestamp": "2022-06-05T20:17:10Z",
+    "size": 23079,
+    "comment": "Correções na introdução",
+    "tags": [
+      "mobile edit",
+      "mobile app edit",
+      "ios app edit"
+    ]
+  },
+  {
+    "revid": 63632750,
+    "parentid": 63220476,
+    "minor": true,
+    "user": "Cadnero",
+    "timestamp": "2022-05-21T11:42:50Z",
+    "size": 23070,
+    "comment": "",
+    "tags": [
+      "visualeditor"
+    ]
+  },
+  {
+    "revid": 63220476,
+    "parentid": 61180370,
+    "minor": false,
+    "user": "Joseolgon",
+    "timestamp": "2022-03-19T10:13:34Z",
+    "size": 23071,
+    "comment": "/* Portugal */",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "revid": 61180370,
+    "parentid": 60430722,
+    "minor": true,
+    "user": "Cadnero",
+    "timestamp": "2021-05-18T20:19:44Z",
+    "size": 22439,
+    "comment": "",
+    "tags": [
+      "visualeditor"
+    ]
+  },
+  {
+    "revid": 60430722,
+    "parentid": 60427172,
+    "minor": true,
+    "user": "Stegop",
+    "timestamp": "2021-02-11T21:02:22Z",
+    "size": 22582,
+    "comment": "Desfeita(s) uma ou mais edições de [[Special:Contribs/Thaliacorrea|Thaliacorrea]] ([[WP:VLP]]), com [[WP:RA|Reversão e avisos]]",
+    "tags": [
+      "mw-manual-revert"
+    ]
+  },
+  {
+    "revid": 60427172,
+    "parentid": 60278003,
+    "minor": true,
+    "user": "Thaliacorrea",
+    "timestamp": "2021-02-11T12:21:17Z",
+    "size": 22584,
+    "comment": "Os primeiros europeus a ter contato com o chá",
+    "tags": [
+      "visualeditor",
+      "mw-reverted"
+    ]
+  },
+  {
+    "revid": 60278003,
+    "parentid": 60277977,
+    "minor": true,
+    "user": "Douglasboavista",
+    "timestamp": "2021-01-20T19:33:55Z",
+    "size": 22582,
+    "comment": "Foram [[WP:REV|revertidas]] as edições de [[Special:Contribs/Viictiin|Viictiin]] devido a [[WP:VAN|vandalismo]] (usando [[WP:H|Huggle]])  (3.4.10)",
+    "tags": [
+      "mw-rollback"
+    ]
+  },
+  {
+    "revid": 60277977,
+    "parentid": 59447616,
+    "minor": false,
+    "user": "Viictiin",
+    "timestamp": "2021-01-20T19:31:35Z",
+    "size": 22736,
+    "comment": "",
+    "tags": [
+      "visualeditor",
+      "mobile edit",
+      "mobile web edit",
+      "mw-reverted"
+    ]
+  }
+]

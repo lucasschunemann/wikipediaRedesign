@@ -1,0 +1,277 @@
+{
+  "fetchedAt": "2026-10-15T18:21:04.551Z",
+  "lang": "pt",
+  "title": "Chá",
+  "displayTitle": "Chá",
+  "description": "bebida feita pela infusão de folhas de chá",
+  "pageId": 13628,
+  "revision": 73198638,
+  "timestamp": "2026-10-13T12:12:52Z",
+  "bytes": 25938,
+  "watchers": 47,
+  "contributors": 289,
+  "registeredContributors": 177,
+  "anonContributors": 112,
+  "editCount": 531,
+  "firstEdit": "2004-06-09T15:15:38Z",
+  "pageviews": [
+    {
+      "date": "2026-08-16",
+      "views": 86
+    },
+    {
+      "date": "2026-08-17",
+      "views": 176
+    },
+    {
+      "date": "2026-08-18",
+      "views": 171
+    },
+    {
+      "date": "2026-08-19",
+      "views": 140
+    },
+    {
+      "date": "2026-08-20",
+      "views": 162
+    },
+    {
+      "date": "2026-08-21",
+      "views": 162
+    },
+    {
+      "date": "2026-08-22",
+      "views": 62
+    },
+    {
+      "date": "2026-08-23",
+      "views": 74
+    },
+    {
+      "date": "2026-08-24",
+      "views": 138
+    },
+    {
+      "date": "2026-08-25",
+      "views": 175
+    },
+    {
+      "date": "2026-08-26",
+      "views": 154
+    },
+    {
+      "date": "2026-08-27",
+      "views": 134
+    },
+    {
+      "date": "2026-08-28",
+      "views": 134
+    },
+    {
+      "date": "2026-08-29",
+      "views": 70
+    },
+    {
+      "date": "2026-08-30",
+      "views": 60
+    },
+    {
+      "date": "2026-08-31",
+      "views": 139
+    },
+    {
+      "date": "2026-09-01",
+      "views": 135
+    },
+    {
+      "date": "2026-09-02",
+      "views": 139
+    },
+    {
+      "date": "2026-09-03",
+      "views": 117
+    },
+    {
+      "date": "2026-09-04",
+      "views": 91
+    },
+    {
+      "date": "2026-09-05",
+      "views": 55
+    },
+    {
+      "date": "2026-09-06",
+      "views": 47
+    },
+    {
+      "date": "2026-09-07",
+      "views": 71
+    },
+    {
+      "date": "2026-09-08",
+      "views": 119
+    },
+    {
+      "date": "2026-09-09",
+      "views": 124
+    },
+    {
+      "date": "2026-09-10",
+      "views": 104
+    },
+    {
+      "date": "2026-09-11",
+      "views": 99
+    },
+    {
+      "date": "2026-09-12",
+      "views": 63
+    },
+    {
+      "date": "2026-09-13",
+      "views": 75
+    },
+    {
+      "date": "2026-09-14",
+      "views": 98
+    },
+    {
+      "date": "2026-09-15",
+      "views": 94
+    },
+    {
+      "date": "2026-09-16",
+      "views": 105
+    },
+    {
+      "date": "2026-09-17",
+      "views": 71
+    },
+    {
+      "date": "2026-09-18",
+      "views": 68
+    },
+    {
+      "date": "2026-09-19",
+      "views": 59
+    },
+    {
+      "date": "2026-09-20",
+      "views": 76
+    },
+    {
+      "date": "2026-09-21",
+      "views": 128
+    },
+    {
+      "date": "2026-09-22",
+      "views": 142
+    },
+    {
+      "date": "2026-09-23",
+      "views": 175
+    },
+    {
+      "date": "2026-09-24",
+      "views": 152
+    },
+    {
+      "date": "2026-09-25",
+      "views": 125
+    },
+    {
+      "date": "2026-09-26",
+      "views": 72
+    },
+    {
+      "date": "2026-09-27",
+      "views": 59
+    },
+    {
+      "date": "2026-09-28",
+      "views": 105
+    },
+    {
+      "date": "2026-09-29",
+      "views": 116
+    },
+    {
+      "date": "2026-09-30",
+      "views": 107
+    },
+    {
+      "date": "2026-10-01",
+      "views": 117
+    },
+    {
+      "date": "2026-10-02",
+      "views": 146
+    },
+    {
+      "date": "2026-10-03",
+      "views": 65
+    },
+    {
+      "date": "2026-10-04",
+      "views": 72
+    },
+    {
+      "date": "2026-10-05",
+      "views": 102
+    },
+    {
+      "date": "2026-10-06",
+      "views": 99
+    },
+    {
+      "date": "2026-10-07",
+      "views": 105
+    },
+    {
+      "date": "2026-10-08",
+      "views": 109
+    },
+    {
+      "date": "2026-10-09",
+      "views": 75
+    },
+    {
+      "date": "2026-10-10",
+      "views": 60
+    },
+    {
+      "date": "2026-10-11",
+      "views": 42
+    },
+    {
+      "date": "2026-10-12",
+      "views": 61
+    },
+    {
+      "date": "2026-10-13",
+      "views": 86
+    },
+    {
+      "date": "2026-10-14",
+      "views": 90
+    }
+  ],
+  "categories": [
+    "Chás"
+  ],
+  "badges": [],
+  "thumbnail": {
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Cup_of_Earl_Gray.jpg/330px-Cup_of_Earl_Gray.jpg?utm_source=pt.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 330,
+    "height": 248
+  },
+  "urls": {
+    "page": "https://pt.wikipedia.org/wiki/Ch%C3%A1",
+    "permanent": "https://pt.wikipedia.org/w/index.php?title=Ch%C3%A1&oldid=73198638",
+    "history": "https://pt.wikipedia.org/w/index.php?title=Ch%C3%A1&action=history",
+    "edit": "https://pt.wikipedia.org/w/index.php?title=Ch%C3%A1&action=edit",
+    "talk": "https://pt.wikipedia.org/wiki/Discuss%C3%A3o%3ACh%C3%A1",
+    "info": "https://pt.wikipedia.org/w/index.php?title=Ch%C3%A1&action=info",
+    "wikidata": "https://www.wikidata.org/wiki/Q6097"
+  }
+}

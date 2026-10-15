@@ -1,0 +1,1963 @@
+[
+  {
+    "code": "ace",
+    "title": "Tè",
+    "url": "https://ace.wikipedia.org/wiki/T%C3%A8",
+    "name": "achém",
+    "autonym": "Acèh",
+    "bytes": 1300,
+    "badges": []
+  },
+  {
+    "code": "af",
+    "title": "Tee",
+    "url": "https://af.wikipedia.org/wiki/Tee",
+    "name": "africanês",
+    "autonym": "Afrikaans",
+    "bytes": 17307,
+    "badges": []
+  },
+  {
+    "code": "am",
+    "title": "ሻይ",
+    "url": "https://am.wikipedia.org/wiki/%E1%88%BB%E1%8B%AD",
+    "name": "amárico",
+    "autonym": "አማርኛ",
+    "bytes": 1063,
+    "badges": []
+  },
+  {
+    "code": "an",
+    "title": "Te",
+    "url": "https://an.wikipedia.org/wiki/Te",
+    "name": "aragonês",
+    "autonym": "aragonés",
+    "bytes": 2633,
+    "badges": []
+  },
+  {
+    "code": "ang",
+    "title": "Tē",
+    "url": "https://ang.wikipedia.org/wiki/T%C4%93",
+    "name": "inglês antigo",
+    "autonym": "Ænglisc",
+    "bytes": 357,
+    "badges": []
+  },
+  {
+    "code": "anp",
+    "title": "चाय",
+    "url": "https://anp.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%AF",
+    "name": "angika",
+    "autonym": "अंगिका",
+    "bytes": 4849,
+    "badges": []
+  },
+  {
+    "code": "ar",
+    "title": "شاي",
+    "url": "https://ar.wikipedia.org/wiki/%D8%B4%D8%A7%D9%8A",
+    "name": "árabe",
+    "autonym": "العربية",
+    "bytes": 44269,
+    "badges": []
+  },
+  {
+    "code": "ary",
+    "title": "أتاي (مشروب)",
+    "url": "https://ary.wikipedia.org/wiki/%D8%A3%D8%AA%D8%A7%D9%8A_(%D9%85%D8%B4%D8%B1%D9%88%D8%A8)",
+    "name": "Moroccan Arabic",
+    "autonym": "الدارجة",
+    "bytes": 2987,
+    "badges": []
+  },
+  {
+    "code": "arz",
+    "title": "شاى",
+    "url": "https://arz.wikipedia.org/wiki/%D8%B4%D8%A7%D9%89",
+    "name": "Egyptian Arabic",
+    "autonym": "مصرى",
+    "bytes": 1379,
+    "badges": []
+  },
+  {
+    "code": "as",
+    "title": "চাহ",
+    "url": "https://as.wikipedia.org/wiki/%E0%A6%9A%E0%A6%BE%E0%A6%B9",
+    "name": "assamês",
+    "autonym": "অসমীয়া",
+    "bytes": 18228,
+    "badges": []
+  },
+  {
+    "code": "ast",
+    "title": "Té",
+    "url": "https://ast.wikipedia.org/wiki/T%C3%A9",
+    "name": "asturiano",
+    "autonym": "asturianu",
+    "bytes": 3694,
+    "badges": []
+  },
+  {
+    "code": "atj",
+    "title": "Nipicapo",
+    "url": "https://atj.wikipedia.org/wiki/Nipicapo",
+    "name": "atikamekw",
+    "autonym": "Atikamekw",
+    "bytes": 323,
+    "badges": []
+  },
+  {
+    "code": "awa",
+    "title": "चाह",
+    "url": "https://awa.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%B9",
+    "name": "awadhi",
+    "autonym": "अवधी",
+    "bytes": 99,
+    "badges": []
+  },
+  {
+    "code": "ay",
+    "title": "Pulu",
+    "url": "https://ay.wikipedia.org/wiki/Pulu",
+    "name": "aimará",
+    "autonym": "Aymar aru",
+    "bytes": 170,
+    "badges": []
+  },
+  {
+    "code": "az",
+    "title": "Çay (içki)",
+    "url": "https://az.wikipedia.org/wiki/%C3%87ay_(i%C3%A7ki)",
+    "name": "azerbaijano",
+    "autonym": "azərbaycanca",
+    "bytes": 31809,
+    "badges": []
+  },
+  {
+    "code": "azb",
+    "title": "چای (ایچگی)",
+    "url": "https://azb.wikipedia.org/wiki/%DA%86%D8%A7%DB%8C_(%D8%A7%DB%8C%DA%86%DA%AF%DB%8C)",
+    "name": "South Azerbaijani",
+    "autonym": "تۆرکجه",
+    "bytes": 1517,
+    "badges": []
+  },
+  {
+    "code": "ba",
+    "title": "Сәй",
+    "url": "https://ba.wikipedia.org/wiki/%D0%A1%D3%99%D0%B9",
+    "name": "bashkir",
+    "autonym": "башҡортса",
+    "bytes": 36915,
+    "badges": []
+  },
+  {
+    "code": "ban",
+    "title": "Téh",
+    "url": "https://ban.wikipedia.org/wiki/T%C3%A9h",
+    "name": "balinês",
+    "autonym": "Basa Bali",
+    "bytes": 5886,
+    "badges": []
+  },
+  {
+    "code": "bar",
+    "title": "Tää",
+    "url": "https://bar.wikipedia.org/wiki/T%C3%A4%C3%A4",
+    "name": "Bavarian",
+    "autonym": "Boarisch",
+    "bytes": 1813,
+    "badges": []
+  },
+  {
+    "code": "bcl",
+    "title": "Tsa",
+    "url": "https://bcl.wikipedia.org/wiki/Tsa",
+    "name": "Central Bikol",
+    "autonym": "Bikol Central",
+    "bytes": 1919,
+    "badges": []
+  },
+  {
+    "code": "be",
+    "title": "Чай",
+    "url": "https://be.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "bielorrusso",
+    "autonym": "беларуская",
+    "bytes": 12180,
+    "badges": []
+  },
+  {
+    "code": "be-tarask",
+    "title": "Гарбата",
+    "url": "https://be-tarask.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D0%B1%D0%B0%D1%82%D0%B0",
+    "name": "Belarusian (Taraškievica orthography)",
+    "autonym": "беларуская (тарашкевіца)",
+    "bytes": 19632,
+    "badges": []
+  },
+  {
+    "code": "bew",
+    "title": "Sahi",
+    "url": "https://bew.wikipedia.org/wiki/Sahi",
+    "name": "Betawi",
+    "autonym": "Betawi",
+    "bytes": 2986,
+    "badges": []
+  },
+  {
+    "code": "bg",
+    "title": "Чай",
+    "url": "https://bg.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "búlgaro",
+    "autonym": "български",
+    "bytes": 116456,
+    "badges": []
+  },
+  {
+    "code": "bh",
+    "title": "चाय",
+    "url": "https://bh.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%AF",
+    "name": "Bhojpuri",
+    "autonym": "भोजपुरी",
+    "bytes": 50717,
+    "badges": []
+  },
+  {
+    "code": "bjn",
+    "title": "Dunti",
+    "url": "https://bjn.wikipedia.org/wiki/Dunti",
+    "name": "Banjar",
+    "autonym": "Banjar",
+    "bytes": 1484,
+    "badges": []
+  },
+  {
+    "code": "bn",
+    "title": "চা",
+    "url": "https://bn.wikipedia.org/wiki/%E0%A6%9A%E0%A6%BE",
+    "name": "bengalês",
+    "autonym": "বাংলা",
+    "bytes": 43787,
+    "badges": []
+  },
+  {
+    "code": "bo",
+    "title": "ཇ།",
+    "url": "https://bo.wikipedia.org/wiki/%E0%BD%87%E0%BC%8D",
+    "name": "tibetano",
+    "autonym": "བོད་ཡིག",
+    "bytes": 967,
+    "badges": []
+  },
+  {
+    "code": "br",
+    "title": "Te",
+    "url": "https://br.wikipedia.org/wiki/Te",
+    "name": "bretão",
+    "autonym": "brezhoneg",
+    "bytes": 19248,
+    "badges": []
+  },
+  {
+    "code": "bs",
+    "title": "Čaj",
+    "url": "https://bs.wikipedia.org/wiki/%C4%8Caj",
+    "name": "bósnio",
+    "autonym": "bosanski",
+    "bytes": 25547,
+    "badges": []
+  },
+  {
+    "code": "bxr",
+    "title": "Сай",
+    "url": "https://bxr.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B9",
+    "name": "Russia Buriat",
+    "autonym": "буряад",
+    "bytes": 3840,
+    "badges": []
+  },
+  {
+    "code": "ca",
+    "title": "Te",
+    "url": "https://ca.wikipedia.org/wiki/Te",
+    "name": "catalão",
+    "autonym": "català",
+    "bytes": 38406,
+    "badges": []
+  },
+  {
+    "code": "cdo",
+    "title": "Dà",
+    "url": "https://cdo.wikipedia.org/wiki/D%C3%A0",
+    "name": "Mindong",
+    "autonym": "閩東語 / Mìng-dĕ̤ng-ngṳ̄",
+    "bytes": 222,
+    "badges": []
+  },
+  {
+    "code": "ce",
+    "title": "Чай",
+    "url": "https://ce.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "checheno",
+    "autonym": "нохчийн",
+    "bytes": 181200,
+    "badges": []
+  },
+  {
+    "code": "ceb",
+    "title": "Tsa",
+    "url": "https://ceb.wikipedia.org/wiki/Tsa",
+    "name": "cebuano",
+    "autonym": "Cebuano",
+    "bytes": 6479,
+    "badges": []
+  },
+  {
+    "code": "chr",
+    "title": "ᎤᎦᎶᎬ",
+    "url": "https://chr.wikipedia.org/wiki/%E1%8E%A4%E1%8E%A6%E1%8E%B6%E1%8E%AC",
+    "name": "cherokee",
+    "autonym": "ᏣᎳᎩ",
+    "bytes": 500,
+    "badges": []
+  },
+  {
+    "code": "chy",
+    "title": "Véhpotséhohpe",
+    "url": "https://chy.wikipedia.org/wiki/V%C3%A9hpots%C3%A9hohpe",
+    "name": "cheyenne",
+    "autonym": "Tsetsêhestâhese",
+    "bytes": 366,
+    "badges": []
+  },
+  {
+    "code": "ckb",
+    "title": "چا",
+    "url": "https://ckb.wikipedia.org/wiki/%DA%86%D8%A7",
+    "name": "curdo central",
+    "autonym": "کوردی",
+    "bytes": 13810,
+    "badges": []
+  },
+  {
+    "code": "cs",
+    "title": "Čaj",
+    "url": "https://cs.wikipedia.org/wiki/%C4%8Caj",
+    "name": "checo",
+    "autonym": "čeština",
+    "bytes": 9700,
+    "badges": []
+  },
+  {
+    "code": "cv",
+    "title": "Чей",
+    "url": "https://cv.wikipedia.org/wiki/%D0%A7%D0%B5%D0%B9",
+    "name": "chuvash",
+    "autonym": "чӑвашла",
+    "bytes": 4154,
+    "badges": []
+  },
+  {
+    "code": "cy",
+    "title": "Te",
+    "url": "https://cy.wikipedia.org/wiki/Te",
+    "name": "galês",
+    "autonym": "Cymraeg",
+    "bytes": 4106,
+    "badges": []
+  },
+  {
+    "code": "da",
+    "title": "Te",
+    "url": "https://da.wikipedia.org/wiki/Te",
+    "name": "dinamarquês",
+    "autonym": "dansk",
+    "bytes": 11953,
+    "badges": []
+  },
+  {
+    "code": "de",
+    "title": "Tee",
+    "url": "https://de.wikipedia.org/wiki/Tee",
+    "name": "alemão",
+    "autonym": "Deutsch",
+    "bytes": 75930,
+    "badges": [
+      "bom"
+    ]
+  },
+  {
+    "code": "diq",
+    "title": "Çay",
+    "url": "https://diq.wikipedia.org/wiki/%C3%87ay",
+    "name": "Dimli",
+    "autonym": "Zazaki",
+    "bytes": 543,
+    "badges": []
+  },
+  {
+    "code": "dty",
+    "title": "चिया",
+    "url": "https://dty.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+    "name": "Doteli",
+    "autonym": "डोटेली",
+    "bytes": 1833,
+    "badges": []
+  },
+  {
+    "code": "dv",
+    "title": "ސައި",
+    "url": "https://dv.wikipedia.org/wiki/%DE%90%DE%A6%DE%87%DE%A8",
+    "name": "divehi",
+    "autonym": "ދިވެހިބަސް",
+    "bytes": 4563,
+    "badges": []
+  },
+  {
+    "code": "dz",
+    "title": "ཇ",
+    "url": "https://dz.wikipedia.org/wiki/%E0%BD%87",
+    "name": "dzonga",
+    "autonym": "ཇོང་ཁ",
+    "bytes": 195,
+    "badges": []
+  },
+  {
+    "code": "el",
+    "title": "Τσάι",
+    "url": "https://el.wikipedia.org/wiki/%CE%A4%CF%83%CE%AC%CE%B9",
+    "name": "grego",
+    "autonym": "Ελληνικά",
+    "bytes": 6670,
+    "badges": []
+  },
+  {
+    "code": "en",
+    "title": "Tea",
+    "url": "https://en.wikipedia.org/wiki/Tea",
+    "name": "inglês",
+    "autonym": "English",
+    "bytes": 94581,
+    "badges": []
+  },
+  {
+    "code": "eo",
+    "title": "Teo",
+    "url": "https://eo.wikipedia.org/wiki/Teo",
+    "name": "esperanto",
+    "autonym": "Esperanto",
+    "bytes": 47952,
+    "badges": []
+  },
+  {
+    "code": "es",
+    "title": "Té",
+    "url": "https://es.wikipedia.org/wiki/T%C3%A9",
+    "name": "espanhol",
+    "autonym": "español",
+    "bytes": 74439,
+    "badges": []
+  },
+  {
+    "code": "et",
+    "title": "Tee (jook)",
+    "url": "https://et.wikipedia.org/wiki/Tee_(jook)",
+    "name": "estónio",
+    "autonym": "eesti",
+    "bytes": 12630,
+    "badges": []
+  },
+  {
+    "code": "eu",
+    "title": "Te (edaria)",
+    "url": "https://eu.wikipedia.org/wiki/Te_(edaria)",
+    "name": "basco",
+    "autonym": "euskara",
+    "bytes": 119580,
+    "badges": []
+  },
+  {
+    "code": "ext",
+    "title": "Ten",
+    "url": "https://ext.wikipedia.org/wiki/Ten",
+    "name": "Extremaduran",
+    "autonym": "estremeñu",
+    "bytes": 671,
+    "badges": []
+  },
+  {
+    "code": "fa",
+    "title": "چای",
+    "url": "https://fa.wikipedia.org/wiki/%DA%86%D8%A7%DB%8C",
+    "name": "persa",
+    "autonym": "فارسی",
+    "bytes": 101952,
+    "badges": []
+  },
+  {
+    "code": "fi",
+    "title": "Tee",
+    "url": "https://fi.wikipedia.org/wiki/Tee",
+    "name": "finlandês",
+    "autonym": "suomi",
+    "bytes": 62030,
+    "badges": []
+  },
+  {
+    "code": "fo",
+    "title": "Te",
+    "url": "https://fo.wikipedia.org/wiki/Te",
+    "name": "feroês",
+    "autonym": "føroyskt",
+    "bytes": 1296,
+    "badges": []
+  },
+  {
+    "code": "fr",
+    "title": "Thé",
+    "url": "https://fr.wikipedia.org/wiki/Th%C3%A9",
+    "name": "francês",
+    "autonym": "français",
+    "bytes": 137543,
+    "badges": []
+  },
+  {
+    "code": "frr",
+    "title": "Tee",
+    "url": "https://frr.wikipedia.org/wiki/Tee",
+    "name": "frísio setentrional",
+    "autonym": "Nordfriisk",
+    "bytes": 1708,
+    "badges": []
+  },
+  {
+    "code": "fur",
+    "title": "Te",
+    "url": "https://fur.wikipedia.org/wiki/Te",
+    "name": "friulano",
+    "autonym": "furlan",
+    "bytes": 689,
+    "badges": []
+  },
+  {
+    "code": "ga",
+    "title": "Tae",
+    "url": "https://ga.wikipedia.org/wiki/Tae",
+    "name": "irlandês",
+    "autonym": "Gaeilge",
+    "bytes": 3240,
+    "badges": []
+  },
+  {
+    "code": "gan",
+    "title": "茶",
+    "url": "https://gan.wikipedia.org/wiki/%E8%8C%B6",
+    "name": "gan",
+    "autonym": "贛語",
+    "bytes": 727,
+    "badges": []
+  },
+  {
+    "code": "gcr",
+    "title": "Té",
+    "url": "https://gcr.wikipedia.org/wiki/T%C3%A9",
+    "name": "Guianan Creole",
+    "autonym": "kriyòl gwiyannen",
+    "bytes": 733,
+    "badges": []
+  },
+  {
+    "code": "gd",
+    "title": "Tì",
+    "url": "https://gd.wikipedia.org/wiki/T%C3%AC",
+    "name": "gaélico escocês",
+    "autonym": "Gàidhlig",
+    "bytes": 5847,
+    "badges": []
+  },
+  {
+    "code": "gl",
+    "title": "Té",
+    "url": "https://gl.wikipedia.org/wiki/T%C3%A9",
+    "name": "galego",
+    "autonym": "galego",
+    "bytes": 57376,
+    "badges": []
+  },
+  {
+    "code": "glk",
+    "title": "چأيي",
+    "url": "https://glk.wikipedia.org/wiki/%DA%86%D8%A3%D9%8A%D9%8A",
+    "name": "Gilaki",
+    "autonym": "گیلکی",
+    "bytes": 17862,
+    "badges": []
+  },
+  {
+    "code": "gn",
+    "title": "Ygua",
+    "url": "https://gn.wikipedia.org/wiki/Ygua",
+    "name": "guarani",
+    "autonym": "Avañe'ẽ",
+    "bytes": 1747,
+    "badges": []
+  },
+  {
+    "code": "got",
+    "title": "𐌷𐌰𐌹𐍂𐌱𐌰𐍄𐌰",
+    "url": "https://got.wikipedia.org/wiki/%F0%90%8C%B7%F0%90%8C%B0%F0%90%8C%B9%F0%90%8D%82%F0%90%8C%B1%F0%90%8C%B0%F0%90%8D%84%F0%90%8C%B0",
+    "name": "gótico",
+    "autonym": "𐌲𐌿𐍄𐌹𐍃𐌺",
+    "bytes": 1045,
+    "badges": []
+  },
+  {
+    "code": "gsw",
+    "title": "Tee",
+    "url": "https://als.wikipedia.org/wiki/Tee",
+    "name": "alemão suíço",
+    "autonym": "Alemannisch",
+    "bytes": null,
+    "badges": []
+  },
+  {
+    "code": "gu",
+    "title": "ચા",
+    "url": "https://gu.wikipedia.org/wiki/%E0%AA%9A%E0%AA%BE",
+    "name": "guzerate",
+    "autonym": "ગુજરાતી",
+    "bytes": 187083,
+    "badges": []
+  },
+  {
+    "code": "hak",
+    "title": "Chhà",
+    "url": "https://hak.wikipedia.org/wiki/Chh%C3%A0",
+    "name": "hacá",
+    "autonym": "客家語 / Hak-kâ-ngî",
+    "bytes": 583,
+    "badges": []
+  },
+  {
+    "code": "he",
+    "title": "תה",
+    "url": "https://he.wikipedia.org/wiki/%D7%AA%D7%94",
+    "name": "hebraico",
+    "autonym": "עברית",
+    "bytes": 36253,
+    "badges": []
+  },
+  {
+    "code": "hi",
+    "title": "चाय",
+    "url": "https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%AF",
+    "name": "hindi",
+    "autonym": "हिन्दी",
+    "bytes": 20682,
+    "badges": []
+  },
+  {
+    "code": "hif",
+    "title": "Cha",
+    "url": "https://hif.wikipedia.org/wiki/Cha",
+    "name": "Fiji Hindi",
+    "autonym": "Fiji Hindi",
+    "bytes": 2714,
+    "badges": []
+  },
+  {
+    "code": "hr",
+    "title": "Čaj",
+    "url": "https://hr.wikipedia.org/wiki/%C4%8Caj",
+    "name": "croata",
+    "autonym": "hrvatski",
+    "bytes": 14970,
+    "badges": []
+  },
+  {
+    "code": "hu",
+    "title": "Tea (ital)",
+    "url": "https://hu.wikipedia.org/wiki/Tea_(ital)",
+    "name": "húngaro",
+    "autonym": "magyar",
+    "bytes": 39906,
+    "badges": []
+  },
+  {
+    "code": "hy",
+    "title": "Թեյ",
+    "url": "https://hy.wikipedia.org/wiki/%D4%B9%D5%A5%D5%B5",
+    "name": "arménio",
+    "autonym": "հայերեն",
+    "bytes": 103011,
+    "badges": []
+  },
+  {
+    "code": "hyw",
+    "title": "Թէյ",
+    "url": "https://hyw.wikipedia.org/wiki/%D4%B9%D5%A7%D5%B5",
+    "name": "Western Armenian",
+    "autonym": "Արեւմտահայերէն",
+    "bytes": 22116,
+    "badges": []
+  },
+  {
+    "code": "ia",
+    "title": "The",
+    "url": "https://ia.wikipedia.org/wiki/The",
+    "name": "interlíngua",
+    "autonym": "interlingua",
+    "bytes": 1286,
+    "badges": []
+  },
+  {
+    "code": "iba",
+    "title": "Te",
+    "url": "https://iba.wikipedia.org/wiki/Te",
+    "name": "iban",
+    "autonym": "Jaku Iban",
+    "bytes": 3326,
+    "badges": []
+  },
+  {
+    "code": "id",
+    "title": "Teh",
+    "url": "https://id.wikipedia.org/wiki/Teh",
+    "name": "indonésio",
+    "autonym": "Bahasa Indonesia",
+    "bytes": 26871,
+    "badges": []
+  },
+  {
+    "code": "ie",
+    "title": "Té",
+    "url": "https://ie.wikipedia.org/wiki/T%C3%A9",
+    "name": "interlingue",
+    "autonym": "Interlingue",
+    "bytes": 733,
+    "badges": []
+  },
+  {
+    "code": "ik",
+    "title": "Saiyu",
+    "url": "https://ik.wikipedia.org/wiki/Saiyu",
+    "name": "inupiaque",
+    "autonym": "Iñupiatun",
+    "bytes": 307,
+    "badges": []
+  },
+  {
+    "code": "ilo",
+    "title": "Tsa",
+    "url": "https://ilo.wikipedia.org/wiki/Tsa",
+    "name": "ilocano",
+    "autonym": "Ilokano",
+    "bytes": 4697,
+    "badges": []
+  },
+  {
+    "code": "io",
+    "title": "Teo",
+    "url": "https://io.wikipedia.org/wiki/Teo",
+    "name": "ido",
+    "autonym": "Ido",
+    "bytes": 1228,
+    "badges": []
+  },
+  {
+    "code": "is",
+    "title": "Te",
+    "url": "https://is.wikipedia.org/wiki/Te",
+    "name": "islandês",
+    "autonym": "íslenska",
+    "bytes": 4208,
+    "badges": []
+  },
+  {
+    "code": "isv",
+    "title": "Чај",
+    "url": "https://isv.wikipedia.org/wiki/%D0%A7%D0%B0%D1%98",
+    "name": "Interslavic",
+    "autonym": "medžuslovjansky",
+    "bytes": 4921,
+    "badges": []
+  },
+  {
+    "code": "it",
+    "title": "Tè",
+    "url": "https://it.wikipedia.org/wiki/T%C3%A8",
+    "name": "italiano",
+    "autonym": "italiano",
+    "bytes": 40783,
+    "badges": []
+  },
+  {
+    "code": "iu",
+    "title": "ᓂᐅᖅᑲᖅ/ᑏᕐᓗ",
+    "url": "https://iu.wikipedia.org/wiki/%E1%93%82%E1%90%85%E1%96%85%E1%91%B2%E1%96%85/%E1%91%8F%E1%95%90%E1%93%97",
+    "name": "inuktitut",
+    "autonym": "ᐃᓄᒃᑎᑐᑦ / inuktitut",
+    "bytes": 321,
+    "badges": []
+  },
+  {
+    "code": "ja",
+    "title": "茶",
+    "url": "https://ja.wikipedia.org/wiki/%E8%8C%B6",
+    "name": "japonês",
+    "autonym": "日本語",
+    "bytes": 126906,
+    "badges": []
+  },
+  {
+    "code": "jam",
+    "title": "Tii",
+    "url": "https://jam.wikipedia.org/wiki/Tii",
+    "name": "Jamaican Creole English",
+    "autonym": "Patois",
+    "bytes": 1718,
+    "badges": []
+  },
+  {
+    "code": "jbo",
+    "title": "tcati",
+    "url": "https://jbo.wikipedia.org/wiki/tcati",
+    "name": "lojban",
+    "autonym": "la .lojban.",
+    "bytes": 280,
+    "badges": []
+  },
+  {
+    "code": "jv",
+    "title": "Tèh",
+    "url": "https://jv.wikipedia.org/wiki/T%C3%A8h",
+    "name": "javanês",
+    "autonym": "Jawa",
+    "bytes": 22245,
+    "badges": []
+  },
+  {
+    "code": "ka",
+    "title": "ჩაი",
+    "url": "https://ka.wikipedia.org/wiki/%E1%83%A9%E1%83%90%E1%83%98",
+    "name": "georgiano",
+    "autonym": "ქართული",
+    "bytes": 5291,
+    "badges": []
+  },
+  {
+    "code": "kaa",
+    "title": "Chay",
+    "url": "https://kaa.wikipedia.org/wiki/Chay",
+    "name": "kara-kalpak",
+    "autonym": "Qaraqalpaqsha",
+    "bytes": 663,
+    "badges": []
+  },
+  {
+    "code": "kbp",
+    "title": "Tii",
+    "url": "https://kbp.wikipedia.org/wiki/Tii",
+    "name": "Kabiye",
+    "autonym": "Kabɩyɛ",
+    "bytes": 6125,
+    "badges": []
+  },
+  {
+    "code": "kge",
+    "title": "Teh",
+    "url": "https://kge.wikipedia.org/wiki/Teh",
+    "name": "Komering",
+    "autonym": "Kumoring",
+    "bytes": 160,
+    "badges": []
+  },
+  {
+    "code": "kk",
+    "title": "Шай",
+    "url": "https://kk.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B9",
+    "name": "cazaque",
+    "autonym": "қазақша",
+    "bytes": 9776,
+    "badges": []
+  },
+  {
+    "code": "km",
+    "title": "តែ",
+    "url": "https://km.wikipedia.org/wiki/%E1%9E%8F%E1%9F%82",
+    "name": "khmer",
+    "autonym": "ភាសាខ្មែរ",
+    "bytes": 2292,
+    "badges": []
+  },
+  {
+    "code": "kn",
+    "title": "ಚಹಾ",
+    "url": "https://kn.wikipedia.org/wiki/%E0%B2%9A%E0%B2%B9%E0%B2%BE",
+    "name": "canarim",
+    "autonym": "ಕನ್ನಡ",
+    "bytes": 247222,
+    "badges": []
+  },
+  {
+    "code": "ko",
+    "title": "차 (음료)",
+    "url": "https://ko.wikipedia.org/wiki/%EC%B0%A8_(%EC%9D%8C%EB%A3%8C)",
+    "name": "coreano",
+    "autonym": "한국어",
+    "bytes": 22311,
+    "badges": []
+  },
+  {
+    "code": "krc",
+    "title": "Чай",
+    "url": "https://krc.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "carachaio-bálcaro",
+    "autonym": "къарачай-малкъар",
+    "bytes": 7258,
+    "badges": []
+  },
+  {
+    "code": "ks",
+    "title": "چاے",
+    "url": "https://ks.wikipedia.org/wiki/%DA%86%D8%A7%DB%92",
+    "name": "caxemira",
+    "autonym": "کٲشُر",
+    "bytes": 256,
+    "badges": []
+  },
+  {
+    "code": "ksh",
+    "title": "Tee",
+    "url": "https://ksh.wikipedia.org/wiki/Tee",
+    "name": "kölsch",
+    "autonym": "Ripoarisch",
+    "bytes": 538,
+    "badges": []
+  },
+  {
+    "code": "ku",
+    "title": "Çay (vexwarin)",
+    "url": "https://ku.wikipedia.org/wiki/%C3%87ay_(vexwarin)",
+    "name": "curdo",
+    "autonym": "kurdî",
+    "bytes": 3188,
+    "badges": []
+  },
+  {
+    "code": "kw",
+    "title": "Te",
+    "url": "https://kw.wikipedia.org/wiki/Te",
+    "name": "córnico",
+    "autonym": "kernowek",
+    "bytes": 1649,
+    "badges": []
+  },
+  {
+    "code": "ky",
+    "title": "Чай",
+    "url": "https://ky.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "quirguiz",
+    "autonym": "кыргызча",
+    "bytes": 6534,
+    "badges": []
+  },
+  {
+    "code": "la",
+    "title": "Thea",
+    "url": "https://la.wikipedia.org/wiki/Thea",
+    "name": "latim",
+    "autonym": "Latina",
+    "bytes": 18043,
+    "badges": []
+  },
+  {
+    "code": "lad",
+    "title": "Chai",
+    "url": "https://lad.wikipedia.org/wiki/Chai",
+    "name": "ladino",
+    "autonym": "Ladino",
+    "bytes": 831,
+    "badges": []
+  },
+  {
+    "code": "lb",
+    "title": "Téi",
+    "url": "https://lb.wikipedia.org/wiki/T%C3%A9i",
+    "name": "luxemburguês",
+    "autonym": "Lëtzebuergesch",
+    "bytes": 2381,
+    "badges": []
+  },
+  {
+    "code": "lbe",
+    "title": "Чяй",
+    "url": "https://lbe.wikipedia.org/wiki/%D0%A7%D1%8F%D0%B9",
+    "name": "Lak",
+    "autonym": "лакку",
+    "bytes": 528,
+    "badges": []
+  },
+  {
+    "code": "lez",
+    "title": "Чай",
+    "url": "https://lez.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "lezghiano",
+    "autonym": "лезги",
+    "bytes": 883,
+    "badges": []
+  },
+  {
+    "code": "lfn",
+    "title": "Te",
+    "url": "https://lfn.wikipedia.org/wiki/Te",
+    "name": "Lingua Franca Nova",
+    "autonym": "Lingua Franca Nova",
+    "bytes": 524,
+    "badges": []
+  },
+  {
+    "code": "li",
+    "title": "Tieë",
+    "url": "https://li.wikipedia.org/wiki/Tie%C3%AB",
+    "name": "limburguês",
+    "autonym": "Limburgs",
+    "bytes": 1452,
+    "badges": []
+  },
+  {
+    "code": "lij",
+    "title": "Tè",
+    "url": "https://lij.wikipedia.org/wiki/T%C3%A8",
+    "name": "ligure",
+    "autonym": "Ligure",
+    "bytes": 2091,
+    "badges": []
+  },
+  {
+    "code": "lmo",
+    "title": "Tè",
+    "url": "https://lmo.wikipedia.org/wiki/T%C3%A8",
+    "name": "lombardo",
+    "autonym": "lombard",
+    "bytes": 624,
+    "badges": []
+  },
+  {
+    "code": "lo",
+    "title": "ຊາ",
+    "url": "https://lo.wikipedia.org/wiki/%E0%BA%8A%E0%BA%B2",
+    "name": "laosiano",
+    "autonym": "ລາວ",
+    "bytes": 1755,
+    "badges": []
+  },
+  {
+    "code": "lt",
+    "title": "Arbata",
+    "url": "https://lt.wikipedia.org/wiki/Arbata",
+    "name": "lituano",
+    "autonym": "lietuvių",
+    "bytes": 28143,
+    "badges": [
+      "bom"
+    ]
+  },
+  {
+    "code": "lv",
+    "title": "Tēja",
+    "url": "https://lv.wikipedia.org/wiki/T%C4%93ja",
+    "name": "letão",
+    "autonym": "latviešu",
+    "bytes": 17368,
+    "badges": []
+  },
+  {
+    "code": "lzh",
+    "title": "茶",
+    "url": "https://zh-classical.wikipedia.org/wiki/%E8%8C%B6",
+    "name": "Literary Chinese",
+    "autonym": "文言",
+    "bytes": 1537,
+    "badges": []
+  },
+  {
+    "code": "mad",
+    "title": "Tèh",
+    "url": "https://mad.wikipedia.org/wiki/T%C3%A8h",
+    "name": "madurês",
+    "autonym": "Madhurâ",
+    "bytes": 5363,
+    "badges": []
+  },
+  {
+    "code": "mag",
+    "title": "चाह",
+    "url": "https://mag.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%B9",
+    "name": "magahi",
+    "autonym": "मगही",
+    "bytes": 2116,
+    "badges": []
+  },
+  {
+    "code": "mai",
+    "title": "चाय",
+    "url": "https://mai.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%AF",
+    "name": "maithili",
+    "autonym": "मैथिली",
+    "bytes": 1501,
+    "badges": []
+  },
+  {
+    "code": "mg",
+    "title": "Dite (zava-pisotro)",
+    "url": "https://mg.wikipedia.org/wiki/Dite_(zava-pisotro)",
+    "name": "malgaxe",
+    "autonym": "Malagasy",
+    "bytes": 1123,
+    "badges": []
+  },
+  {
+    "code": "mhr",
+    "title": "Чай",
+    "url": "https://mhr.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "Eastern Mari",
+    "autonym": "олык марий",
+    "bytes": 471,
+    "badges": []
+  },
+  {
+    "code": "min",
+    "title": "Teh",
+    "url": "https://min.wikipedia.org/wiki/Teh",
+    "name": "minangkabau",
+    "autonym": "Minangkabau",
+    "bytes": 2150,
+    "badges": []
+  },
+  {
+    "code": "mk",
+    "title": "Чај",
+    "url": "https://mk.wikipedia.org/wiki/%D0%A7%D0%B0%D1%98",
+    "name": "macedónio",
+    "autonym": "македонски",
+    "bytes": 77489,
+    "badges": [
+      "destacado"
+    ]
+  },
+  {
+    "code": "ml",
+    "title": "ചായ",
+    "url": "https://ml.wikipedia.org/wiki/%E0%B4%9A%E0%B4%BE%E0%B4%AF",
+    "name": "malaiala",
+    "autonym": "മലയാളം",
+    "bytes": 42195,
+    "badges": []
+  },
+  {
+    "code": "mn",
+    "title": "Цай",
+    "url": "https://mn.wikipedia.org/wiki/%D0%A6%D0%B0%D0%B9",
+    "name": "mongol",
+    "autonym": "монгол",
+    "bytes": 8101,
+    "badges": []
+  },
+  {
+    "code": "mni",
+    "title": "ꯆꯥ (ꯃꯍꯤ)",
+    "url": "https://mni.wikipedia.org/wiki/%EA%AF%86%EA%AF%A5_(%EA%AF%83%EA%AF%8D%EA%AF%A4)",
+    "name": "manipuri",
+    "autonym": "ꯃꯤꯇꯩ ꯂꯣꯟ",
+    "bytes": 1205,
+    "badges": []
+  },
+  {
+    "code": "mr",
+    "title": "चहा",
+    "url": "https://mr.wikipedia.org/wiki/%E0%A4%9A%E0%A4%B9%E0%A4%BE",
+    "name": "marata",
+    "autonym": "मराठी",
+    "bytes": 27133,
+    "badges": []
+  },
+  {
+    "code": "ms",
+    "title": "Teh",
+    "url": "https://ms.wikipedia.org/wiki/Teh",
+    "name": "malaio",
+    "autonym": "Bahasa Melayu",
+    "bytes": 18586,
+    "badges": []
+  },
+  {
+    "code": "mwl",
+    "title": "Xá",
+    "url": "https://mwl.wikipedia.org/wiki/X%C3%A1",
+    "name": "mirandês",
+    "autonym": "Mirandés",
+    "bytes": 15643,
+    "badges": []
+  },
+  {
+    "code": "my",
+    "title": "လက်ဖက်",
+    "url": "https://my.wikipedia.org/wiki/%E1%80%9C%E1%80%80%E1%80%BA%E1%80%96%E1%80%80%E1%80%BA",
+    "name": "birmanês",
+    "autonym": "မြန်မာဘာသာ",
+    "bytes": 73774,
+    "badges": []
+  },
+  {
+    "code": "mzn",
+    "title": "چائی",
+    "url": "https://mzn.wikipedia.org/wiki/%DA%86%D8%A7%D8%A6%DB%8C",
+    "name": "mazandarani",
+    "autonym": "مازِرونی",
+    "bytes": 321,
+    "badges": []
+  },
+  {
+    "code": "nan",
+    "title": "Tê",
+    "url": "https://zh-min-nan.wikipedia.org/wiki/T%C3%AA",
+    "name": "min nan",
+    "autonym": "閩南語 / Bân-lâm-gí",
+    "bytes": 2547,
+    "badges": []
+  },
+  {
+    "code": "nb",
+    "title": "Te",
+    "url": "https://no.wikipedia.org/wiki/Te",
+    "name": "norueguês bokmål",
+    "autonym": "norsk bokmål",
+    "bytes": 7581,
+    "badges": []
+  },
+  {
+    "code": "nds",
+    "title": "Tee",
+    "url": "https://nds.wikipedia.org/wiki/Tee",
+    "name": "baixo-alemão",
+    "autonym": "Plattdüütsch",
+    "bytes": 60127,
+    "badges": []
+  },
+  {
+    "code": "nds-nl",
+    "title": "Tee (draank)",
+    "url": "https://nds-nl.wikipedia.org/wiki/Tee_(draank)",
+    "name": "baixo-saxão",
+    "autonym": "Nedersaksies",
+    "bytes": 3176,
+    "badges": []
+  },
+  {
+    "code": "ne",
+    "title": "चिया",
+    "url": "https://ne.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+    "name": "nepalês",
+    "autonym": "नेपाली",
+    "bytes": 3525,
+    "badges": []
+  },
+  {
+    "code": "nia",
+    "title": "Tesi",
+    "url": "https://nia.wikipedia.org/wiki/Tesi",
+    "name": "nias",
+    "autonym": "Li Niha",
+    "bytes": 14344,
+    "badges": []
+  },
+  {
+    "code": "nl",
+    "title": "Thee (drank)",
+    "url": "https://nl.wikipedia.org/wiki/Thee_(drank)",
+    "name": "neerlandês",
+    "autonym": "Nederlands",
+    "bytes": 21350,
+    "badges": []
+  },
+  {
+    "code": "nn",
+    "title": "Te",
+    "url": "https://nn.wikipedia.org/wiki/Te",
+    "name": "norueguês nynorsk",
+    "autonym": "norsk nynorsk",
+    "bytes": 5411,
+    "badges": []
+  },
+  {
+    "code": "nrm",
+    "title": "Thée",
+    "url": "https://nrm.wikipedia.org/wiki/Th%C3%A9e",
+    "name": "Norman",
+    "autonym": "Nouormand",
+    "bytes": 965,
+    "badges": []
+  },
+  {
+    "code": "nv",
+    "title": "Chʼil ahwééh",
+    "url": "https://nv.wikipedia.org/wiki/Ch%CA%BCil_ahw%C3%A9%C3%A9h",
+    "name": "navajo",
+    "autonym": "Diné bizaad",
+    "bytes": 342,
+    "badges": []
+  },
+  {
+    "code": "oc",
+    "title": "Tè",
+    "url": "https://oc.wikipedia.org/wiki/T%C3%A8",
+    "name": "occitano",
+    "autonym": "occitan",
+    "bytes": 5589,
+    "badges": []
+  },
+  {
+    "code": "olo",
+    "title": "Čuaju",
+    "url": "https://olo.wikipedia.org/wiki/%C4%8Cuaju",
+    "name": "Livvi-Karelian",
+    "autonym": "livvinkarjala",
+    "bytes": 1462,
+    "badges": []
+  },
+  {
+    "code": "or",
+    "title": "ଚା’",
+    "url": "https://or.wikipedia.org/wiki/%E0%AC%9A%E0%AC%BE%E2%80%99",
+    "name": "oriá",
+    "autonym": "ଓଡ଼ିଆ",
+    "bytes": 27365,
+    "badges": []
+  },
+  {
+    "code": "os",
+    "title": "Цай",
+    "url": "https://os.wikipedia.org/wiki/%D0%A6%D0%B0%D0%B9",
+    "name": "ossético",
+    "autonym": "ирон",
+    "bytes": 1504,
+    "badges": []
+  },
+  {
+    "code": "pa",
+    "title": "ਚਾਹ",
+    "url": "https://pa.wikipedia.org/wiki/%E0%A8%9A%E0%A8%BE%E0%A8%B9",
+    "name": "panjabi",
+    "autonym": "ਪੰਜਾਬੀ",
+    "bytes": 1579,
+    "badges": []
+  },
+  {
+    "code": "pfl",
+    "title": "Tee",
+    "url": "https://pfl.wikipedia.org/wiki/Tee",
+    "name": "Palatine German",
+    "autonym": "Pälzisch",
+    "bytes": 1127,
+    "badges": []
+  },
+  {
+    "code": "pl",
+    "title": "Herbata",
+    "url": "https://pl.wikipedia.org/wiki/Herbata",
+    "name": "polaco",
+    "autonym": "polski",
+    "bytes": 38742,
+    "badges": []
+  },
+  {
+    "code": "pms",
+    "title": "Té",
+    "url": "https://pms.wikipedia.org/wiki/T%C3%A9",
+    "name": "Piedmontese",
+    "autonym": "Piemontèis",
+    "bytes": 3145,
+    "badges": []
+  },
+  {
+    "code": "pnb",
+    "title": "چاہ",
+    "url": "https://pnb.wikipedia.org/wiki/%DA%86%D8%A7%DB%81",
+    "name": "Western Punjabi",
+    "autonym": "پنجابی",
+    "bytes": 15593,
+    "badges": []
+  },
+  {
+    "code": "ps",
+    "title": "چای",
+    "url": "https://ps.wikipedia.org/wiki/%DA%86%D8%A7%DB%8C",
+    "name": "pastó",
+    "autonym": "پښتو",
+    "bytes": 1903,
+    "badges": []
+  },
+  {
+    "code": "qu",
+    "title": "Tiy",
+    "url": "https://qu.wikipedia.org/wiki/Tiy",
+    "name": "quíchua",
+    "autonym": "Runa Simi",
+    "bytes": 439,
+    "badges": []
+  },
+  {
+    "code": "ro",
+    "title": "Ceai",
+    "url": "https://ro.wikipedia.org/wiki/Ceai",
+    "name": "romeno",
+    "autonym": "română",
+    "bytes": 50912,
+    "badges": []
+  },
+  {
+    "code": "ru",
+    "title": "Чай",
+    "url": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "russo",
+    "autonym": "русский",
+    "bytes": 226036,
+    "badges": []
+  },
+  {
+    "code": "rue",
+    "title": "Чай",
+    "url": "https://rue.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "Rusyn",
+    "autonym": "русиньскый",
+    "bytes": 2631,
+    "badges": []
+  },
+  {
+    "code": "rup",
+    "title": "Ceai",
+    "url": "https://roa-rup.wikipedia.org/wiki/Ceai",
+    "name": "aromeno",
+    "autonym": "armãneashti",
+    "bytes": null,
+    "badges": []
+  },
+  {
+    "code": "rw",
+    "title": "Icyayi cy'icyatsi",
+    "url": "https://rw.wikipedia.org/wiki/Icyayi_cy%27icyatsi",
+    "name": "quiniaruanda",
+    "autonym": "Ikinyarwanda",
+    "bytes": 2148,
+    "badges": []
+  },
+  {
+    "code": "sa",
+    "title": "चायम्",
+    "url": "https://sa.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BE%E0%A4%AF%E0%A4%AE%E0%A5%8D",
+    "name": "sânscrito",
+    "autonym": "संस्कृतम्",
+    "bytes": 6663,
+    "badges": []
+  },
+  {
+    "code": "sah",
+    "title": "Чэй",
+    "url": "https://sah.wikipedia.org/wiki/%D0%A7%D1%8D%D0%B9",
+    "name": "sakha",
+    "autonym": "саха тыла",
+    "bytes": 1753,
+    "badges": []
+  },
+  {
+    "code": "sat",
+    "title": "ᱪᱟ",
+    "url": "https://sat.wikipedia.org/wiki/%E1%B1%AA%E1%B1%9F",
+    "name": "santali",
+    "autonym": "ᱥᱟᱱᱛᱟᱲᱤ",
+    "bytes": 6855,
+    "badges": []
+  },
+  {
+    "code": "scn",
+    "title": "Tè",
+    "url": "https://scn.wikipedia.org/wiki/T%C3%A8",
+    "name": "siciliano",
+    "autonym": "sicilianu",
+    "bytes": 1163,
+    "badges": []
+  },
+  {
+    "code": "sco",
+    "title": "Tea",
+    "url": "https://sco.wikipedia.org/wiki/Tea",
+    "name": "scots",
+    "autonym": "Scots",
+    "bytes": 1521,
+    "badges": []
+  },
+  {
+    "code": "sd",
+    "title": "چانهہ",
+    "url": "https://sd.wikipedia.org/wiki/%DA%86%D8%A7%D9%86%D9%87%DB%81",
+    "name": "sindi",
+    "autonym": "سنڌي",
+    "bytes": 14795,
+    "badges": []
+  },
+  {
+    "code": "sgs",
+    "title": "Erbeta",
+    "url": "https://bat-smg.wikipedia.org/wiki/Erbeta",
+    "name": "Samogitian",
+    "autonym": "žemaitėška",
+    "bytes": 608,
+    "badges": []
+  },
+  {
+    "code": "sh",
+    "title": "Čaj",
+    "url": "https://sh.wikipedia.org/wiki/%C4%8Caj",
+    "name": "servo-croata",
+    "autonym": "srpskohrvatski / српскохрватски",
+    "bytes": 9934,
+    "badges": []
+  },
+  {
+    "code": "shi",
+    "title": "Atay",
+    "url": "https://shi.wikipedia.org/wiki/Atay",
+    "name": "tachelhit",
+    "autonym": "Taclḥit",
+    "bytes": 926,
+    "badges": []
+  },
+  {
+    "code": "shn",
+    "title": "ၼမ်ႉၼဵင်ႈ",
+    "url": "https://shn.wikipedia.org/wiki/%E1%81%BC%E1%80%99%E1%80%BA%E1%82%89%E1%81%BC%E1%80%B5%E1%80%84%E1%80%BA%E1%82%88",
+    "name": "shan",
+    "autonym": "တႆး",
+    "bytes": 930,
+    "badges": []
+  },
+  {
+    "code": "si",
+    "title": "තේ",
+    "url": "https://si.wikipedia.org/wiki/%E0%B6%AD%E0%B7%9A",
+    "name": "cingalês",
+    "autonym": "සිංහල",
+    "bytes": 90435,
+    "badges": []
+  },
+  {
+    "code": "simple",
+    "title": "Tea",
+    "url": "https://simple.wikipedia.org/wiki/Tea",
+    "name": "Simple English",
+    "autonym": "Simple English",
+    "bytes": 4086,
+    "badges": []
+  },
+  {
+    "code": "sk",
+    "title": "Čaj",
+    "url": "https://sk.wikipedia.org/wiki/%C4%8Caj",
+    "name": "eslovaco",
+    "autonym": "slovenčina",
+    "bytes": 13683,
+    "badges": []
+  },
+  {
+    "code": "sl",
+    "title": "Čaj",
+    "url": "https://sl.wikipedia.org/wiki/%C4%8Caj",
+    "name": "esloveno",
+    "autonym": "slovenščina",
+    "bytes": 17153,
+    "badges": []
+  },
+  {
+    "code": "sn",
+    "title": "Svutugadzike",
+    "url": "https://sn.wikipedia.org/wiki/Svutugadzike",
+    "name": "shona",
+    "autonym": "chiShona",
+    "bytes": 5371,
+    "badges": []
+  },
+  {
+    "code": "so",
+    "title": "Shaax",
+    "url": "https://so.wikipedia.org/wiki/Shaax",
+    "name": "somali",
+    "autonym": "Soomaaliga",
+    "bytes": 780,
+    "badges": []
+  },
+  {
+    "code": "sq",
+    "title": "Çaji",
+    "url": "https://sq.wikipedia.org/wiki/%C3%87aji",
+    "name": "albanês",
+    "autonym": "shqip",
+    "bytes": 1008,
+    "badges": []
+  },
+  {
+    "code": "sr",
+    "title": "Чај",
+    "url": "https://sr.wikipedia.org/wiki/%D0%A7%D0%B0%D1%98",
+    "name": "sérvio",
+    "autonym": "српски / srpski",
+    "bytes": 44659,
+    "badges": []
+  },
+  {
+    "code": "srn",
+    "title": "Te",
+    "url": "https://srn.wikipedia.org/wiki/Te",
+    "name": "surinamês",
+    "autonym": "Sranantongo",
+    "bytes": 919,
+    "badges": []
+  },
+  {
+    "code": "su",
+    "title": "Entéh",
+    "url": "https://su.wikipedia.org/wiki/Ent%C3%A9h",
+    "name": "sundanês",
+    "autonym": "Sunda",
+    "bytes": 25075,
+    "badges": []
+  },
+  {
+    "code": "sv",
+    "title": "Te",
+    "url": "https://sv.wikipedia.org/wiki/Te",
+    "name": "sueco",
+    "autonym": "svenska",
+    "bytes": 16210,
+    "badges": []
+  },
+  {
+    "code": "sw",
+    "title": "Chai",
+    "url": "https://sw.wikipedia.org/wiki/Chai",
+    "name": "suaíli",
+    "autonym": "Kiswahili",
+    "bytes": 3424,
+    "badges": []
+  },
+  {
+    "code": "syl",
+    "title": "ꠍꠣ",
+    "url": "https://syl.wikipedia.org/wiki/%EA%A0%8D%EA%A0%A3",
+    "name": "Sylheti",
+    "autonym": "ꠍꠤꠟꠐꠤ",
+    "bytes": 3271,
+    "badges": []
+  },
+  {
+    "code": "szl",
+    "title": "Tyj",
+    "url": "https://szl.wikipedia.org/wiki/Tyj",
+    "name": "silesiano",
+    "autonym": "ślůnski",
+    "bytes": 500,
+    "badges": []
+  },
+  {
+    "code": "szy",
+    "title": "ucya",
+    "url": "https://szy.wikipedia.org/wiki/ucya",
+    "name": "Sakizaya",
+    "autonym": "Sakizaya",
+    "bytes": 190,
+    "badges": []
+  },
+  {
+    "code": "ta",
+    "title": "தேநீர்",
+    "url": "https://ta.wikipedia.org/wiki/%E0%AE%A4%E0%AF%87%E0%AE%A8%E0%AF%80%E0%AE%B0%E0%AF%8D",
+    "name": "tâmil",
+    "autonym": "தமிழ்",
+    "bytes": 29873,
+    "badges": []
+  },
+  {
+    "code": "te",
+    "title": "తేనీరు",
+    "url": "https://te.wikipedia.org/wiki/%E0%B0%A4%E0%B1%87%E0%B0%A8%E0%B1%80%E0%B0%B0%E0%B1%81",
+    "name": "telugu",
+    "autonym": "తెలుగు",
+    "bytes": 20350,
+    "badges": []
+  },
+  {
+    "code": "tg",
+    "title": "Чой",
+    "url": "https://tg.wikipedia.org/wiki/%D0%A7%D0%BE%D0%B9",
+    "name": "tajique",
+    "autonym": "тоҷикӣ",
+    "bytes": 5838,
+    "badges": []
+  },
+  {
+    "code": "th",
+    "title": "ชา",
+    "url": "https://th.wikipedia.org/wiki/%E0%B8%8A%E0%B8%B2",
+    "name": "tailandês",
+    "autonym": "ไทย",
+    "bytes": 6202,
+    "badges": []
+  },
+  {
+    "code": "tk",
+    "title": "Çaý",
+    "url": "https://tk.wikipedia.org/wiki/%C3%87a%C3%BD",
+    "name": "turcomano",
+    "autonym": "Türkmençe",
+    "bytes": 4617,
+    "badges": []
+  },
+  {
+    "code": "tl",
+    "title": "Tsaa",
+    "url": "https://tl.wikipedia.org/wiki/Tsaa",
+    "name": "tagalo",
+    "autonym": "Tagalog",
+    "bytes": 9361,
+    "badges": []
+  },
+  {
+    "code": "tly",
+    "title": "Caj",
+    "url": "https://tly.wikipedia.org/wiki/Caj",
+    "name": "Talysh",
+    "autonym": "tolışi",
+    "bytes": 358,
+    "badges": []
+  },
+  {
+    "code": "tok",
+    "title": "telo moku pi lipu kasi",
+    "url": "https://tok.wikipedia.org/wiki/telo_moku_pi_lipu_kasi",
+    "name": "toki pona",
+    "autonym": "toki pona",
+    "bytes": 2658,
+    "badges": []
+  },
+  {
+    "code": "tpi",
+    "title": "Ti",
+    "url": "https://tpi.wikipedia.org/wiki/Ti",
+    "name": "tok pisin",
+    "autonym": "Tok Pisin",
+    "bytes": 3306,
+    "badges": []
+  },
+  {
+    "code": "tr",
+    "title": "Çay (içecek)",
+    "url": "https://tr.wikipedia.org/wiki/%C3%87ay_(i%C3%A7ecek)",
+    "name": "turco",
+    "autonym": "Türkçe",
+    "bytes": 11113,
+    "badges": []
+  },
+  {
+    "code": "tt",
+    "title": "Чәй",
+    "url": "https://tt.wikipedia.org/wiki/%D0%A7%D3%99%D0%B9",
+    "name": "tatar",
+    "autonym": "татарча / tatarça",
+    "bytes": 23834,
+    "badges": []
+  },
+  {
+    "code": "tyv",
+    "title": "Шай",
+    "url": "https://tyv.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B9",
+    "name": "tuviniano",
+    "autonym": "тыва дыл",
+    "bytes": 897,
+    "badges": []
+  },
+  {
+    "code": "ug",
+    "title": "چاي",
+    "url": "https://ug.wikipedia.org/wiki/%DA%86%D8%A7%D9%8A",
+    "name": "uigur",
+    "autonym": "ئۇيغۇرچە / Uyghurche",
+    "bytes": 3174,
+    "badges": []
+  },
+  {
+    "code": "uk",
+    "title": "Чай",
+    "url": "https://uk.wikipedia.org/wiki/%D0%A7%D0%B0%D0%B9",
+    "name": "ucraniano",
+    "autonym": "українська",
+    "bytes": 105478,
+    "badges": [
+      "bom"
+    ]
+  },
+  {
+    "code": "ur",
+    "title": "چائے",
+    "url": "https://ur.wikipedia.org/wiki/%DA%86%D8%A7%D8%A6%DB%92",
+    "name": "urdu",
+    "autonym": "اردو",
+    "bytes": 7229,
+    "badges": []
+  },
+  {
+    "code": "uz",
+    "title": "Choy",
+    "url": "https://uz.wikipedia.org/wiki/Choy",
+    "name": "usbeque",
+    "autonym": "oʻzbekcha / ўзбекча",
+    "bytes": 3876,
+    "badges": []
+  },
+  {
+    "code": "vec",
+    "title": "Tè",
+    "url": "https://vec.wikipedia.org/wiki/T%C3%A8",
+    "name": "véneto",
+    "autonym": "vèneto",
+    "bytes": 2060,
+    "badges": []
+  },
+  {
+    "code": "vep",
+    "title": "Čai",
+    "url": "https://vep.wikipedia.org/wiki/%C4%8Cai",
+    "name": "Veps",
+    "autonym": "vepsän kel’",
+    "bytes": 1312,
+    "badges": []
+  },
+  {
+    "code": "vi",
+    "title": "Trà",
+    "url": "https://vi.wikipedia.org/wiki/Tr%C3%A0",
+    "name": "vietnamita",
+    "autonym": "Tiếng Việt",
+    "bytes": 89011,
+    "badges": []
+  },
+  {
+    "code": "vro",
+    "title": "Tii",
+    "url": "https://fiu-vro.wikipedia.org/wiki/Tii",
+    "name": "Võro",
+    "autonym": "võro",
+    "bytes": 417,
+    "badges": []
+  },
+  {
+    "code": "wa",
+    "title": "Té (aboere do teyî)",
+    "url": "https://wa.wikipedia.org/wiki/T%C3%A9_(aboere_do_tey%C3%AE)",
+    "name": "valão",
+    "autonym": "walon",
+    "bytes": 1584,
+    "badges": []
+  },
+  {
+    "code": "war",
+    "title": "Seminte",
+    "url": "https://war.wikipedia.org/wiki/Seminte",
+    "name": "waray",
+    "autonym": "Winaray",
+    "bytes": 6721,
+    "badges": []
+  },
+  {
+    "code": "wuu",
+    "title": "茶",
+    "url": "https://wuu.wikipedia.org/wiki/%E8%8C%B6",
+    "name": "wu",
+    "autonym": "吴语",
+    "bytes": 397,
+    "badges": []
+  },
+  {
+    "code": "xmf",
+    "title": "ჩაი",
+    "url": "https://xmf.wikipedia.org/wiki/%E1%83%A9%E1%83%90%E1%83%98",
+    "name": "Mingrelian",
+    "autonym": "მარგალური",
+    "bytes": 3515,
+    "badges": []
+  },
+  {
+    "code": "yi",
+    "title": "טיי",
+    "url": "https://yi.wikipedia.org/wiki/%D7%98%D7%99%D7%99",
+    "name": "iídiche",
+    "autonym": "ייִדיש",
+    "bytes": 2776,
+    "badges": []
+  },
+  {
+    "code": "yue",
+    "title": "茶",
+    "url": "https://zh-yue.wikipedia.org/wiki/%E8%8C%B6",
+    "name": "cantonês",
+    "autonym": "粵語",
+    "bytes": 1977,
+    "badges": []
+  },
+  {
+    "code": "za",
+    "title": "Caz",
+    "url": "https://za.wikipedia.org/wiki/Caz",
+    "name": "zhuang",
+    "autonym": "Vahcuengh",
+    "bytes": 357,
+    "badges": []
+  },
+  {
+    "code": "zea",
+    "title": "Thee",
+    "url": "https://zea.wikipedia.org/wiki/Thee",
+    "name": "Zeelandic",
+    "autonym": "Zeêuws",
+    "bytes": 307,
+    "badges": []
+  },
+  {
+    "code": "zgh",
+    "title": "ⴰⵜⴰⵢ",
+    "url": "https://zgh.wikipedia.org/wiki/%E2%B4%B0%E2%B5%9C%E2%B4%B0%E2%B5%A2",
+    "name": "tamazight marroquino padrão",
+    "autonym": "ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ",
+    "bytes": 2268,
+    "badges": []
+  },
+  {
+    "code": "zh",
+    "title": "茶",
+    "url": "https://zh.wikipedia.org/wiki/%E8%8C%B6",
+    "name": "chinês",
+    "autonym": "中文",
+    "bytes": 149154,
+    "badges": []
+  },
+  {
+    "code": "zu",
+    "title": "Itiye",
+    "url": "https://zu.wikipedia.org/wiki/Itiye",
+    "name": "zulu",
+    "autonym": "isiZulu",
+    "bytes": 225,
+    "badges": []
+  }
+]
