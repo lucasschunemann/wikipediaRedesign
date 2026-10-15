@@ -36,6 +36,18 @@ Para recalcular a tabela de contraste dos temas:
 npm run contrast
 ```
 
+## Publicar na Vercel
+
+O `vercel.json` já define tudo: a Vercel instala as dependências, roda `npm run build` (que usa só os dados em `data/cha/`, sem rede) e publica a pasta `site/`. Todas as respostas levam o cabeçalho `X-Robots-Tag: noindex`, para o protótipo não aparecer em buscadores.
+
+Pelo GitHub: suba o repositório e importe o projeto na Vercel, sem mudar nenhuma configuração.
+
+Pela linha de comando, na raiz do projeto:
+
+```bash
+npx vercel --prod
+```
+
 ## Estrutura
 
 ```
