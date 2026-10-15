@@ -18,9 +18,9 @@ const talk = JSON.parse(await readFile(join(data, 'talk.json'), 'utf8'));
 const languages = JSON.parse(await readFile(join(data, 'languages.json'), 'utf8'));
 
 // Larguras das imagens por contexto: margem no computador, coluna no resto.
-const imageSizes = '(min-width: 78em) 16rem, (min-width: 48em) 24rem, calc(100vw - 2rem)';
+const imageSizes = '(min-width: 48em) 44rem, calc(100vw - 2rem)';
 
-const article = transformArticle(html, { lang: meta.lang, title: meta.title, strings: S, imageSizes });
+const article = transformArticle(html, { lang: meta.lang, title: meta.title, strings: S, imageSizes, heroSizes: imageSizes });
 
 const date = (iso) => {
   const d = new Date(iso);
@@ -96,6 +96,9 @@ const toolLinks = [
   { id: 'cite', label: S.cite, href: `https://${meta.lang}.wikipedia.org/w/index.php?title=Especial:Citar/${encodeURIComponent(meta.title)}&id=${meta.revision}` },
 ];
 
+// Sumário dentro do artigo, logo depois da introdução. É o mesmo da navegação de seções, sem a introdução.
+const inlineToc = `<nav class="intoc" id="neste-artigo" aria-labelledby="intoc-titulo"><h2 id="intoc-titulo">${S.inlineToc}</h2>${tocList(article.toc)}</nav>`;
+
 const prefsScript = (await readFile(join(root, 'src', 'prefs-inline.js'), 'utf8')).trim();
 
 const page = `<!doctype html>
@@ -114,25 +117,30 @@ const page = `<!doctype html>
 </head>
 <body>
 <a class="skip" href="#texto">${S.skipToText}</a>
-<a class="skip" href="#secoes">${S.skipToSections}</a>
+<a class="skip" href="#neste-artigo">${S.skipToSections}</a>
 
 <p class="concept-note">${S.conceptNote} <a href="${meta.urls.page}">${S.conceptLink}</a></p>
 
 <header class="topbar">
-  <a class="wordmark" href="https://${meta.lang}.wikipedia.org/">${S.siteName}</a>
-  <button class="topbar-location" type="button" data-open="sections">
-    <span class="visually-hidden">${S.currentSection}: </span><span class="topbar-section"></span>
-  </button>
+  <div class="topbar-center">
+    <a class="wordmark" href="https://${meta.lang}.wikipedia.org/">${S.siteName}</a>
+    <button class="topbar-location" type="button" data-open="sections">
+      <span class="visually-hidden">${S.currentSection}: </span><span class="topbar-title">${escapeHtml(meta.displayTitle)}</span><span class="topbar-section"></span>
+    </button>
+  </div>
   <form class="global-search" role="search" action="https://${meta.lang}.wikipedia.org/w/index.php">
     <label class="visually-hidden" for="busca-wikipedia">${S.searchWikipedia}</label>
     <input id="busca-wikipedia" name="search" type="search" placeholder="${S.searchWikipedia}" autocomplete="off">
-    <button class="btn" type="submit">${S.searchButton}</button>
+    <button class="btn search-submit" type="submit">${S.searchButton}</button>
   </form>
-  <nav class="account" aria-label="${S.accountNav}">
-    <a href="https://donate.wikimedia.org/?uselang=pt">${S.donate}</a>
-    <a href="https://${meta.lang}.wikipedia.org/w/index.php?title=Especial:Entrar&returnto=${encodeURIComponent(meta.title)}">${S.login}</a>
-  </nav>
-  <button class="btn btn-options" type="button" data-open="options">${S.readingOptions}</button>
+  <div class="topbar-end">
+    <button class="btn btn-options" type="button" data-open="options">${S.readingOptions}</button>
+    <nav class="account" aria-label="${S.accountNav}">
+      <a href="https://${meta.lang}.wikipedia.org/w/index.php?title=Especial:Entrar&returnto=${encodeURIComponent(meta.title)}">${S.login}</a>
+      <a class="pill" href="https://donate.wikimedia.org/?uselang=pt">${S.donate}</a>
+    </nav>
+  </div>
+  <div class="progress" aria-hidden="true"><span></span></div>
 </header>
 
 <div class="layout">
@@ -158,13 +166,16 @@ const page = `<!doctype html>
   <main id="texto" tabindex="-1">
     <article class="article" lang="${meta.lang}">
       <header class="article-header" id="inicio">
+        <div class="resume" role="status" hidden></div>
         <h1>${escapeHtml(meta.displayTitle)}</h1>
         ${meta.description ? `<p class="description">${escapeHtml(meta.description)}</p>` : ''}
-        <p class="meta">
-          <span>${S.lastEdit} <time datetime="${meta.timestamp}">${date(meta.timestamp)}</time></span>
-          <span>${fmt(S.editsSince, num(meta.editCount), new Date(meta.firstEdit).getUTCFullYear())}</span>
-          <span>${fmt(S.readingTime, article.stats.minutes)}</span>
-        </p>
+        <div class="byline">
+          <p class="byline-by">${fmt(S.byline, num(meta.contributors), num(meta.editCount), new Date(meta.firstEdit).getUTCFullYear(), meta.urls.history)}</p>
+          <p class="byline-meta">
+            <span>${fmt(S.readingTime, article.stats.minutes)}</span>
+            <span>${S.lastEdit} <time datetime="${meta.timestamp}">${date(meta.timestamp)}</time></span>
+          </p>
+        </div>
         <ul class="tools" aria-label="${S.articleTools}">
           ${toolLinks
             .map(
@@ -172,12 +183,13 @@ const page = `<!doctype html>
                 `<li><a class="tool" href="${t.href}" data-panel="${t.id}">${t.label}${t.count != null ? ` <span class="tool-count">${num(t.count)}</span>` : ''}</a></li>`,
             )
             .join('\n          ')}
+          <li class="tools-end"><button class="tool" type="button" data-open="sections">${S.sectionsAndSearch}</button></li>
           <li><a class="tool" href="${meta.urls.edit}" title="${S.editHint}">${S.edit}</a></li>
         </ul>
-        <div class="resume" role="status" hidden></div>
+        ${article.hero}
       </header>
       <div class="article-body">
-${article.html}
+${article.html.replace('</section>', `</section>\n${inlineToc}`)}
       </div>
       <footer class="article-footer">
         <p><span class="footer-label">${S.categories}:</span> ${meta.categories

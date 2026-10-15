@@ -4,21 +4,23 @@ Cada funcionalidade responde a um problema da [auditoria](01-auditoria.md). Para
 
 ## Seções e posição atual
 
-![Busca e sumário lateral no computador](imagens/redesign-busca.jpg)
+> Atualização da versão 2: o sumário deixou de ser lateral. A escolha abaixo descreve a versão 2; o que valia na versão 1 e por que mudou está em [11-versao-2-editorial.md](11-versao-2-editorial.md#o-sumário).
+
+![Painel de seções e busca no computador](imagens/redesign-busca.jpg)
 
 Problema (P3). O leitor não sabe em que parte do artigo está, principalmente no celular, onde não existe sumário.
 
 Alternativas. Barra de progresso com porcentagem no topo da página. Sumário só no topo do artigo, como no Vector antigo. Seções recolhidas, como no Minerva. Um elemento fixo que mostra a seção atual e abre o sumário.
 
-Escolha. Um elemento fixo em todas as larguras. No computador é o próprio sumário lateral, com a seção atual em negrito e uma barra à esquerda. No tablet é a barra do topo, que mostra o caminho ("Cultivo › Portugal › Açores"). No celular é a barra inferior, com o rótulo "Seções" e o caminho. Tocar no caminho abre o sumário completo.
+Escolha. Um elemento fixo que mostra a seção atual e abre o sumário. No computador e no tablet é a barra do topo: enquanto o título está à vista ela mostra a marca, e depois mostra "Chá · Cultivo › Portugal › Açores". No celular é a barra inferior, com o rótulo "Seções" e o caminho. Uma linha de progresso de 2 px sob a barra do topo cresce com a rolagem. O sumário completo, com a busca, abre num painel lateral (computador) ou numa folha (celular). Além disso, logo depois da introdução há um bloco "Neste artigo", em duas colunas, com o mesmo sumário.
 
-Por quê. A porcentagem diz quanto falta, mas não diz onde o leitor está. "Açores" diz as duas coisas, porque o sumário mostra o que vem antes e depois. O caminho completo importa no Chá porque "Açores" e "Vila do Conde" só fazem sentido dentro de "Portugal".
+Por quê. A porcentagem sozinha diz quanto falta, mas não diz onde o leitor está; por isso a linha de progresso acompanha o caminho e não o substitui. "Açores" diz as duas coisas, porque o sumário mostra o que vem antes e depois. O caminho completo importa no Chá porque "Açores" e "Vila do Conde" só fazem sentido dentro de "Portugal".
 
 A seção atual é a do último título que passou de um quarto da altura da tela. Com a metade da tela como referência, a troca aconteceria tarde: o leitor já estaria nas primeiras linhas da seção nova e a barra ainda mostraria a anterior.
 
 Descartado. Mostrar o tempo de leitura de cada seção no sumário. Ajudaria a decidir o que ler, mas acrescenta um número a cada linha e o sumário deixa de ser escaneável.
 
-Sem JavaScript. O sumário aparece como lista de links no topo da página, como um índice de livro.
+Sem JavaScript. O bloco "Neste artigo" funciona como um índice de livro, com links para cada seção.
 
 ## Busca no artigo
 
@@ -62,13 +64,13 @@ Sem JavaScript. A chamada leva à referência na lista, e "Citada em" leva de vo
 
 ## Retomar a leitura
 
-![Aviso "Você parou em" no topo do artigo](imagens/redesign-desktop.jpg)
+![Aviso "Você parou em" acima do título](imagens/redesign-opcoes-desktop.jpg)
 
 Problema (P7). Nenhuma versão lembra onde a leitura parou.
 
 Alternativas. Rolar automaticamente até o ponto salvo. Mostrar uma oferta para continuar.
 
-Escolha. Oferta. Ao voltar ao artigo, aparece "Você parou em Cultivo › Portugal › Açores, em 15 de outubro" com os botões Continuar e Dispensar.
+Escolha. Oferta. Ao voltar ao artigo, aparece acima do título uma nota "Você parou em Cultivo › Portugal › Açores, em 15 de outubro" com os botões Continuar e Dispensar.
 
 Por quê. Rolar sozinho tira o controle do leitor e desorienta quem voltou para ler a introdução de novo. A posição é guardada pelo parágrafo, não pela distância em pixels, para continuar certa se o leitor mudar o tamanho do texto ou a largura da janela. Ela é salva no navegador (localStorage), então vale só para aquele aparelho, e nada sai dele. Se o leitor volta ao topo, a posição é apagada, porque quem rola de volta até o começo terminou ou desistiu.
 
@@ -82,7 +84,7 @@ Problema (P8). A ficha resume o artigo, mas não leva ao trecho do texto que tra
 
 Alternativas. Transformar cada item da ficha num botão de busca (os itens já são links para outros artigos, então haveria dois alvos no mesmo texto). Ligar cada linha da ficha a uma seção por correspondência de nomes (funcionaria mal: "População" não se chama "Demografia"). Uma lista opcional, no pé da ficha, com as seções em que cada item aparece.
 
-Escolha. A lista opcional, fechada por padrão, chamada "Onde estes itens aparecem no texto". Para cada item da ficha mostra as seções onde ele aparece como palavra inteira. Cada seção é um botão que leva à primeira ocorrência e a destaca.
+Escolha. Na versão 2 a ficha é um bloco com fundo cinza na coluna, depois do primeiro parágrafo, e a lista continua dentro dela. A lista opcional, fechada por padrão, chamada "Onde estes itens aparecem no texto". Para cada item da ficha mostra as seções onde ele aparece como palavra inteira. Cada seção é um botão que leva à primeira ocorrência e a destaca.
 
 Por quê. No Chá, a lista mostra que cafeína aparece em Cultura do chá, Substitutos do chá e Preparação, e que tanino só aparece em Preparação. Também mostra que "tea leaves", "steeping" e "boiling" não aparecem no texto: são rótulos do Wikidata sem tradução para o português. Esse é um achado útil para leitores atentos e para editores, e a interface o revela sem comentar o conteúdo.
 

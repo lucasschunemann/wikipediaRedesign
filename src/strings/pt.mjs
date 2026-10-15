@@ -27,6 +27,9 @@ export default {
 
   // Cabeçalho do artigo
   lastEdit: 'Editado em',
+  byline: 'Escrito por <a href="{3}">{0} colaboradores</a> em {1} edições desde {2}',
+  inlineToc: 'Neste artigo',
+  sectionsAndSearch: 'Seções e busca',
   editsSince: '{0} edições desde {1}',
   readingTime: 'Cerca de {0} minutos de leitura',
   articleTools: 'Sobre este artigo',
@@ -83,9 +86,9 @@ export default {
   themes: { auto: 'Automático', light: 'Claro', paper: 'Papel', dark: 'Escuro' },
   themeHint: 'Automático segue o sistema. Papel tem fundo mais quente e menos brilho, para leituras longas.',
   font: 'Fonte',
-  fonts: { system: 'Sistema', serif: 'Serifada', inter: 'Inter', literata: 'Literata', sourceserif: 'Source Serif', legible: 'Legibilidade' },
+  fonts: { serif: 'Serifada', system: 'Sem serifa', inter: 'Inter', literata: 'Literata', sourceserif: 'Source Serif', legible: 'Legibilidade' },
   fontHint:
-    'Sistema e Serifada usam fontes já instaladas no aparelho. Inter (48 KB), Literata (79 KB), Source Serif 4 (103 KB) e Atkinson Hyperlegible (48 KB, na opção Legibilidade, com mais espaço entre letras e palavras) só são baixadas quando escolhidas.',
+    'Serifada e Sem serifa usam fontes já instaladas no aparelho. Inter (48 KB), Literata (79 KB), Source Serif 4 (103 KB) e Atkinson Hyperlegible (48 KB, na opção Legibilidade, com mais espaço entre letras e palavras) só são baixadas quando escolhidas.',
   size: 'Tamanho do texto',
   sizeDown: 'Diminuir texto',
   sizeUp: 'Aumentar texto',

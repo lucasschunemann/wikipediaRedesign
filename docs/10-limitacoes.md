@@ -13,6 +13,13 @@ Também por isso, o desenho não foi testado com:
 
 O código foi escrito pensando nesses casos (propriedades lógicas no CSS, largura em `ch`, textos de interface num arquivo só, tabelas com rolagem própria), mas nada disso foi verificado.
 
+## Riscos da versão 2
+
+Dois pontos da [versão 2](11-versao-2-editorial.md) são apostas, não resultados:
+
+- Sem sumário lateral, saltar entre seções no computador custa um toque a mais. A barra do topo, a linha de progresso e o bloco "Neste artigo" compensam no desenho, mas não foram medidos com leitores. Se o teste mostrar que a perda pesa, o caminho é um sumário flutuante em telas largas, sem mexer na coluna.
+- A abertura com imagem depende de o artigo ter uma imagem na ficha. Sem ela, o cabeçalho termina nas ferramentas e a primeira tela fica mais seca. Esse caso não foi desenhado.
+
 ## Dados congelados
 
 O artigo, o histórico, a discussão e os idiomas são da revisão 73198638, baixados em 15 de outubro de 2026. Na Wikipédia real esses dados viriam do servidor a cada visita. O painel de histórico, por exemplo, mostra as edições até essa data.

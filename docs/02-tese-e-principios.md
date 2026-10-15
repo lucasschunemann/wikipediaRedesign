@@ -28,13 +28,13 @@ O que removi foram elementos de interface das predefinições que não carregam 
 
 ### 2. A coluna de texto tem largura fixa
 
-Nada flutua dentro da coluna de texto. Infobox e figuras ficam na margem quando há espaço e entre parágrafos quando não há. A medida da linha fica entre 55 e 75 caracteres em qualquer tela, e quem decide onde dentro dessa faixa é o leitor.
+Nada flutua dentro da coluna de texto. Ficha e figuras ocupam a coluna, entre parágrafos, e a imagem de abertura pode passar um pouco da coluna porque fica fora do texto. A medida da linha fica entre 55 e 75 caracteres em qualquer tela, e quem decide onde dentro dessa faixa é o leitor.
 
-Essa regra resolve P1 e P2 de uma vez. É também a decisão de layout que mais influenciou o resto, porque obriga a ter uma coluna de margem no computador.
+Essa regra resolve P1 e P2 de uma vez. Na versão 1 ela exigia uma coluna de margem no computador; na versão 2 a coluna é única, que é o que o pedido de Medium e Substack pedia, e a regra ficou mais simples.
 
 ### 3. O leitor sempre sabe em que seção está
 
-Em qualquer largura de tela existe um elemento fixo que mostra a seção atual: o sumário lateral no computador, a barra superior no tablet e a barra inferior no celular. Ao tocar nele, o leitor chega ao sumário completo e à busca no artigo.
+Em qualquer largura de tela existe um elemento fixo que mostra a seção atual: a barra do topo no computador e no tablet (depois que o título sai da tela) e a barra inferior no celular. Ao tocar nele, o leitor chega ao sumário completo e à busca no artigo. Na versão 1 esse elemento era um sumário lateral sempre visível; a troca por uma barra está em [11-versao-2-editorial.md](11-versao-2-editorial.md#o-sumário).
 
 ### 4. A página funciona sem JavaScript
 
@@ -46,7 +46,7 @@ Isso vem da restrição de conexão ruim. Em 2G, o HTML chega bem antes do JavaS
 
 A página atual do Chá transfere cerca de 54 KB de HTML e 178 KB de outros recursos em 37 requisições. O redesign tem um orçamento menor que isso: HTML de até 60 KB comprimido, CSS de até 15 KB, JavaScript de até 20 KB, nenhuma fonte baixada por padrão. As imagens são as mesmas do artigo, servidas pelo mesmo servidor da Wikimedia, e carregam só quando se aproximam da tela.
 
-O resultado ficou em 24,7 KB de HTML, 7,7 KB de CSS e 11,8 KB de JavaScript, comprimidos. O orçamento eliminou ideias boas na aparência; fontes customizadas são o exemplo principal (ver [04-tipografia-e-layout.md](04-tipografia-e-layout.md#família-tipográfica)).
+O resultado ficou em 25,1 KB de HTML, 8,4 KB de CSS e 12,0 KB de JavaScript, comprimidos (versão 2). O orçamento eliminou ideias boas na aparência; fontes customizadas são o exemplo principal (ver [04-tipografia-e-layout.md](04-tipografia-e-layout.md#família-tipográfica)).
 
 ### 6. Movimento mínimo e nada se move sozinho
 

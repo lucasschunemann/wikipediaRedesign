@@ -13,7 +13,6 @@
   const fmt = (t, ...a) => t.replace(/\{(\d)\}/g, (_, i) => a[i]);
   const nf = new Intl.NumberFormat(S.locale);
   const small = matchMedia('(max-width: 47.99em)');
-  const rail = matchMedia('(min-width: 64em)');
   const body = $('.article-body');
 
   function h(tag, attrs, ...kids) {
@@ -77,7 +76,7 @@
   /* ---------- Preferências de leitura ---------- */
 
   const PREF_KEY = 'leitura';
-  const DEFAULTS = { theme: 'auto', font: 'system', size: '0', leading: 'normal', measure: 'normal' };
+  const DEFAULTS = { theme: 'auto', font: 'serif', size: '0', leading: 'normal', measure: 'normal' };
   let prefs = {};
   try {
     prefs = JSON.parse(localStorage.getItem(PREF_KEY) || '{}');
@@ -148,14 +147,21 @@
     const label = pathOf(id);
     if (topSection) topSection.textContent = label;
     if (bottomSection) bottomSection.textContent = label;
-    // Mantém o item atual visível no sumário lateral, sem rolar a página.
-    const link = tocLinks.find((a) => a.dataset.target === id);
-    const nav = $('.layout > .sections');
-    if (link && nav && rail.matches && nav.contains(link)) {
-      const r = link.getBoundingClientRect();
-      const n = nav.getBoundingClientRect();
-      if (r.top < n.top + 40 || r.bottom > n.bottom - 40) nav.scrollTop += r.top - n.top - n.height / 3;
-    }
+  }
+
+  // Barra do topo: depois do título, a marca dá lugar ao título e à seção atual (só no computador).
+  // A linha fina embaixo mostra quanto do texto já passou. Os dois mudam por causa da rolagem, não sozinhos.
+  const topbar = $('.topbar');
+  const progress = $('.progress span');
+  const h1 = $('.article h1');
+  const endMark = $('.article-footer');
+  function updateReading() {
+    topbar.classList.toggle('is-reading', h1.getBoundingClientRect().bottom < topOffset());
+    if (!progress) return;
+    const start = body.getBoundingClientRect().top + window.scrollY;
+    const total = endMark.getBoundingClientRect().top + window.scrollY - start - window.innerHeight * 0.6;
+    const pct = Math.max(0, Math.min(1, (window.scrollY - start + window.innerHeight * 0.4) / Math.max(total, 1)));
+    progress.style.width = `${(pct * 100).toFixed(1)}%`;
   }
 
   let ticking = false;
@@ -165,6 +171,7 @@
     requestAnimationFrame(() => {
       ticking = false;
       updateCurrent();
+      updateReading();
       positionRefnote();
     });
   }
@@ -212,11 +219,10 @@
     secDialog.showModal();
     const cur = $('.toc a[aria-current]', secDialog) || $('.toc a', secDialog);
     cur.scrollIntoView({ block: 'center' });
-    cur.focus();
+    // No computador, o campo de busca vem primeiro; no celular, o foco no campo abriria o teclado.
+    if (!small.matches) findInput.focus();
+    else cur.focus();
   }
-  rail.addEventListener('change', () => {
-    if (rail.matches && secDialog.open) closeDialog(secDialog);
-  });
 
   document.addEventListener('click', (e) => {
     const opener = e.target.closest('[data-open]');
@@ -230,7 +236,7 @@
       closeDialog(closer.closest('dialog'));
       return;
     }
-    const tocLink = e.target.closest('.toc a[data-target]');
+    const tocLink = e.target.closest('.toc a[data-target], .intoc a[data-target]');
     if (tocLink) {
       e.preventDefault();
       const id = tocLink.dataset.target;
@@ -1054,5 +1060,6 @@
     if (target && window.scrollY < 10) scrollToNode(target);
   }
   updateCurrent();
+  updateReading();
   offerResume();
 })();

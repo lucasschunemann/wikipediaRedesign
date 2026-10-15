@@ -2,6 +2,8 @@
 
 Protótipo conceitual da página de artigo da Wikipédia, feito com o artigo [Chá](https://pt.wikipedia.org/wiki/Ch%C3%A1) da Wikipédia em português. A documentação do processo está em [docs/](docs/README.md).
 
+A versão atual (2) trata a página como uma publicação, no formato de Medium e Substack: coluna única, imagem de abertura, autoria no cabeçalho e navegação pela barra do topo. A versão 1, com sumário lateral e acabamento Notion e Linear, está na tag `v1-notion` (`git checkout v1-notion`).
+
 ## Ver o site
 
 O site pronto está em `site/`. Qualquer servidor de arquivos estáticos serve:

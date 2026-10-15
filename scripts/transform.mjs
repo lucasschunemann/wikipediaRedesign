@@ -9,7 +9,7 @@
 import { parseHTML } from 'linkedom';
 
 const WORDS_PER_MINUTE = 230;
-const THUMB_WIDTHS = [330, 500];
+const THUMB_WIDTHS = [330, 500, 960];
 
 // Elementos de predefinição cujo estilo inline é só aparência do Vector
 // (cores de fundo, bordas, larguras fixas). Nesses, o estilo inline sai.
@@ -101,11 +101,14 @@ export function transformArticle(html, ctx) {
     if (isThumb && /\/\d+px-/.test(src) && fileWidth) {
       const set = THUMB_WIDTHS.filter((w) => w < fileWidth).map((w) => `${src.replace(/\/\d+px-/, `/${w}px-`)} ${w}w`);
       if (fileWidth <= THUMB_WIDTHS.at(-1)) {
-        const original = src.replace('/thumb/', '/').replace(/\/\d+px-[^/]+$/, '');
+        // O arquivo original fica em upload.wikimedia.org; thumb.wikimedia.org só serve miniaturas.
+        const original = src.replace('thumb.wikimedia.org', 'upload.wikimedia.org').replace('/thumb/', '/').replace(/\/\d+px-[^/]+$/, '');
         set.push(`${original} ${fileWidth}w`);
       }
       img.setAttribute('srcset', set.join(', '));
       img.setAttribute('sizes', ctx.imageSizes);
+      // Largura natural do arquivo: a figura nunca passa dela, para não ampliar foto pequena.
+      img.closest('figure')?.setAttribute('style', `--w:${fileWidth}px`);
     } else if (img.hasAttribute('srcset')) {
       img.setAttribute(
         'srcset',
@@ -216,9 +219,25 @@ export function transformArticle(html, ctx) {
     if (kids.indexOf(mainBox) < kids.indexOf(firstPara)) firstPara.after(mainBox);
   }
 
+  // A imagem principal da ficha vira a imagem de abertura do artigo, fora da ficha.
+  // O texto da legenda e o arquivo são os mesmos; só muda onde a figura é mostrada.
+  let hero = '';
+  const heroFig = mainBox?.querySelector('figure.infobox-image');
+  if (heroFig) {
+    heroFig.className = 'hero';
+    const himg = heroFig.querySelector('img');
+    if (himg) {
+      himg.setAttribute('sizes', ctx.heroSizes);
+      himg.setAttribute('loading', 'eager');
+      himg.setAttribute('fetchpriority', 'high');
+    }
+    hero = heroFig.outerHTML;
+    heroFig.remove();
+  }
+
   // 9. Figuras.
   for (const fig of body.querySelectorAll('figure')) {
-    if (fig.classList.contains('infobox-image')) continue;
+    if (fig.classList.contains('infobox-image') || fig.classList.contains('hero')) continue;
     fig.className = 'figure';
   }
 
@@ -402,6 +421,7 @@ export function transformArticle(html, ctx) {
 
   return {
     html: contentHTML,
+    hero,
     toc,
     stats: {
       words: totalWords,

@@ -1,5 +1,7 @@
 # 8. Celular, tablet e computador
 
+> Atualização da versão 2: a página tem uma coluna em todas as larguras, e o sumário lateral e a margem direita da versão 1 saíram. O que cada aparelho pede continua valendo; o que muda é como a página responde. Ver [11-versao-2-editorial.md](11-versao-2-editorial.md).
+
 Mudar o número de colunas é a parte fácil. A pergunta que guiou esta etapa foi outra: o que a pessoa está fazendo quando abre o artigo em cada aparelho, e o que precisa estar ao alcance nesse momento.
 
 ## Celular
@@ -10,7 +12,7 @@ Quem abre "Chá" no celular quase sempre veio de um buscador, procurando uma coi
 
 O que importa, então, é chegar rápido ao trecho certo e conseguir voltar depois. Por isso:
 
-- A primeira tela mostra o título, a descrição curta, os metadados, as ferramentas, a nota de desambiguação, o aviso de fontes e o começo do texto. A ficha vem depois do primeiro parágrafo.
+- A primeira tela mostra o título, a descrição curta, a autoria, o tempo de leitura, as ferramentas e o começo da imagem de abertura (em 3:2). O texto começa logo abaixo. A ficha vem depois do primeiro parágrafo.
 - A barra inferior fica ao alcance do polegar e mostra a seção atual. Tocar nela abre o sumário com a busca em cima.
 - As seções não ficam recolhidas. O sumário faz o papel de visão geral (ver [D05](registro-de-decisoes.md)).
 - A retomada de leitura serve à leitura interrompida: "Você parou em Preparação".
@@ -27,19 +29,17 @@ Considerei colocar a seção atual no topo da tela, como no tablet. Ficou embaix
 
 O tablet é o aparelho da leitura longa e relaxada: no sofá, na cama, com o aparelho apoiado. Aqui a tipografia e as opções de leitura pesam mais que a navegação.
 
-Em pé (768 px), a página tem uma coluna centralizada com margens largas. A barra do topo fica fixa e mostra a seção atual; tocar nela abre o sumário pela esquerda. Os painéis abrem pela direita e deixam parte do texto visível. Doar e Entrar descem para o rodapé para dar espaço à seção atual na barra.
-
-Deitado (a partir de 1024 px), o sumário lateral aparece fixo, como no computador.
+Em pé (768 px) e deitado, a página é a mesma do computador: uma coluna centralizada com margens largas e a barra do topo fixa. A barra tem três zonas (busca, marca ou seção atual, e opções, entrar e doar). Tocar na seção atual abre o painel de seções pela esquerda. Os painéis abrem pela direita e deixam parte do texto visível.
 
 ## Computador
 
 O computador é onde se pesquisa: várias abas, anotações, citação. O leitor alterna entre ler e consultar.
 
-- O sumário e a busca ficam sempre visíveis à esquerda.
-- A partir de 1248 px, a ficha e as figuras vão para a margem direita, ao lado do parágrafo em que foram colocadas, e a coluna de texto fica livre.
+- Uma coluna centralizada de 610 a 665 px, com a imagem de abertura 35% mais larga. Não há sumário lateral: a seção atual aparece na barra do topo depois do título e o painel "Seções e busca" abre com um clique.
+- O bloco "Neste artigo" fica no texto, em duas colunas.
 - Os painéis abrem na lateral direita sem bloquear o texto. Dá para ler a seção Preparação com o histórico aberto ao lado.
 - A prévia de referência abre ao lado da chamada, sem tirar o leitor do lugar.
-- A barra do topo fica fixa com a busca da Wikipédia e as opções de leitura.
+- A barra do topo fica fixa, com a busca da Wikipédia, a marca (que vira o título e a seção atual) e as opções de leitura, Entrar e Doar. Uma linha de 2 px embaixo mostra o progresso.
 
 ## O que não muda entre aparelhos
 

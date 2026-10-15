@@ -1,8 +1,8 @@
 # Redesign de leitura da Wikipédia: o artigo Chá
 
-Redesign conceitual da página de artigo da Wikipédia, demonstrado com o artigo [Chá](https://pt.wikipedia.org/wiki/Ch%C3%A1) da Wikipédia em português. O foco é orientação e leitura: encontrar a informação dentro de um artigo longo, ler com conforto por muito tempo e usar as ferramentas que a Wikipédia já tem sem que elas fiquem escondidas. O texto do artigo não foi resumido, encurtado nem reescrito.
+Redesign conceitual da página de artigo da Wikipédia, na versão 2 com estrutura de publicação (Medium e Substack), demonstrado com o artigo [Chá](https://pt.wikipedia.org/wiki/Ch%C3%A1) da Wikipédia em português. O foco é orientação e leitura: encontrar a informação dentro de um artigo longo, ler com conforto por muito tempo e usar as ferramentas que a Wikipédia já tem sem que elas fiquem escondidas. O texto do artigo não foi resumido, encurtado nem reescrito.
 
-![A página redesenhada no computador](imagens/redesign-desktop.jpg)
+![A versão 2 no computador](imagens/redesign-desktop.jpg)
 
 ## Documentos, na ordem do processo
 
@@ -16,17 +16,18 @@ Redesign conceitual da página de artigo da Wikipédia, demonstrado com o artigo
 8. [Celular, tablet e computador](08-responsivo.md): o que cada contexto de leitura pede.
 9. [Desempenho e testes](09-desempenho-e-testes.md): peso, testes feitos, erros encontrados e o que não foi testado.
 10. [Limitações](10-limitacoes.md): o que o conceito não cobre e o que faltou verificar.
+11. [Versão 2: a Wikipédia como publicação](11-versao-2-editorial.md): a mudança de estrutura no formato de Medium e Substack. A versão 1 está na tag `v1-notion`.
 
-O [registro de decisões](registro-de-decisoes.md) reúne as 19 decisões principais no formato problema, alternativas, escolha e motivo.
+O [registro de decisões](registro-de-decisoes.md) reúne as 24 decisões principais no formato problema, alternativas, escolha e motivo.
 
 ## Em números
 
 | | Página atual (Vector 2022) | Redesign |
 | --- | --- | --- |
 | Caracteres por linha no computador | 64 a 121 no mesmo artigo | 65 (opções de 55 e 75), em qualquer das seis fontes |
-| Peso na primeira visita, sem imagens | cerca de 232 KB, 37 requisições | 44,2 KB, 3 requisições |
+| Peso na primeira visita, sem imagens | cerca de 232 KB, 37 requisições | 45,5 KB, 3 requisições |
 | Citar | dentro de um menu de 18 itens | no cabeçalho, 6 formatos, data de acesso correta |
-| Sumário no celular | não há | barra inferior com a seção atual |
+| Sumário no celular | não há | barra inferior com a seção atual e painel de seções |
 | Violações automáticas de WCAG 2.2 AA (axe) | não medido | 0 nos três temas |
 
 ## Créditos

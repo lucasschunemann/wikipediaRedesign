@@ -4,14 +4,14 @@
 
 | Arquivo | Tamanho | Comprimido | Quando carrega |
 | --- | --- | --- | --- |
-| `index.html` (artigo inteiro e interface) | 98,8 KB | 24,7 KB | Sempre |
-| `site.css` | 32,7 KB | 7,7 KB | Sempre |
-| `site.js` | 38,3 KB | 11,8 KB | Sempre, depois do HTML (`defer`) |
+| `index.html` (artigo inteiro e interface) | 101,4 KB | 25,1 KB | Sempre |
+| `site.css` | 36,5 KB | 8,4 KB | Sempre |
+| `site.js` | 38,8 KB | 12,0 KB | Sempre, depois do HTML (`defer`) |
 | `cha-dados.json` (idiomas, histórico, discussão) | 39,5 KB | 10,4 KB | Só quando o leitor abre Idiomas, Histórico ou Discussão |
 | Fontes opcionais: Inter 48 KB, Literata 79 KB, Source Serif 4 103 KB, Atkinson Hyperlegible Next 48 KB | já comprimidas | | Só quando o leitor escolhe a fonte |
 | Imagens | as mesmas do artigo | | Quando se aproximam da tela |
 
-Primeira visita, sem contar imagens: 44,2 KB comprimidos em 3 requisições. A página atual do Vector 2022 transfere cerca de 54 KB de HTML e 178 KB de outros recursos em 37 requisições (ver [auditoria](01-auditoria.md#desempenho-medido)).
+Primeira visita, sem contar imagens: 45,5 KB comprimidos em 3 requisições. A página atual do Vector 2022 transfere cerca de 54 KB de HTML e 178 KB de outros recursos em 37 requisições (ver [auditoria](01-auditoria.md#desempenho-medido)).
 
 O orçamento definido no começo era 60 KB de HTML, 15 KB de CSS e 20 KB de JavaScript, comprimidos. Os três ficaram abaixo.
 

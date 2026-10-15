@@ -64,7 +64,7 @@ Por quê: O sumário dá a mesma visão geral que as seções recolhidas, inclus
 
 ---
 
-## D06. Coluna de texto fixa e coluna de margem
+## D06. Coluna de texto fixa e coluna de margem (revista em D20)
 
 Problema: A medida da linha varia de 64 a 121 caracteres no mesmo artigo porque infobox e imagens flutuam dentro da coluna (P1).
 
@@ -231,4 +231,64 @@ Alternativas: Inter como padrão (baixa 48 KB em toda primeira visita); sans do 
 Escolha: sans do sistema como padrão, com Inter, Literata, Source Serif 4, serifada do sistema e Atkinson a um clique.
 
 Por quê: a fonte do sistema não custa nenhum byte e, no Mac e no iPhone, é a San Francisco, a fonte da Apple. Inter ficaria quase idêntica e custaria o download. Mantive as serifadas porque algumas pessoas leem melhor com elas e a tese é deixar o leitor decidir. Os fatores de correção da largura da coluna foram recalibrados para as seis famílias (todas entre 65 e 66 caracteres por linha). Detalhes em [04-tipografia-e-layout.md](04-tipografia-e-layout.md#família-tipográfica).
+
+---
+
+## D20. Uma coluna única, no formato de publicação
+
+Problema: a versão 1 tinha três colunas (sumário, texto, margem com ficha e figuras). O pedido passou a ser um redesign estrutural, como um rebranding, com referência em Medium e Substack.
+
+Alternativas: manter a margem e só trocar o estilo; coluna única com sumário em lateral flutuante; coluna única centralizada com sumário no texto e na barra do topo.
+
+Escolha: coluna única centralizada, de 610 a 665 px, com a imagem de abertura 35% mais larga que o texto. Ficha e figuras ocupam a coluna.
+
+Por quê: é a estrutura que Medium e Substack usam e que o pedido descreve. Ela simplifica o responsivo: a mesma página serve do tablet ao monitor, e só a barra de navegação muda.
+
+---
+
+## D21. Tirar o sumário lateral
+
+Problema: o sumário lateral era a resposta mais direta a "onde estou?" (P3), mas ocupava a esquerda da página e impedia o texto de ficar no centro.
+
+Alternativas: manter o sumário lateral com o texto deslocado; sumário flutuante à direita, aparecendo só em telas largas; sumário no texto mais uma barra do topo com a seção atual; sumário em painel.
+
+Escolha: bloco "Neste artigo" logo depois da introdução, barra do topo que mostra o título e a seção atual depois que o título sai da tela, linha de progresso e painel "Seções e busca".
+
+Por quê: o texto no centro é o que o formato pede, e os quatro elementos juntos respondem às três perguntas (onde estou, para onde vou, quanto falta). O custo é um toque a mais para saltar entre seções no computador. É o ponto da versão 2 com mais risco e o primeiro a testar com leitores.
+
+---
+
+## D22. Imagem de abertura e recorte
+
+Problema: a imagem principal estava dentro da ficha, pequena, na margem.
+
+Alternativas: manter na ficha; copiá-la para a abertura (a imagem apareceria duas vezes); movê-la para a abertura.
+
+Escolha: mover. A ficha perde a imagem e fica só com o título e a tabela. A abertura usa a imagem em 16:9 no computador e 3:2 no celular, com recorte de apresentação (`object-fit: cover`).
+
+Por quê: abrir com imagem é a marca dos dois modelos de referência. O recorte é de apresentação e a imagem inteira continua na página do arquivo. O build mudou só o lugar da figura, não o conteúdo.
+
+---
+
+## D23. Autoria coletiva no cabeçalho
+
+Problema: Medium e Substack mostram quem escreveu. A Wikipédia não tem um autor.
+
+Alternativas: não mostrar autoria; mostrar o nome do último editor; mostrar o número de colaboradores e de edições.
+
+Escolha: "Escrito por 289 colaboradores em 531 edições desde 2004", com link para o histórico.
+
+Por quê: o último editor não é o autor. O número diz a verdade sobre o texto (feito por muita gente, ao longo de 22 anos) e leva ao histórico, onde cada nome está.
+
+---
+
+## D24. Marca e botão Doar
+
+Problema: uma mudança de estrutura vendida como rebranding precisa de uma marca.
+
+Alternativas: usar o logotipo da Wikipédia (não é nosso e criaria confusão); criar um símbolo; usar só o nome em tipografia própria.
+
+Escolha: o nome "Wikipédia" em serifa negrito, 24 px, com espaçamento fechado. O botão "Doar" é a única superfície cheia da página, preto com texto branco, em pílula.
+
+Por quê: sem logotipo e sem símbolo, não há risco de ser confundido com o site da Wikimedia. A pílula preta é o que Medium e Substack fazem com a assinatura, e a Wikipédia tem o mesmo único apelo: doar.
 

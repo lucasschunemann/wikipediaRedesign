@@ -1,5 +1,7 @@
 # 5. Sistema visual
 
+> Atualização da versão 2: as cores do tema claro, a fonte padrão e as formas mudaram (neutros mais frios, serifada, pílulas). Os valores abaixo são os da versão 2. O que mudou na estrutura está em [11-versao-2-editorial.md](11-versao-2-editorial.md).
+
 Todos os valores estão como variáveis CSS no começo de `src/site.css`. Esta página explica por que cada um existe.
 
 ## Cor
@@ -9,17 +11,17 @@ A linguagem visual vem do Notion e do Linear: neutros quentes, linhas finas em v
 | Token | Uso | Claro | Papel | Escuro |
 | --- | --- | --- | --- | --- |
 | `--bg` | Fundo da página e dos painéis | #ffffff | #f6f1e7 | #161617 |
-| `--bg-2` | Superfícies: avisos, retomada, hover do sumário | #f7f6f3 | #eee7d8 | #1e1e20 |
-| `--hover` | Item atual do sumário, botão pressionado, escolha marcada | #f0efec | #e8e0cf | #27272a |
-| `--text` | Texto | #37352f | #33291f | #ececed |
-| `--text-2` | Texto secundário: metadados, legendas, rótulos | #6b6964 | #675b4c | #a0a0a6 |
-| `--rule` | Linhas divisórias, que não carregam informação | #ebeae6 | #e2d9c7 | #2b2b2e |
-| `--rule-strong` | Bordas de campos e botões | #8f8c85 | #8b7d69 | #74747b |
+| `--bg-2` | Superfícies: avisos, ficha, retomada, campo de busca do topo | #f7f7f5 | #eee7d8 | #1e1e20 |
+| `--hover` | Item atual do sumário, ferramenta aberta, escolha marcada | #efefec | #e8e0cf | #27272a |
+| `--text` | Texto, botão Doar | #242424 | #33291f | #ececed |
+| `--text-2` | Texto secundário: metadados, legendas, ferramentas | #666666 | #675b4c | #a0a0a6 |
+| `--rule` | Linhas divisórias, que não carregam informação | #e8e8e5 | #e2d9c7 | #2b2b2e |
+| `--rule-strong` | Bordas de campos e botões | #8a8a86 | #8b7d69 | #74747b |
 | `--accent` | Links e anel de foco | #1d5fc4 | #24508f | #7fa9f5 |
 | `--visited` | Links já visitados | #6a4fb3 | #5a4686 | #b8a8ee |
 | `--mark` e `--mark-current` | Destaque da busca e do resultado atual | #fff0a6 / #ffd84d | #f2d57a / #e2ae3d | #4a3c10 / #6b520c |
 
-O texto do tema claro é #37352f, o marrom-acinzentado que o Notion usa no lugar do preto, e o fundo de superfície é #f7f6f3, o cinza quente da barra lateral do Notion. No escuro, #161617 com texto #ececed segue o caminho do Linear: fundo quase preto, sem azul de fundo e sem branco puro.
+O texto do tema claro é #242424, o mesmo preto suave do Medium, e as superfícies são um cinza quase branco (#f7f7f5). Na versão 1, com Notion como referência, o texto era um marrom-acinzentado (#37352f); na versão 2 os neutros ficaram mais frios para a leitura longa. No escuro, #161617 com texto #ececed segue o caminho do Linear: fundo quase preto, sem azul de fundo e sem branco puro.
 
 ### Uma cor de destaque
 
@@ -51,18 +53,18 @@ Calculado por `scripts/contrast.mjs`, que lê as cores direto do CSS.
 
 | Par | Mínimo | Claro | Papel | Escuro |
 | --- | --- | --- | --- | --- |
-| Texto sobre fundo | 4,5:1 | 12,26:1 | 12,62:1 | 15,32:1 |
-| Texto secundário sobre fundo | 4,5:1 | 5,48:1 | 5,87:1 | 6,95:1 |
-| Texto secundário sobre superfície (avisos) | 4,5:1 | 5,07:1 | 5,37:1 | 6,40:1 |
+| Texto sobre fundo | 4,5:1 | 15,52:1 | 12,62:1 | 15,32:1 |
+| Texto secundário sobre fundo | 4,5:1 | 5,74:1 | 5,87:1 | 6,95:1 |
+| Texto secundário sobre superfície (avisos) | 4,5:1 | 5,35:1 | 5,37:1 | 6,40:1 |
 | Link sobre fundo | 4,5:1 | 6,02:1 | 7,12:1 | 7,66:1 |
-| Link sobre superfície | 4,5:1 | 5,57:1 | 6,51:1 | 7,05:1 |
+| Link sobre superfície | 4,5:1 | 5,62:1 | 6,51:1 | 7,05:1 |
 | Link visitado sobre fundo | 4,5:1 | 6,21:1 | 7,03:1 | 8,50:1 |
-| Texto sobre destaque da busca | 4,5:1 | 10,67:1 | 9,86:1 | 9,15:1 |
-| Texto sobre destaque atual | 4,5:1 | 8,86:1 | 7,01:1 | 6,27:1 |
-| Borda de campo e botão sobre fundo | 3:1 | 3,36:1 | 3,56:1 | 3,90:1 |
+| Texto sobre destaque da busca | 4,5:1 | 13,50:1 | 9,86:1 | 9,15:1 |
+| Texto sobre destaque atual | 4,5:1 | 11,22:1 | 7,01:1 | 6,27:1 |
+| Borda de campo e botão sobre fundo | 3:1 | 3,47:1 | 3,56:1 | 3,90:1 |
 | Anel de foco sobre fundo | 3:1 | 6,02:1 | 7,12:1 | 7,66:1 |
 
-Todos os pares passam. Na versão anterior, o destaque do resultado atual no tema escuro tinha 3,84:1; o script acusou e escureci os dois tons de amarelo, e a nova paleta manteve o ajuste.
+Todos os pares passam.
 
 ## Tipo
 
@@ -70,11 +72,11 @@ Todos os pares passam. Na versão anterior, o destaque do resultado atual no tem
 | --- | --- |
 | `--font-system-sans` | -apple-system, Segoe UI Variable Text, Segoe UI, Roboto, Noto Sans, Ubuntu, Helvetica Neue, Arial, sans-serif |
 | `--font-system-serif` | Charter, Sitka Text, Cambria, Georgia, Noto Serif, DejaVu Serif, serif |
-| `--font-text` | Sistema (padrão). Serifada, Inter, Literata, Source Serif 4 ou Atkinson, conforme a escolha |
+| `--font-text` | Serifada do sistema (padrão). Sem serifa, Inter, Literata, Source Serif 4 ou Atkinson, conforme a escolha |
 | `--font-ui` | Sempre a sans do sistema, exceto em Legibilidade |
-| `--title-weight` / `--heading-weight` | 700 e 600 (600 e 600 nas serifadas) |
-| `--text-size` | 1,0625rem no celular, 1,125rem a partir de 48em, vezes a escala escolhida |
-| `--leading` | 1,65 (opções: 1,45 e 1,85) |
+| `--title-weight` / `--heading-weight` | 700 e 700 (700 e 600 nas sans) |
+| `--text-size` | 1,125rem no celular, 1,25rem a partir de 48em, vezes a escala escolhida |
+| `--leading` | 1,7 (opções: 1,5 e 1,9) |
 | `--measure-chars` e `--measure-k` | 55 (opções: 47 e 64) vezes o fator da fonte, em `ch` |
 | `--ui-size` / `--ui-small` | 0,9375rem / 0,875rem |
 
@@ -86,9 +88,9 @@ Uma escala de oito passos em múltiplos de 4 px: 4, 8, 12, 16, 24, 32, 48 e 64. 
 
 ## Forma
 
-Cantos de 6 px em botões, campos e avisos, e de 10 px em imagens e na prévia de referência. Os painéis que sobem da base no celular têm 12 px em cima, para se lerem como uma folha sobre a página.
+Cantos de 6 px em campos, imagens e a imagem de abertura, de 8 px em avisos e na ficha, de 10 px na prévia de referência e em pílula completa nas ferramentas do cabeçalho e no botão Doar. Os painéis que sobem da base no celular têm 12 px em cima, para se lerem como uma folha sobre a página.
 
-Linhas de 1 px em vez de caixas: o item atual do sumário é um fundo cinza arredondado (como a barra lateral do Notion), os botões do cabeçalho têm um contorno fino e o resto separa por espaço.
+Linhas de 1 px em vez de caixas: o cabeçalho do artigo e a barra de ferramentas ficam entre duas linhas finas, como uma matéria de revista, e o resto separa por espaço. O fundo cinza aparece só em três lugares: avisos, a ficha e o campo de busca do topo.
 
 A única sombra do sistema é a da prévia de referência, uma borda de 1 px mais um desfoque de 24 px a 12% de opacidade (a 50% no tema escuro). É o único elemento que flutua sobre o texto, e sem a sombra a borda dele se confundiria com as linhas do parágrafo embaixo. Os painéis laterais não têm sombra: uma linha de 1 px os separa da página.
 
@@ -105,7 +107,7 @@ O sistema tem poucos componentes e todos se repetem.
 | Botão de texto | Fechar, Continuar, Dispensar, Copiar, Limpar, ferramentas do cabeçalho |
 | Grupo de escolha | Tema, fonte, entrelinha, largura da coluna, formato de citação |
 | Campo de busca | Buscar na Wikipédia, buscar neste artigo, filtrar idiomas |
-| Painel | Opções de leitura, Idiomas, Discussão, Histórico, Citar e o sumário em telas menores |
+| Painel | Opções de leitura, Idiomas, Discussão, Histórico, Citar e Seções e busca |
 | Prévia de referência | Ao clicar numa chamada de referência |
 | Linha de lista | Idiomas, edições do histórico, tópicos da discussão |
 | Etiqueta | "reversão", "desfeita", "artigo bom", "destacado" |
@@ -117,4 +119,4 @@ O painel é o mesmo para tudo: no computador ele abre na lateral direita e deixa
 
 Nenhum ícone. Todos os botões dizem o que fazem em texto. A única exceção é "Aa" na barra inferior do celular, que é a convenção de leitores de livros digitais para opções de texto e tem o nome acessível "Opções de leitura".
 
-Nenhum gradiente, vidro, brilho ou imagem de capa. Nenhum card: os parágrafos do artigo não ficam dentro de caixas, e a ficha é só texto com linhas divisórias.
+Nenhum gradiente, vidro, brilho ou ícone. Nenhum card: os parágrafos do artigo não ficam dentro de caixas, e a ficha é só texto com linhas divisórias.

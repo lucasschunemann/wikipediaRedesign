@@ -60,20 +60,20 @@
 :root {
   --font-system-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI Variable Text', 'Segoe UI', Roboto, 'Noto Sans', Ubuntu, 'Helvetica Neue', Arial, sans-serif;
   --font-system-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia, 'Noto Serif', 'DejaVu Serif', serif;
-  --font-text: var(--font-system-sans);
+  --font-text: var(--font-system-serif);
   --font-ui: var(--font-system-sans);
   --text-tracking: 0;
   --word-spacing: normal;
   --title-weight: 700;
-  --heading-weight: 600;
+  --heading-weight: 700;
 
-  /* Escala: 1 = 17 px no celular e 18 px no computador quando o navegador está no padrão de 16 px. */
+  /* Escala: 1 = 18 px no celular e 20 px no computador quando o navegador está no padrão de 16 px. */
   --scale: 1;
-  --text-size: calc(1.0625rem * var(--scale));
-  --leading: 1.65;
+  --text-size: calc(1.125rem * var(--scale));
+  --leading: 1.7;
   /* Largura da coluna em caracteres do próprio texto, corrigida por família (ver docs/04). */
   --measure-chars: 55;
-  --measure-k: 0.9;
+  --measure-k: 1;
 
   /* Espaçamento em múltiplos de 4 px. */
   --s1: 0.25rem;
@@ -88,20 +88,18 @@
   --ui-size: 0.9375rem;
   --ui-small: 0.875rem;
   --radius: 6px;
-  --radius-lg: 10px;
-  --topbar-h: 3.25rem;
-  --rail-w: 14.5rem;
-  --margin-w: 16rem;
-  --gap: 3rem;
+  --radius-lg: 8px;
+  --pill: 999px;
+  --topbar-h: 3.5rem;
 
   /* Tema claro */
   --bg: #ffffff;
-  --bg-2: #f7f6f3;
-  --hover: #f0efec;
-  --text: #37352f;
-  --text-2: #6b6964;
-  --rule: #ebeae6;
-  --rule-strong: #8f8c85;
+  --bg-2: #f7f7f5;
+  --hover: #efefec;
+  --text: #242424;
+  --text-2: #666666;
+  --rule: #e8e8e5;
+  --rule-strong: #8a8a86;
   --accent: #1d5fc4;
   --visited: #6a4fb3;
   --mark: #fff0a6;
@@ -173,10 +171,15 @@
 }
 
 /* Fontes do texto do artigo. A interface fica sempre na fonte do sistema, exceto em Legibilidade. */
+/* Fontes do texto do artigo. A serifada do sistema é o padrão e não precisa de regra. */
+:root[data-font='system'] {
+  --font-text: var(--font-system-sans);
+  --heading-weight: 600;
+  --measure-k: 0.9;
+}
 :root[data-font='serif'] {
   --font-text: var(--font-system-serif);
-  --title-weight: 600;
-  --heading-weight: 600;
+}
   --measure-k: 1;
 }
 :root[data-font='inter'] {
@@ -186,12 +189,10 @@
 }
 :root[data-font='literata'] {
   --font-text: 'Literata', var(--font-system-serif);
-  --title-weight: 600;
   --measure-k: 1.03;
 }
 :root[data-font='sourceserif'] {
   --font-text: 'Source Serif 4', var(--font-system-serif);
-  --title-weight: 600;
   --measure-k: 1.14;
 }
 :root[data-font='legible'] {
@@ -207,14 +208,14 @@
 :root[data-size='2'] { --scale: 1.25; }
 :root[data-size='3'] { --scale: 1.42; }
 
-:root[data-leading='tight'] { --leading: 1.45; }
-:root[data-leading='loose'] { --leading: 1.85; }
+:root[data-leading='tight'] { --leading: 1.5; }
+:root[data-leading='loose'] { --leading: 1.9; }
 
 :root[data-measure='narrow'] { --measure-chars: 47; }
 :root[data-measure='wide'] { --measure-chars: 64; }
 
 @media (min-width: 48em) {
-  :root { --text-size: calc(1.125rem * var(--scale)); }
+  :root { --text-size: calc(1.25rem * var(--scale)); }
 }
 
 /* ---------- Base ---------- */
@@ -371,6 +372,7 @@ input[type='search']::placeholder {
 /* ---------- Barra do topo ---------- */
 
 .topbar {
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -382,10 +384,12 @@ input[type='search']::placeholder {
 }
 .wordmark {
   font-family: var(--font-system-serif);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
   color: var(--text);
   text-decoration: none;
-  letter-spacing: 0.005em;
+  letter-spacing: -0.03em;
 }
 .wordmark:visited {
   color: var(--text);
@@ -393,14 +397,18 @@ input[type='search']::placeholder {
 .global-search {
   display: flex;
   gap: var(--s2);
-  flex: 1 1 14rem;
+  flex: 1 1 10rem;
   max-width: 28rem;
 }
 .global-search .btn {
   border-color: var(--rule-strong);
 }
-.account {
+.topbar-end {
   display: none;
+}
+.account {
+  display: flex;
+  align-items: center;
   gap: var(--s4);
 }
 .account a {
@@ -410,23 +418,50 @@ input[type='search']::placeholder {
 .account a:hover {
   text-decoration: underline;
 }
+.account .pill {
+  padding: 0.4em 1em;
+  border-radius: var(--pill);
+  background: var(--text);
+  color: var(--bg);
+  font-weight: 600;
+  line-height: 1.25;
+}
+.account .pill:visited {
+  color: var(--bg);
+}
+.account .pill:hover {
+  text-decoration: none;
+  opacity: 0.88;
+}
 .topbar-location {
   display: none;
   font: inherit;
   color: var(--text-2);
   background: none;
   border: 0;
-  padding: var(--s2) 0;
+  border-radius: var(--radius);
+  padding: var(--s2) var(--s3);
   cursor: pointer;
   min-width: 0;
-  flex: 1 1 0;
-  text-align: start;
+  max-width: 100%;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .topbar-location:hover {
   color: var(--text);
+  background: var(--bg-2);
+}
+.topbar-title {
+  color: var(--text);
+  font-weight: 600;
+}
+.topbar-section::before {
+  content: ' · ';
+}
+.progress {
+  display: none;
 }
 
 @media (min-width: 48em) {
@@ -435,11 +470,89 @@ input[type='search']::placeholder {
     top: 0;
     z-index: 20;
     flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) auto;
+    gap: var(--s4);
     min-height: var(--topbar-h);
+    padding: 0 var(--s5);
+  }
+  .topbar-center {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+  }
+  .global-search {
+    grid-column: 1;
+    grid-row: 1;
+    width: min(100%, 15rem);
+    max-width: none;
+  }
+  .global-search input {
+    min-height: 2.25rem;
+    border-color: transparent;
+    background: var(--bg-2);
+  }
+  .global-search input:hover {
+    border-color: var(--rule);
+  }
+  .search-submit {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    padding: 0;
+    min-height: 0;
+  }
+  .topbar-end {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: var(--s4);
+  }
+  .btn-options {
+    display: none;
   }
   .js .btn-options {
     display: inline-block;
-    margin-inline-start: auto;
+    color: var(--text-2);
+    white-space: nowrap;
+  }
+  .account a {
+    white-space: nowrap;
+  }
+  .progress {
+    display: block;
+    position: absolute;
+    inset: auto 0 -1px 0;
+    height: 2px;
+  }
+  .progress span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background: var(--text);
+  }
+  /* Ao rolar para além do título, o centro da barra troca a marca pelo título e a seção atual. */
+  .js .is-reading .wordmark {
+    display: none;
+  }
+  .js .is-reading .topbar-location {
+    display: block;
+  }
+}
+@media (min-width: 64em) {
+  .topbar {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  }
+}
+@media (max-width: 47.99em) {
+  .search-submit {
+    flex: none;
   }
 }
 
@@ -453,80 +566,24 @@ main:focus {
   outline: none;
 }
 
+/* A coluna de texto é única e centralizada. --col é a largura do texto; --wide é a largura
+   máxima da imagem de abertura, que pode passar da coluna como nas revistas na web. */
 .article {
+  --col: calc(var(--measure-chars) * var(--measure-k) * 1ch);
+  --wide: min(calc(100vw - 2rem), calc(var(--col) * 1.35));
   font-family: var(--font-text);
   font-size: var(--text-size);
   line-height: var(--leading);
   letter-spacing: var(--text-tracking);
   word-spacing: var(--word-spacing);
-  max-width: calc(var(--measure-chars) * var(--measure-k) * 1ch);
+  max-width: var(--col);
   margin-inline: auto;
   padding-block: var(--s6) var(--s8);
 }
 
-/* Sem JavaScript, o sumário aparece no topo do artigo, como um índice de livro. */
-.no-js .sections {
-  max-width: 40rem;
-  margin: var(--s5) auto 0;
-  padding: var(--s4);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-}
-
-/* Com JavaScript e tela estreita, o sumário vive num painel aberto pela barra. */
-@media (max-width: 63.99em) {
-  .js .layout > .sections {
-    display: none;
-  }
-}
-
-@media (min-width: 64em) {
-  .layout {
-    display: grid;
-    grid-template-columns: var(--rail-w) auto;
-    column-gap: var(--gap);
-    justify-content: center;
-    align-items: start;
-  }
-  .layout > .sections,
-  .no-js .layout > .sections {
-    position: sticky;
-    top: var(--topbar-h);
-    max-height: calc(100vh - var(--topbar-h));
-    overflow-y: auto;
-    margin: 0 calc(-1 * var(--s3));
-    padding: var(--s6) var(--s3);
-    border: 0;
-    overflow-x: hidden;
-  }
-  .article {
-    margin-inline: 0;
-  }
-}
-
-@media (min-width: 64em) {
-  .account {
-    display: flex;
-  }
-  .site-footer .account {
-    display: none;
-  }
-}
-.site-footer .account {
-  display: flex;
-  justify-content: center;
-  margin-bottom: var(--s3);
-}
-.site-footer .account a {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-/* Com espaço para a margem: infobox e figuras saem da coluna de texto. */
-@media (min-width: 78em) {
-  .layout {
-    grid-template-columns: var(--rail-w) auto var(--margin-w);
-  }
+/* A navegação de seções só existe como painel. Sem JavaScript, o sumário do próprio artigo ("Neste artigo") serve. */
+.layout > .sections {
+  display: none;
 }
 
 /* ---------- Cabeçalho do artigo ---------- */
@@ -537,8 +594,8 @@ main:focus {
 .article h1 {
   font-family: var(--font-text);
   font-weight: var(--title-weight);
-  font-size: clamp(2.25rem, 1.5rem + 3vw, 3.25rem);
-  line-height: 1.08;
+  font-size: clamp(2.75rem, 1.8rem + 4.2vw, 4.5rem);
+  line-height: 1.05;
   letter-spacing: -0.025em;
   margin: 0;
   text-wrap: balance;
@@ -546,30 +603,52 @@ main:focus {
 .description {
   margin: var(--s3) 0 0;
   color: var(--text-2);
-  font-size: 1.1em;
-  line-height: 1.45;
-}
-.meta {
-  margin: var(--s4) 0 0;
-  font-family: var(--font-ui);
-  font-size: var(--ui-small);
-  color: var(--text-2);
-  line-height: 1.5;
+  font-size: 1.2em;
+  line-height: 1.4;
   text-wrap: balance;
 }
-.meta span + span::before {
+.byline {
+  margin: var(--s5) 0 0;
+  font-family: var(--font-ui);
+  font-size: var(--ui-size);
+  letter-spacing: 0;
+  word-spacing: normal;
+  line-height: 1.45;
+}
+.byline p {
+  margin: 0;
+}
+.byline-by {
+  font-weight: 600;
+}
+.byline-by a {
+  color: var(--text);
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+}
+.byline-meta {
+  color: var(--text-2);
+  font-size: var(--ui-small);
+}
+.byline-meta span + span::before {
   content: ' · ';
 }
 .tools {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s2);
+  align-items: center;
+  gap: 0 var(--s1);
   margin: var(--s5) 0 0;
-  padding: 0;
+  padding: var(--s2) 0;
   list-style: none;
+  border-block: 1px solid var(--rule);
   font-family: var(--font-ui);
   font-size: var(--ui-size);
+  letter-spacing: 0;
+  word-spacing: normal;
   line-height: 1.25;
+}
+.tools .tools-end {
+  margin-inline-start: auto;
 }
 .tool {
   display: inline-flex;
@@ -577,20 +656,30 @@ main:focus {
   gap: 0.4em;
   min-height: 2.25rem;
   padding: 0.4em var(--s3);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  color: var(--text);
+  border: 0;
+  border-radius: var(--pill);
+  background: none;
+  font: inherit;
+  color: var(--text-2);
   text-decoration: none;
+  cursor: pointer;
 }
 .tool:visited {
-  color: var(--text);
+  color: var(--text-2);
 }
 .tool:hover {
   background: var(--hover);
+  color: var(--text);
 }
 .tool[aria-expanded='true'] {
   background: var(--hover);
-  border-color: var(--rule-strong);
+  color: var(--text);
+}
+/* No celular, "Seções e busca" é a barra inferior. */
+@media (max-width: 47.99em) {
+  .tools .tools-end {
+    display: none;
+  }
 }
 .tool-count {
   color: var(--text-2);
@@ -602,12 +691,15 @@ main:focus {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--s2) var(--s3);
-  margin-top: var(--s5);
+  margin: 0 0 var(--s5);
   padding: var(--s3) var(--s4);
   background: var(--bg-2);
-  border-radius: var(--radius);
+  border-radius: var(--radius-lg);
   font-family: var(--font-ui);
   font-size: var(--ui-size);
+  letter-spacing: 0;
+  word-spacing: normal;
+  line-height: 1.4;
 }
 .resume p {
   margin: 0;
@@ -616,6 +708,95 @@ main:focus {
 .resume .btn-primary {
   border-color: var(--rule-strong);
   background: var(--bg);
+}
+
+/* Imagem de abertura: a imagem principal da ficha, na largura da coluna ou um pouco além. */
+.hero {
+  width: var(--wide);
+  max-width: none;
+  margin: var(--s6) 0 0 calc((100% - var(--wide)) / 2);
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: 50% 62%;
+  background: var(--bg-2);
+  border-radius: var(--radius);
+}
+.hero > a,
+.hero > span > a {
+  display: block;
+}
+@media (min-width: 48em) {
+  /* Recorte de apresentação, como nas aberturas de revista: a foto inteira continua no arquivo da Wikimedia. */
+  .hero img {
+    aspect-ratio: 16 / 9;
+  }
+}
+.hero figcaption {
+  font-family: var(--font-ui);
+  font-size: var(--ui-small);
+  line-height: 1.45;
+  color: var(--text-2);
+  margin: var(--s2) auto 0;
+  max-width: var(--col);
+  text-align: center;
+  letter-spacing: 0;
+  word-spacing: normal;
+}
+
+/* Sumário do artigo, logo depois da introdução. */
+.article-body .intoc {
+  margin: var(--s7) 0;
+  padding: var(--s5) 0 var(--s4);
+  border-block: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: var(--ui-size);
+  line-height: 1.4;
+  letter-spacing: 0;
+  word-spacing: normal;
+}
+.article-body .intoc h2 {
+  margin: 0 0 var(--s3);
+  font-family: var(--font-ui);
+  font-size: var(--ui-small);
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--text-2);
+}
+.intoc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.intoc > ol > li {
+  break-inside: avoid;
+}
+.intoc ol ol {
+  padding-inline-start: var(--s4);
+}
+.intoc a {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s2);
+  padding: 0.3em 0;
+  color: var(--text);
+  text-decoration: none;
+}
+.intoc ol ol a {
+  color: var(--text-2);
+}
+.intoc a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 40em) {
+  .intoc > ol {
+    columns: 2;
+    column-gap: var(--s7);
+  }
 }
 
 /* ---------- Texto do artigo ---------- */
@@ -758,25 +939,30 @@ sup.cn a {
   font-size: inherit !important;
 }
 
-/* Figuras: entre parágrafos nas telas menores, na margem quando há espaço. */
+/* Figuras: na largura da coluna, sem passar do tamanho do arquivo (para não ampliar foto pequena). */
 .figure {
-  margin: var(--s5) 0;
-  max-width: 24rem;
+  margin: var(--s6) auto;
+  max-width: min(100%, var(--w, 100%));
 }
-.figure img,
-.infobox-image img {
+.figure img {
   display: block;
   width: 100%;
   background: var(--bg-2);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius);
 }
-.figure figcaption,
-.infobox-image figcaption {
+.figure > a,
+.figure > span > a {
+  display: block;
+}
+.figure figcaption {
   font-family: var(--font-ui);
   font-size: var(--ui-small);
   line-height: 1.45;
   color: var(--text-2);
   margin-top: var(--s2);
+  text-align: center;
+  letter-spacing: 0;
+  word-spacing: normal;
 }
 
 /* Infobox */
@@ -787,8 +973,10 @@ sup.cn a {
   line-height: 1.45;
   letter-spacing: 0;
   word-spacing: normal;
-  margin: var(--s5) 0 var(--s6);
-  max-width: 24rem;
+  margin: var(--s6) 0;
+  padding: var(--s4) var(--s5);
+  background: var(--bg-2);
+  border-radius: var(--radius-lg);
 }
 .infobox-title {
   font-weight: 600;
@@ -877,19 +1065,6 @@ sup.cn a {
 }
 .sister-box img {
   filter: none;
-}
-
-@media (min-width: 78em) {
-  .article-body .infobox,
-  .article-body .sister-box,
-  .article-body .figure {
-    float: inline-end;
-    clear: inline-end;
-    width: var(--margin-w);
-    max-width: none;
-    margin-block: 0.35em var(--s6);
-    margin-inline: var(--s5) calc(-1 * (var(--margin-w) + var(--gap)));
-  }
 }
 
 /* Tabelas de dados */
@@ -1203,6 +1378,21 @@ mark {
   display: block;
   font-size: var(--ui-small);
   color: var(--text-2);
+}
+
+/* Rodapé: no computador, Entrar e Doar já estão na barra do topo. */
+.site-footer .account {
+  justify-content: center;
+  margin-bottom: var(--s3);
+}
+.site-footer .account a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+@media (min-width: 48em) {
+  .site-footer .account {
+    display: none;
+  }
 }
 
 /* ---------- Painéis ---------- */
@@ -1572,13 +1762,6 @@ dialog::backdrop {
   font-family: var(--font-system-serif) !important;
   font-size: 1.15rem !important;
   border-inline-start: 1px solid var(--rule) !important;
-}
-
-/* A barra do topo mostra a seção atual quando o sumário lateral não está visível. */
-@media (min-width: 48em) and (max-width: 63.99em) {
-  .js .topbar-location {
-    display: block;
-  }
 }
 
 /* ---------- Impressão ---------- */
